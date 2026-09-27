@@ -1,0 +1,19 @@
+{
+  "_comment": "Dropdown order. The tuner saves skins by position, so append new skins at the end. Textures: mods/AnimSkins/assets/units/mods/animskins3/<id>_df.texture (base) and <id>_il.texture (glow).",
+  "skins": [
+    { "id": "default",             "name": "Eldritch Rose" },
+    { "id": "crackle",             "name": "Crackle" },
+    { "id": "crystal",             "name": "Crystal" },
+    { "id": "interstellar",        "name": "Interstellar" },
+    { "id": "inversion",           "name": "Inversion" },
+    { "id": "molton",              "name": "Molton" },
+    { "id": "nebula",              "name": "Nebula" },
+    { "id": "nightwave",           "name": "Nightwave" },
+    { "id": "pap_galaxy",          "name": "Pap Galaxy" },
+    { "id": "purple",              "name": "Purple" },
+    { "id": "scribble",            "name": "Scribble" },
+    { "id": "shatter",             "name": "Shatter" },
+    { "id": "starfall",            "name": "Starfall" },
+    { "id": "inversion_universal", "name": "Inversion Universal" }
+  ]
+}

@@ -1,0 +1,70 @@
+<materials version="3" group="weapon_slap">
+	<material name="mat_gre_b_standard" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_gre_body_lower" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 -0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_gre_body_upper" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_gre_o_iron" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_gre_s_standard" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_gre_vg" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_sight_rail" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_fps_gre_slap_s_rail_df" />
+		<bump_normal_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_fps_gre_slap_s_rail_nm" />
+	</material>
+	<material name="third_gre_body_lower" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_third_gre_slap_body_lower_grip_df" />
+		<bump_normal_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_third_gre_slap_body_lower_grip_nm" />
+	</material>
+	<material name="third_gre_body_upper" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
+		<diffuse_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_third_gre_slap_body_lower_df" />
+		<bump_normal_texture file="units/pd2_dlc_fgl/weapons/wpn_fps_gre_slap_pts/wpn_third_gre_slap_body_lower_nm" />
+	</material>
+	<material name="ak_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="cover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+</materials>

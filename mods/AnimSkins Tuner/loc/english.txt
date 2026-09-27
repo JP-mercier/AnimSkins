@@ -1,0 +1,77 @@
+{
+	"ast_menu_title" : "AnimSkins Tuner",
+	"ast_menu_desc" : "Pick which skin shows, plus brightness, bloom, speed and direction of the animated weapon skin, and the reactive glow.",
+
+	"ast_primary_skin_title" : "Primary skin",
+	"ast_primary_skin_desc" : "Skin for your primary weapon. Switching is instant: every skin is loaded at startup. A new skin needs AnimSkins' tools/build.py and a restart.",
+
+	"ast_secondary_skin_title" : "Secondary skin",
+	"ast_secondary_skin_desc" : "Skin for your secondary weapon. Switching is instant: every skin is loaded at startup.",
+
+	"ast_enabled_title" : "Animated skin",
+	"ast_enabled_desc" : "Off sets the glow and the scroll to zero, leaving the plain base texture. To remove the skin entirely, disable AnimSkins and restart.",
+
+	"ast_glow_title" : "Glow brightness",
+	"ast_glow_desc" : "il_multiplier: how hard the animated layer burns. Built for 5. Past about 10 the bright parts turn white. 0 turns the animation off.",
+
+	"ast_bloom_title" : "Bloom",
+	"ast_bloom_desc" : "il_bloom: how far the glow bleeds past the edges of the gun. 1.0 is the built value; vanilla's own animated materials run as high as 10. Needs bloom enabled in the video settings.",
+
+	"ast_speed_title" : "Scroll speed",
+	"ast_speed_desc" : "uv_speed, in UV units per second. 0.1 is the built value; 0 freezes the pattern.",
+
+	"ast_direction_title" : "Scroll direction",
+	"ast_direction_desc" : "Which way the pattern travels. UV islands are mirrored and rotated per part, so no single direction reads the same over a whole weapon. Per part uses the direction picked for each material, which is the most even.",
+	"ast_dir_right" : "Right",
+	"ast_dir_left" : "Left",
+	"ast_dir_down" : "Down",
+	"ast_dir_up" : "Up",
+	"ast_dir_diag" : "Diagonal",
+	"ast_dir_part" : "Per part (built-in)",
+
+	"ast_menus_title" : "Show in menus",
+	"ast_menus_desc" : "Show the skin on the inventory and customise previews. Off keeps menu weapons vanilla and skins only the weapon in your hands in a heist. Applies to weapons built after the change.",
+
+	"ast_reactive_title" : "Reactive glow",
+	"ast_reactive_desc" : "The glow follows the heist: dims to an ember in stealth, ramps up during assaults, and the gun heats up the longer you fire -- brighter, faster scrolling, and a heat effect at the muzzle. All of it scales the Glow brightness above.",
+
+	"ast_react_stealth_title" : "Stealth ember",
+	"ast_react_stealth_desc" : "Fraction of the glow shown while the level is still in stealth. 0.35 is a faint ember; 1.0 means stealth changes nothing.",
+
+	"ast_react_assault_title" : "Assault surge",
+	"ast_react_assault_desc" : "Multiplier on the glow while an assault is in progress. The build-up before the assault gets 40% of the way there.",
+
+	"ast_react_heat_gain_title" : "Heat per shot",
+	"ast_react_heat_gain_desc" : "How much each shot heats the gun, on a 0-1 scale. 0.06 means about 17 shots to full heat.",
+
+	"ast_react_heat_cool_title" : "Cooling rate",
+	"ast_react_heat_cool_desc" : "Heat lost per second while not firing. 0.35 cools a fully hot gun in about 3 seconds.",
+
+	"ast_react_heat_glow_title" : "Heat glow",
+	"ast_react_heat_glow_desc" : "Extra glow at full heat, as a multiple of the current glow. 1.5 means a fully hot gun burns 2.5x as bright.",
+
+	"ast_react_heat_speed_title" : "Heat scroll speed",
+	"ast_react_heat_speed_desc" : "Scroll speed multiplier at full heat. 3 means the pattern races three times faster on a hot gun and slows as it cools.",
+
+	"ast_react_heat_at_title" : "Effects start at",
+	"ast_react_heat_at_desc" : "Heat level (0-1) where the muzzle heat effect switches on. It switches off a little below it so it does not flicker.",
+
+	"ast_react_heat_fx_title" : "Muzzle heat effect",
+	"ast_react_heat_fx_desc" : "A looping effect at the muzzle while the gun is hot, from the game's own particle library.",
+
+	"ast_react_heat_fx_period_title" : "Heat effect replay",
+	"ast_react_heat_fx_period_desc" : "The game's heat effects play once and stop, so while the gun stays hot the effect is replayed this often, in seconds.",
+
+	"ast_react_flash_fx_title" : "Star muzzle flash",
+	"ast_react_flash_fx_desc" : "A sparkle fired from the muzzle on every shot. Kawaii sparkles are the twinkling stars from the Kawaii mask. The FPS entries are the game's own muzzle flashes and always load; if one of those shows but a sparkle does not, that sparkle is not loaded in this heist (see mods/logs).",
+
+	"ast_react_flash_life_title" : "Star flash length",
+	"ast_react_flash_life_desc" : "How long each star flash lives, in seconds, before it is removed.",
+
+	"ast_react_smooth_title" : "Response speed",
+	"ast_react_smooth_desc" : "How quickly the glow follows when the heist state changes. Higher is snappier; 4 takes about half a second.",
+
+	"ast_reset_title" : "Reset to defaults",
+	"ast_reset_desc" : "Back to the values the skins were built with.",
+	"ast_reset_done" : "Reset. Reopen this menu to see the sliders update."
+}

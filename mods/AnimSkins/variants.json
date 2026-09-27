@@ -1,0 +1,95 @@
+{
+  "mod": "AnimSkins",
+  "default": "default",
+  "baked": {
+    "glow": 5,
+    "bloom": 1.0,
+    "speed": 0.1
+  },
+  "skins": [
+    {
+      "id": "default",
+      "name": "Eldritch Rose",
+      "base": "units/mods/animskins3/default_df",
+      "glow": "units/mods/animskins3/default_il"
+    },
+    {
+      "id": "crackle",
+      "name": "Crackle",
+      "base": "units/mods/animskins3/crackle_df",
+      "glow": "units/mods/animskins3/crackle_il"
+    },
+    {
+      "id": "crystal",
+      "name": "Crystal",
+      "base": "units/mods/animskins3/crystal_df",
+      "glow": "units/mods/animskins3/crystal_il"
+    },
+    {
+      "id": "interstellar",
+      "name": "Interstellar",
+      "base": "units/mods/animskins3/interstellar_df",
+      "glow": "units/mods/animskins3/interstellar_il"
+    },
+    {
+      "id": "inversion",
+      "name": "Inversion",
+      "base": "units/mods/animskins3/inversion_df",
+      "glow": "units/mods/animskins3/inversion_il"
+    },
+    {
+      "id": "molton",
+      "name": "Molton",
+      "base": "units/mods/animskins3/molton_df",
+      "glow": "units/mods/animskins3/molton_il"
+    },
+    {
+      "id": "nebula",
+      "name": "Nebula",
+      "base": "units/mods/animskins3/nebula_df",
+      "glow": "units/mods/animskins3/nebula_il"
+    },
+    {
+      "id": "nightwave",
+      "name": "Nightwave",
+      "base": "units/mods/animskins3/nightwave_df",
+      "glow": "units/mods/animskins3/nightwave_il"
+    },
+    {
+      "id": "pap_galaxy",
+      "name": "Pap Galaxy",
+      "base": "units/mods/animskins3/pap_galaxy_df",
+      "glow": "units/mods/animskins3/pap_galaxy_il"
+    },
+    {
+      "id": "purple",
+      "name": "Purple",
+      "base": "units/mods/animskins3/purple_df",
+      "glow": "units/mods/animskins3/purple_il"
+    },
+    {
+      "id": "scribble",
+      "name": "Scribble",
+      "base": "units/mods/animskins3/scribble_df",
+      "glow": "units/mods/animskins3/scribble_il"
+    },
+    {
+      "id": "shatter",
+      "name": "Shatter",
+      "base": "units/mods/animskins3/shatter_df",
+      "glow": "units/mods/animskins3/shatter_il"
+    },
+    {
+      "id": "starfall",
+      "name": "Starfall",
+      "base": "units/mods/animskins3/starfall_df",
+      "glow": "units/mods/animskins3/starfall_il"
+    },
+    {
+      "id": "inversion_universal",
+      "name": "Inversion Universal",
+      "base": "units/mods/animskins3/inversion_universal_df",
+      "glow": "units/mods/animskins3/inversion_universal_il"
+    }
+  ]
+}

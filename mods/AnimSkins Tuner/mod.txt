@@ -1,0 +1,12 @@
+{
+	"name" : "AnimSkins Tuner",
+	"description" : "Live controls for AnimSkins: pick the skin (per slot too), glow brightness, bloom, scroll speed and direction, and the reactive glow (stealth ember, assault surge, weapon heat). Options > Mod Options > AnimSkins Tuner. Requires AnimSkins.",
+	"author" : "jpmercier",
+	"version" : "2.1",
+	"blt_version" : 2,
+	"hooks" : [
+		{ "hook_id" : "lib/managers/menumanager", "script_path" : "lua/menu.lua" },
+		{ "hook_id" : "lib/units/weapons/newraycastweaponbase", "script_path" : "lua/weapon.lua" },
+		{ "hook_id" : "lib/managers/hudmanagerpd2", "script_path" : "lua/reactive_hud.lua" }
+	]
+}

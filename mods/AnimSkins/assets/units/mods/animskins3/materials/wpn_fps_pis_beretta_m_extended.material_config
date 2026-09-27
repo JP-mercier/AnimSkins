@@ -1,0 +1,104 @@
+<materials version="3" group="weapon_b92fs">
+	<material name="body" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="brig" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="comp_1" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="comp_2" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="ergo" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="extd" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="front_rail" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="mtr_bullet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="no_blurr" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="std" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="std_grips" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="std_sight" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<bump_normal_texture file="units/payday2/weapons/wpn_fps_pis_b92fs_pts/wpn_fps_pis_beretta_o_std_nm" />
+	</material>
+	<material name="std_slide" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="ak_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="cover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+</materials>
