@@ -2,7 +2,7 @@
 
 Animated glowing weapon skins for PAYDAY 2, applied to the local player's first-person weapons only. 14 skins, switchable in game through the included AnimSkins Tuner.
 
-Made by Yuna. Built on [Inversion Universal](https://github.com/JP-mercier/PD2-Animated-Weapon-Skin) by [Siuna](https://steamcommunity.com/profiles/76561199075375622).
+Made by [Siuna](https://steamcommunity.com/profiles/76561199075375622). Built on [Inversion Universal](https://github.com/JP-mercier/PD2-Animated-Weapon-Skin), also by Siuna.
 
 Skins: Eldritch Rose, Crackle, Crystal, Interstellar, Inversion, Molton, Nebula, Nightwave, Pap Galaxy, Purple, Scribble, Shatter, Starfall, Inversion Universal.
 
