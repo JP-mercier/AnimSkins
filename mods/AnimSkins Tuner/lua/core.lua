@@ -257,10 +257,29 @@ function T:collect(weapon)
 					table.insert(group.base, m)
 				end
 			end
+			if #group.anim == 0 and next(info.anim) then
+				self:log_skip(part.config, ("none of its %d materials match the animated names listed for it"):format(#unit:get_objects_by_type(IDS_MATERIAL)))
+			end
 			table.insert(groups, group)
+		elseif not info then
+			self:log_skip(part.config, "no entry in skin_materials.txt")
+		elseif not alive(unit) then
+			self:log_skip(part.config, "the unit is gone")
+		else
+			self:log_skip(part.config, "the unit wears another config now")
 		end
 	end
 	return groups
+end
+
+-- Why a swapped part was not retextured, logged once per config and reason (observation only).
+T._skips = {}
+function T:log_skip(config, why)
+	local key = tostring(config) .. "|" .. why
+	if not self._skips[key] and table.size(self._skips) < 40 then
+		self._skips[key] = true
+		log(("[AnimSkins Tuner] not retextured: %s (%s)"):format(tostring(config), why))
+	end
 end
 
 -- Still the unit AnimSkins swapped, still wearing the config it was given.

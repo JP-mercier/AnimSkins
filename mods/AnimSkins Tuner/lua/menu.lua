@@ -43,10 +43,18 @@ Hooks:Add("MenuManagerInitialize", "AnimSkinsTuner_callbacks", function(menu_man
 	MenuCallbackHandler.ast_set_attachments = function(self, item)
 		set("attachments", item:value() == "on")
 		T:sync_animskins()
+		-- Which parts are animated changed: re-swap the weapons on screen now.
+		if _G.AnimSkins and _G.AnimSkins.refresh then
+			_G.AnimSkins.refresh()
+		end
 	end
 	MenuCallbackHandler.ast_set_sights = function(self, item)
 		set("sights", item:value() == "on")
 		T:sync_animskins()
+		-- Which parts are animated changed: re-swap the weapons on screen now.
+		if _G.AnimSkins and _G.AnimSkins.refresh then
+			_G.AnimSkins.refresh()
+		end
 	end
 
 	MenuCallbackHandler.ast_set_reactive = toggle("reactive", true)

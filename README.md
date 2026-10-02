@@ -56,8 +56,8 @@ Options → Mod Options → AnimSkins Tuner. Changes apply immediately, with no 
 | Scroll speed | 0.1 | `uv_speed`, UV units per second. 0 freezes the pattern |
 | Scroll direction | Per part (built-in) | Right, left, down, up, diagonal, or each material's own direction. UV islands are rotated and mirrored per part, so per part reads the most even |
 | Show in menus | On | Off keeps inventory and customization previews vanilla. Applies to weapons built after the change |
-| Animate attachments | On | Off animates only the parts a weapon comes with (its default build, including parts those add). Suppressors, custom barrels, stocks and other mods fitted on top keep their normal look. Applies to weapons built after the change |
-| Animate sights | Off | On also animates scopes, red dots, iron sights (factory type `sight`), offset sights and magnifiers (sub-type `second_sight`). Their glass and reticles keep their normal look. Applies to weapons built after the change |
+| Animate attachments | On | Off animates only the parts a weapon comes with (its default build, including parts those add). Suppressors, custom barrels, stocks and other mods fitted on top keep their normal look. Applies immediately, to the weapons already built |
+| Animate sights | Off | On also animates scopes, red dots, iron sights (factory type `sight`), offset sights and magnifiers (sub-type `second_sight`). Their glass and reticles keep their normal look. Applies immediately, to the weapons already built |
 
 Reactive glow (on by default) scales the glow brightness with the heist state and weapon heat:
 
@@ -85,6 +85,8 @@ Settings are stored in `mods/saves/animskins_tuner.json`. Settings saved by 2.0 
 - *Unskinned weapons* are swapped in a post-hook on `NewRaycastWeaponBase:_update_materials`.
 - *Skinned weapons* get the config through the game's skin system. For those, vanilla `_update_materials` asks `_material_config_name` which config each part should wear, applies it, and paints the skin onto materials with a `wear_tear_value` variable. AnimSkins answers `_material_config_name` with its own config, so the skin system applies it once, finds nothing to paint, and requests no textures. Replacing the skin's `_cc` config afterwards instead destroys materials the skin system is still loading textures for. This crashed the renderer on skinned akimbo weapons.
 - *Loading.* `main.xml` loads every config and texture at startup (`load="true"`). A part is only swapped once its config reports loaded (`DynamicResourceManager:is_resource_ready`). A part skipped this way is picked up the next time the weapon updates its materials.
+
+When `Animate attachments` or `Animate sights` changes, `AnimSkins.refresh()` re-runs the swap on every weapon already built. An unskinned weapon gets back the exact config each part wore before it was swapped (`AnimSkins.original`); a skinned one goes through `_apply_cosmetics`, the same path as changing its skin in the inventory, so the skin system itself decides each part's config again.
 
 After each swap, `AnimSkins.swapped[weapon]` records the part units and configs, and `Hooks:Call("AnimSkinsSwapped", weapon, swapped)` notifies listeners.
 

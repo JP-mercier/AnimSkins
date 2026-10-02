@@ -36,6 +36,10 @@ end
 -- weapon base -> { { unit = part unit, config = config name, ids = config Idstring }, ... }
 AS.swapped = AS.swapped or setmetatable({}, { __mode = "k" })
 
+-- part unit -> the config it wore before AnimSkins swapped it (unskinned weapons only), so a part the
+-- options stop animating can be given back exactly what it had.
+AS.original = AS.original or setmetatable({}, { __mode = "k" })
+
 local IDS_MATERIAL_CONFIG = Idstring("material_config")
 
 -- Each line of material_configs.txt is "<vanilla path> <config name>". Parts whose configs are
@@ -181,13 +185,21 @@ Hooks:PostHook(NewRaycastWeaponBase, "_update_materials", "AnimSkins_update_mate
 
 	for part_id, part in pairs(self._parts) do
 		local part_data = managers.weapon_factory:get_part_data_by_part_id_from_weapon(part_id, self._factory_id, self._blueprint)
-		local replacement = part_data and animate_part(self, part_id, part_data) and replacement_for(part_data, part.unit)
+		local replacement = part_data and alive(part.unit) and replacement_for(part_data, part.unit)
+		local animate = replacement and animate_part(self, part_id, part_data)
 
-		if replacement and alive(part.unit) then
+		-- Swapped earlier, not animated any more (the options changed): give the config back.
+		if replacement and not animate and not skinned and part.unit:material_config() == replacement.ids and AS.original[part.unit] then
+			part.unit:set_material_config(AS.original[part.unit], true)
+			AS.original[part.unit] = nil
+		end
+
+		if animate then
 			total = total + 1
 
 			if part.unit:material_config() ~= replacement.ids and not skinned then
 				if is_loaded(replacement.ids) then
+					AS.original[part.unit] = AS.original[part.unit] or part.unit:material_config()
 					part.unit:set_material_config(replacement.ids, true)
 				else
 					waiting = waiting + 1
@@ -195,7 +207,7 @@ Hooks:PostHook(NewRaycastWeaponBase, "_update_materials", "AnimSkins_update_mate
 			end
 
 			if part.unit:material_config() == replacement.ids then
-				table.insert(swapped, { unit = part.unit, config = replacement.name, ids = replacement.ids })
+				table.insert(swapped, { unit = part.unit, config = replacement.name, ids = replacement.ids, part_id = part_id })
 			end
 		end
 	end
@@ -221,3 +233,27 @@ Hooks:PostHook(NewRaycastWeaponBase, "_update_materials", "AnimSkins_update_mate
 		end
 	end
 end)
+
+-- Re-run the swap on every weapon AnimSkins has seen, after an option changed which parts are
+-- animated. A skinned weapon goes through vanilla's own path, as when its skin is changed in the
+-- inventory: the skin system asks _material_config_name for each part again (ours or its _cc), and
+-- repaints the skin on the parts that get theirs back. An unskinned weapon only needs the swap.
+function AS.refresh()
+	for weapon in pairs(AS.swapped) do
+		if alive(weapon._unit) and weapon._parts then
+			local ok, err = pcall(function()
+				if weapon._cosmetics_data then
+					weapon._materials = nil
+					weapon:_apply_cosmetics(function() end)
+				else
+					weapon:_update_materials()
+				end
+			end)
+
+			if not ok then
+				log("[AnimSkins] refresh failed: " .. tostring(err))
+			end
+		end
+	end
+end
+
