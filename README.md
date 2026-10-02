@@ -195,7 +195,7 @@ At startup, `mods/logs` shows `[AnimSkins] 1909 weapon parts mapped`, then `swap
 - Materials are `unique`: a part fitted to both weapons shows each weapon's own skin.
 - Parts are matched by the config they wear, which covers parts built from another part's mesh.
 - Magazines are animated by default (`BLACK_PARTS = False`).
-- Tuner: `Animate attachments` and `Animate sights` options.
+- Tuner: `Animate attachments` and `Animate sights` options, applied immediately to the weapons already built.
 
 ### 3.1 (Tuner 2.1)
 - Single repository: both mods under `mods/`, sources under `src/`, one build script.
