@@ -6,7 +6,7 @@ wpn_fps_amcar_uupg_fg_amcar fg_amcar:1,0 |
 wpn_fps_ass_74_b_legend ak74_barrel:-0.7,0.7 mtr_bear:0.7,-0.7 mtr_laser:0.7,-0.7 |
 wpn_fps_ass_74_b_standard ak74_barrel:-0.7,0.7 |
 wpn_fps_ass_74_body_upperreceiver ak74_dustcover:1,0 |
-wpn_fps_ass_74_m_standard |
+wpn_fps_ass_74_m_standard ak74_mag:0,1 mtr_bullet:0,1 |
 wpn_fps_ass_ak5_b_short barrel:-0.7,-0.7 |
 wpn_fps_ass_ak5_b_std barrel:-0.7,-0.7 |
 wpn_fps_ass_ak5_body_ak5 ak5:0,1 mtr_grip:-0.7,0.7 |
@@ -28,15 +28,15 @@ wpn_fps_ass_asval_b_standard mtr_barrel:1,0 mtr_clamp:1,0 |
 wpn_fps_ass_asval_body_standard mtr_bolt:1,0 mtr_dustcover:0,-1 mtr_receiver:-0.7,0.7 mtr_trigger:0,-1 |
 wpn_fps_ass_asval_fg_standard mtr_foregrip:0,-1 |
 wpn_fps_ass_asval_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_ass_asval_m_standard |
+wpn_fps_ass_asval_m_standard mtr_mag:-1,0 |
 wpn_fps_ass_asval_s_solid mtr_solid:0.7,-0.7 |
 wpn_fps_ass_asval_s_standard mtr_folding:-0.7,0.7 |
 wpn_fps_ass_asval_scopemount mtr_mount_budget:0.7,-0.7 |
-wpn_fps_ass_aug_m_quick |
+wpn_fps_ass_aug_m_quick mag:0.7,0.7 mtr_bullet:0,1 mtr_magpul:-0.7,-0.7 |
 wpn_fps_ass_ching_b_short mat_ching_body:0.7,-0.7 |
 wpn_fps_ass_ching_body_standard mat_ching_receiver:-0.7,0.7 |
 wpn_fps_ass_ching_fg_railed mtr_rail_adapter:-1,0 |
-wpn_fps_ass_ching_m_standard |
+wpn_fps_ass_ching_m_standard mat_ching_body:0.7,-0.7 mtr_bullet:0,1 |
 wpn_fps_ass_ching_s_pouch mat_ching_body:0.7,-0.7 mtr_bullet:0,1 mtr_pouch:1,0 |
 wpn_fps_ass_contraband_b_standard mtr_barrel:1,0 mtr_gasblock:-1,0 |
 wpn_fps_ass_contraband_body_standard mtr_lower:-1,0 mtr_upper:0.7,-0.7 |
@@ -45,7 +45,8 @@ wpn_fps_ass_contraband_dh_standard mtr_drag:0.7,0.7 |
 wpn_fps_ass_contraband_fg_standard mtr_fg:1,0 |
 wpn_fps_ass_contraband_g_standard mtr_grip:-0.7,0.7 |
 wpn_fps_ass_contraband_gl_m203 mtr_grenade:-0.7,-0.7 mtr_m203:0.7,-0.7 |
-wpn_fps_ass_contraband_m_standard |
+wpn_fps_ass_contraband_gl_m203_hornet mtr_grenade:-0.7,-0.7 mtr_hornet:-0.7,0.7 mtr_hornet_2:1,0 mtr_m203:0.7,-0.7 |
+wpn_fps_ass_contraband_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_ass_contraband_ns_standard mtr_nozzle:1,0 |
 wpn_fps_ass_contraband_o_standard mtr_sight:0.7,-0.7 |
 wpn_fps_ass_contraband_s_standard mtr_stock:0,1 |
@@ -63,8 +64,8 @@ wpn_fps_ass_fal_fg_04 mat_barrel03:0.7,-0.7 mat_frontgrip04:1,0 |
 wpn_fps_ass_fal_fg_standard mat_barrel02:1,0 mat_frontgrip02:-0.7,0.7 |
 wpn_fps_ass_fal_g_01 mat_grip:-1,0 |
 wpn_fps_ass_fal_g_standard mat_grip02:0,1 |
-wpn_fps_ass_fal_m_01 |
-wpn_fps_ass_fal_m_standard |
+wpn_fps_ass_fal_m_01 mat_magazine:-1,0 mtr_bullet:0,1 |
+wpn_fps_ass_fal_m_standard mat_magazine02:1,0 mtr_bullet:0,1 |
 wpn_fps_ass_fal_s_01 mat_stock:-0.7,-0.7 |
 wpn_fps_ass_fal_s_03 mat_stock03:0,1 |
 wpn_fps_ass_fal_s_standard mat_stock02:0.7,0.7 |
@@ -74,24 +75,26 @@ wpn_fps_ass_famas_b_standard mtr_barrel_2:0.7,-0.7 |
 wpn_fps_ass_famas_b_suppressed mtr_supp:1,0 |
 wpn_fps_ass_famas_body_standard mtr_charge:0,-1 mtr_lower:-1,0 mtr_upper:0.7,-0.7 |
 wpn_fps_ass_famas_g_standard mtr_grip_2:0,-1 |
-wpn_fps_ass_famas_m_standard |
+wpn_fps_ass_famas_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_ass_famas_o_adapter mtr_adapter:0,1 |
 wpn_fps_ass_flint_b_standard mat_barrel:-1,0 |
 wpn_fps_ass_flint_body_receiver mat_bodyback:-0.7,-0.7 |
 wpn_fps_ass_flint_fg_standard mat_foregrip:-0.7,0.7 |
 wpn_fps_ass_flint_g_standard mat_grip:-1,0 |
-wpn_fps_ass_flint_m_standard |
+wpn_fps_ass_flint_m_standard mat_mag:-1,0 mtr_bullet:0,1 |
 wpn_fps_ass_flint_ns_standard mat_muzzle:0.7,0.7 |
 wpn_fps_ass_flint_s_standard mat_stock:-0.7,-0.7 |
 wpn_fps_ass_g36_b_long barrel:-0.7,-0.7 |
+wpn_fps_ass_g36_body_optics base:-1,0 mtr_optics:0,1 |
+wpn_fps_ass_g36_body_optics_sl8 base:-1,0 mtr_optics:0,1 |
 wpn_fps_ass_g36_body_sl8 base:-1,0 |
 wpn_fps_ass_g36_body_standard base:-1,0 |
 wpn_fps_ass_g36_fg_c c_handguard:0.7,0.7 |
 wpn_fps_ass_g36_fg_k k_handguard:-1,0 |
 wpn_fps_ass_g36_fg_ksk ksk:0.7,-0.7 |
 wpn_fps_ass_g36_g_standard grip:0,1 |
-wpn_fps_ass_g36_m_quick |
-wpn_fps_ass_g36_m_standard |
+wpn_fps_ass_g36_m_quick mag:0.7,0.7 mtr_bullet:0,1 mtr_magpul:-0.7,-0.7 |
+wpn_fps_ass_g36_m_standard mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_ass_g36_o_vintage mtr_optics:0,1 |
 wpn_fps_ass_g36_s_kv kv:0,1 |
 wpn_fps_ass_g36_s_sl8 sl8:0.7,-0.7 |
@@ -107,8 +110,7 @@ wpn_fps_ass_g3_fg_retro g3_foregrip_retro:-0.7,-0.7 g3_rem:0,1 g3_spanne:-1,0 |
 wpn_fps_ass_g3_fg_retro_plastic g3_foregrip_retro1:0,1 g3_rem1:1,0 g3_spanne:-1,0 |
 wpn_fps_ass_g3_g_retro grip_retro:0,1 |
 wpn_fps_ass_g3_g_sniper grip_sniper:0,-1 |
-wpn_fps_ass_g3_m_mag |
-wpn_fps_ass_g3_m_mag_psg ak_base:-1,0 cover:-0.7,0.7 g3_fg_psg1:0,1 g3_foregrip_bipod:-0.7,0.7 g3_foregrip_railed:0,-1 g3_foregrip_retro:-0.7,-0.7 g3_foregrip_retro1:0,1 g3_mag:-0.7,0.7 g3_rem:0,1 g3_rem1:1,0 g3_spanne:-1,0 g3_upperbody:-1,0 grip_retro:0,1 grip_sniper:0,-1 lower:0,-1 mtr_barrel:1,0 mtr_sniper:0.7,0.7 rail:-1,0 sniper:0,-1 stock_wood:-1,0 | mag_third mtr_third_sniper_barrel
+wpn_fps_ass_g3_m_mag g3_mag:-0.7,0.7 |
 wpn_fps_ass_g3_s_sniper sniper:0,-1 |
 wpn_fps_ass_g3_s_wood stock_wood:-1,0 |
 wpn_fps_ass_galil_body_standard mtr_base:0.7,-0.7 |
@@ -131,8 +133,9 @@ wpn_fps_ass_groza_bolt_standard mtr_upper:0.7,-0.7 |
 wpn_fps_ass_groza_fl_adapter mtr_adapter:0,1 |
 wpn_fps_ass_groza_g_standard mtr_grip:-0.7,0.7 |
 wpn_fps_ass_groza_gl_gp25 mtr_gp25:0,-1 mtr_grenade:-0.7,-0.7 |
-wpn_fps_ass_groza_m_speed |
-wpn_fps_ass_groza_m_standard |
+wpn_fps_ass_groza_gl_gp25_hornet mtr_gp25:0,-1 mtr_grenade:-0.7,-0.7 mtr_hornet:-0.7,0.7 mtr_hornet_2:1,0 |
+wpn_fps_ass_groza_m_speed mtr_bullet:0,1 mtr_mag_speed:0,1 |
+wpn_fps_ass_groza_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_ass_groza_o_adapter mtr_mount:-1,0 |
 wpn_fps_ass_komodo_b_standard mat_barrel:-1,0 |
 wpn_fps_ass_komodo_body mat_body:-1,0 |
@@ -142,7 +145,7 @@ wpn_fps_ass_l85a2_body_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 |
 wpn_fps_ass_l85a2_fg_medium mtr_foregrip:0,-1 mtr_vg:-1,0 |
 wpn_fps_ass_l85a2_fg_short mtr_dd:1,0 mtr_vg:-1,0 |
 wpn_fps_ass_l85a2_g_worn mtr_grip_worn:1,0 |
-wpn_fps_ass_l85a2_m_emag |
+wpn_fps_ass_l85a2_m_emag mtr_bullet:0,1 mtr_emag:0.7,0.7 |
 wpn_fps_ass_l85a2_ns_standard mtr_flash:-1,0 |
 wpn_fps_ass_l85a2_o_standard mtr_sights:-1,0 |
 wpn_fps_ass_m14_b_ruger mtr_ruger_barrel:-0.7,-0.7 |
@@ -152,12 +155,11 @@ wpn_fps_ass_m14_body_ebr ebr:0.7,0.7 |
 wpn_fps_ass_m14_body_jae jae:-0.7,0.7 |
 wpn_fps_ass_m14_body_legendary mtr_body:-0.7,0.7 mtr_stock:0,1 |
 wpn_fps_ass_m14_body_lower lower:0,-1 |
-wpn_fps_ass_m14_body_lower_empty ak_base:-1,0 barrel:-0.7,-0.7 base:-1,0 cover:-0.7,0.7 dmr1:-0.7,0.7 ebr:0.7,0.7 jae:-0.7,0.7 lower:0,-1 lower1:0.7,-0.7 mag:0.7,0.7 mtr_bullet:0,1 no_blurr:-0.7,-0.7 |
 wpn_fps_ass_m14_body_lower_legendary lower1:0.7,-0.7 |
 wpn_fps_ass_m14_body_ruger mtr_ruger:-1,0 mtr_ruger_side_rail:0.7,0.7 |
 wpn_fps_ass_m14_body_ruger_rail mtr_ruger:-1,0 mtr_ruger_rail:0.7,0.7 mtr_ruger_side_rail:0.7,0.7 |
 wpn_fps_ass_m14_body_upper base:-1,0 |
-wpn_fps_ass_m14_m_standard |
+wpn_fps_ass_m14_m_standard mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_ass_m16_b_legend mtr_b_legend:-0.7,-0.7 |
 wpn_fps_ass_m16_fg_legend mtr_fg_legend:-1,0 |
 wpn_fps_ass_m16_o_handle_sight handle:-1,0 |
@@ -167,7 +169,7 @@ wpn_fps_ass_s552_b_long mtr_barrel_assembly:1,0 mtr_flashhider:0.7,-0.7 |
 wpn_fps_ass_s552_body_standard mtr_receiver:-0.7,0.7 |
 wpn_fps_ass_s552_fg_railed mtr_railed_handguard:1,0 |
 wpn_fps_ass_s552_fg_standard mtr_handguard:0,1 |
-wpn_fps_ass_s552_m_standard |
+wpn_fps_ass_s552_m_standard mag:0.7,0.7 mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_ass_s552_o_flipup mtr_sight:0.7,-0.7 |
 wpn_fps_ass_s552_s_m4 mtr_m4:-0.7,0.7 |
 wpn_fps_ass_s552_s_standard mtr_stock:0,1 |
@@ -180,7 +182,7 @@ wpn_fps_ass_shak12_body_upper mtr_upper:0.7,-0.7 |
 wpn_fps_ass_shak12_body_vks mtr_upper:0.7,-0.7 mtr_vks:-0.7,-0.7 |
 wpn_fps_ass_shak12_ejector_standard mtr_body_straps:-0.7,0.7 |
 wpn_fps_ass_shak12_fg_rail mtr_foregrip:0,-1 |
-wpn_fps_ass_shak12_m_magazine25 |
+wpn_fps_ass_shak12_m_magazine25 mtr_bullet:0,1 mtr_magazine25:1,0 mtr_shell:-0.7,-0.7 |
 wpn_fps_ass_shak12_ns_muzzle mtr_muzzle:-0.7,0.7 |
 wpn_fps_ass_shak12_ns_suppressor mtr_suppressor:1,0 |
 wpn_fps_ass_shak12_o_carry_dummy ak_base:-1,0 cover:-0.7,0.7 mtr_bullet:0,1 mtr_foregrip:0,-1 mtr_lower:-1,0 mtr_magazine25:1,0 mtr_muzzle:-0.7,0.7 mtr_shell:-0.7,-0.7 mtr_suppressor:1,0 mtr_upper:0.7,-0.7 mtr_vks:-0.7,-0.7 |
@@ -198,31 +200,34 @@ wpn_fps_ass_tecci_dh_standard mtr_drag:0.7,0.7 |
 wpn_fps_ass_tecci_fg_legend mtr_fg_legend:-1,0 |
 wpn_fps_ass_tecci_fg_standard mtr_fg:1,0 |
 wpn_fps_ass_tecci_lower_reciever mtr_lower:-1,0 |
-wpn_fps_ass_tecci_m_drum |
+wpn_fps_ass_tecci_m_drum mtr_bullet:0,1 mtr_drum:-0.7,-0.7 |
 wpn_fps_ass_tecci_ns_special mtr_special:-0.7,0.7 |
 wpn_fps_ass_tecci_ns_standard mtr_nozzle:1,0 |
 wpn_fps_ass_tecci_upper_reciever mtr_upper:0.7,-0.7 |
 wpn_fps_ass_tecci_vg_standard mtr_vg:-1,0 |
 wpn_fps_ass_tkb_barrels mat_barrel:-1,0 |
-wpn_fps_ass_tkb_barrels_ck ak_base:-1,0 cover:-0.7,0.7 mat_ammopouch:-1,0 mat_back_assembly:0,1 mat_barrel:-1,0 mat_ck_grip_rubber:0.7,-0.7 mat_irons:0,-1 mat_mag_bakelite:1,0 mat_magazine:-1,0 mat_mount:0.7,0.7 mat_rp4:0,1 mat_shoulderpad:-0.7,-0.7 mat_tt01_rail:-0.7,-0.7 mtr_bullet:0,1 mtr_bullet_tungsten:0,-1 mtr_ck_grip:-0.7,0.7 mtr_ck_muzzle:-0.7,0.7 mtr_front_assembly:-0.7,-0.7 | mat_nightsights
+wpn_fps_ass_tkb_barrels_ck mat_barrel:-1,0 mtr_ck_muzzle:-0.7,0.7 |
 wpn_fps_ass_tkb_body_front mat_mount:0.7,0.7 mtr_front_assembly:-0.7,-0.7 |
+wpn_fps_ass_tkb_body_front_ck mtr_front_assembly:-0.7,-0.7 |
 wpn_fps_ass_tkb_body_pouch mat_ammopouch:-1,0 |
 wpn_fps_ass_tkb_body_rear mat_back_assembly:0,1 |
 wpn_fps_ass_tkb_bolt_rp4 mat_back_assembly:0,1 mat_rp4:0,1 |
-wpn_fps_ass_tkb_m_bakelite |
-wpn_fps_ass_tkb_m_standard |
+wpn_fps_ass_tkb_ck_dummy ak_base:-1,0 cover:-0.7,0.7 mat_ammopouch:-1,0 mat_back_assembly:0,1 mat_barrel:-1,0 mat_ck_grip_rubber:0.7,-0.7 mat_irons:0,-1 mat_mag_bakelite:1,0 mat_magazine:-1,0 mat_mount:0.7,0.7 mat_rp4:0,1 mat_shoulderpad:-0.7,-0.7 mat_tt01_rail:-0.7,-0.7 mtr_bullet:0,1 mtr_bullet_tungsten:0,-1 mtr_ck_grip:-0.7,0.7 mtr_ck_muzzle:-0.7,0.7 mtr_front_assembly:-0.7,-0.7 | mat_nightsights
+wpn_fps_ass_tkb_grip_ck mat_ck_grip_rubber:0.7,-0.7 mtr_ck_grip:-0.7,0.7 |
+wpn_fps_ass_tkb_m_bakelite mat_mag_bakelite:1,0 mtr_bullet:0,1 mtr_bullet_tungsten:0,-1 |
+wpn_fps_ass_tkb_m_standard mat_magazine:-1,0 mtr_bullet:0,1 mtr_bullet_tungsten:0,-1 |
 wpn_fps_ass_tkb_o_front_post mat_irons:0,-1 |
 wpn_fps_ass_tkb_o_tritium mat_nightsights:0,1 |
 wpn_fps_ass_tkb_o_tt01 mat_tt01_rail:-0.7,-0.7 |
 wpn_fps_ass_tkb_s_tigr mat_shoulderpad:-0.7,-0.7 |
 wpn_fps_ass_vhs_b_silenced mtr_silencer:1,0 |
-wpn_fps_ass_vhs_m |
+wpn_fps_ass_vhs_m mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_ass_vhs_o_standard mtr_body:-0.7,0.7 |
 wpn_fps_aug_b_long barrel:-0.7,-0.7 |
 wpn_fps_aug_body_aug aug:-0.7,0.7 |
 wpn_fps_aug_body_f90 aug:-0.7,0.7 mtr_f90:0,-1 |
 wpn_fps_aug_fg_a3 a3:-0.7,-0.7 |
-wpn_fps_aug_m_pmag |
+wpn_fps_aug_m_pmag mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_bow_arblast_b_steel |
 wpn_fps_bow_arblast_body_standard mtr_crank:0,-1 mtr_xbow:-1,0 |
 wpn_fps_bow_arblast_g_standard mtr_xbow:-1,0 |
@@ -236,7 +241,7 @@ wpn_fps_bow_ecp_ejector_left mtr_ejectors:0.7,-0.7 |
 wpn_fps_bow_ecp_m_arrows_explosive mtr_arrows_explosive:1,0 |
 wpn_fps_bow_ecp_m_arrows_poison mtr_arrows_poison:-0.7,0.7 |
 wpn_fps_bow_ecp_m_arrows_standard mtr_arrows_standard:-0.7,-0.7 |
-wpn_fps_bow_ecp_m_casing |
+wpn_fps_bow_ecp_m_casing mtr_mag:-1,0 |
 wpn_fps_bow_ecp_meter_left mtr_gas:0,1 |
 wpn_fps_bow_ecp_o_iron mtr_dd:1,0 |
 wpn_fps_bow_ecp_s_bare mtr_grip:-0.7,0.7 mtr_stock_bare:0.7,0.7 |
@@ -272,49 +277,49 @@ wpn_fps_bow_plainsrider_m_explosive dinomight:0,-1 mtr_arrow:0.7,0.7 |
 wpn_fps_bullet_belt_0 mat_ammo_belt:-1,0 mat_links:-0.7,-0.7 |
 wpn_fps_fla_mk2_body body:0,1 mtr_meter:0.7,0.7 |
 wpn_fps_fla_mk2_body_fierybeast body:0,1 mtr_head:0,-1 mtr_meter:0.7,0.7 |
-wpn_fps_fla_mk2_mag |
+wpn_fps_fla_mk2_mag flame_fuel_can:-0.7,-0.7 |
 wpn_fps_fla_money_b_standard mtr_money_bits:1,0 |
 wpn_fps_fla_money_body_standard mtr_body:-0.7,0.7 mtr_grip:-0.7,0.7 mtr_system:0.7,0.7 |
 wpn_fps_fla_money_body_upper mtr_upper:0.7,-0.7 |
 wpn_fps_fla_money_dh_standard mtr_system:0.7,0.7 |
-wpn_fps_fla_money_m_standard |
+wpn_fps_fla_money_m_standard mtr_money_bits:1,0 |
 wpn_fps_fla_system_b_standard mtr_barrel_std:1,0 |
 wpn_fps_fla_system_b_wtf mtr_barrel:1,0 |
-wpn_fps_fla_system_m_high |
-wpn_fps_fla_system_m_low |
-wpn_fps_fla_system_m_standard |
+wpn_fps_fla_system_m_high mtr_mag_high:1,0 |
+wpn_fps_fla_system_m_low mtr_mag_low:1,0 |
+wpn_fps_fla_system_m_standard mtr_mag:-1,0 |
 wpn_fps_gre_3gl_barrel mat_wpn_fps_3gl_barrel_standard:0.7,-0.7 |
 wpn_fps_gre_3gl_barrel_dummy ak_base:-1,0 cover:-0.7,0.7 mat_venom:0,-1 mat_venom_stock:-0.7,-0.7 mat_wpn_fps_3gl:0,-1 mat_wpn_fps_3gl_barrel_standard:0.7,-0.7 mat_wpn_fps_3gl_buttpad_standard:-1,0 mat_wpn_fps_gre_3gl_grenade:0.7,0.7 mtr_display:-0.7,0.7 wpn_fps_3gl_barrel_long:0,-1 wpn_fps_3gl_buttpad_extra:-0.7,-0.7 wpn_fps_3gl_venom:0.7,-0.7 | mat_wpn_fps_3gl_sights
 wpn_fps_gre_3gl_barrel_long wpn_fps_3gl_barrel_long:0,-1 |
-wpn_fps_gre_3gl_grenade |
+wpn_fps_gre_3gl_grenade mat_wpn_fps_gre_3gl_grenade:0.7,0.7 |
 wpn_fps_gre_3gl_lower_reciever mat_wpn_fps_3gl:0,-1 |
 wpn_fps_gre_3gl_sight mat_wpn_fps_3gl_sights:0.7,-0.7 |
 wpn_fps_gre_3gl_stock mat_wpn_fps_3gl_buttpad_standard:-1,0 |
 wpn_fps_gre_3gl_stock_modern wpn_fps_3gl_buttpad_extra:-0.7,-0.7 |
 wpn_fps_gre_3gl_upper_reciever mat_wpn_fps_3gl:0,-1 |
+wpn_fps_gre_3gl_venom_lower mat_venom:0,-1 |
+wpn_fps_gre_3gl_venom_stock mat_venom_stock:-0.7,-0.7 |
 wpn_fps_gre_arbiter_b_comp mtr_barrel:1,0 mtr_bolt:1,0 mtr_comp:-0.7,0.7 |
 wpn_fps_gre_arbiter_b_long mtr_barrel:1,0 mtr_bolt:1,0 |
 wpn_fps_gre_arbiter_body_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_grip:-0.7,0.7 |
 wpn_fps_gre_arbiter_charginghandle mtr_bolt:1,0 |
 wpn_fps_gre_arbiter_ejector mtr_body:-0.7,0.7 |
-wpn_fps_gre_arbiter_m_standard |
+wpn_fps_gre_arbiter_m_standard mtr_mag:-1,0 mtr_shell:-0.7,-0.7 |
 wpn_fps_gre_arbiter_o_standard mtr_sights:-1,0 |
 wpn_fps_gre_arbiter_s_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 |
 wpn_fps_gre_china_body_standard mtr_bolt:1,0 mtr_grenade:-0.7,-0.7 mtr_lower:-1,0 mtr_upper:0.7,-0.7 |
-wpn_fps_gre_china_m_standard mtr_mag:-1,0 |
-wpn_fps_gre_hornet ak_base:-1,0 cover:-0.7,0.7 mag:0.7,0.7 mtr_gp25:0,-1 mtr_grenade:-0.7,-0.7 mtr_hornet:-0.7,0.7 mtr_hornet_2:1,0 mtr_m203:0.7,-0.7 |
+wpn_fps_gre_hornet mtr_hornet:-0.7,0.7 mtr_hornet_2:1,0 |
 wpn_fps_gre_m32_barrel body:0,1 |
-wpn_fps_gre_m32_mag |
-wpn_fps_gre_m32_mag_incendiary adapter:0.7,0.7 ak_base:-1,0 body:0,1 cover:-0.7,0.7 mag:0.7,0.7 mtr_grenade:-0.7,-0.7 |
+wpn_fps_gre_m32_mag mag:0.7,0.7 mtr_grenade:-0.7,-0.7 |
+wpn_fps_gre_m32_mag_hornet mag:0.7,0.7 mtr_grenade:-0.7,-0.7 mtr_hornet:-0.7,0.7 mtr_hornet_2:1,0 |
 wpn_fps_gre_m32_stock_adapter adapter:0.7,0.7 |
 wpn_fps_gre_m79_barrel mtr_barrel:1,0 mtr_sling:0.7,-0.7 |
 wpn_fps_gre_m79_barrelcatch mtr_barrelcatch:-0.7,-0.7 |
-wpn_fps_gre_m79_grenade |
-wpn_fps_gre_m79_grenade_whole_incendiary ak_base:-1,0 cover:-0.7,0.7 mtr_barrel:1,0 mtr_bolt:1,0 mtr_fg:1,0 mtr_grenade:-0.7,-0.7 mtr_lower:-1,0 mtr_mag:-1,0 mtr_stock:0,1 mtr_upper:0.7,-0.7 |
+wpn_fps_gre_m79_grenade mtr_grenade:-0.7,-0.7 |
 wpn_fps_gre_m79_stock mtr_sling:0.7,-0.7 mtr_stock:0,1 |
 wpn_fps_gre_ray_body mtr_grip:-0.7,0.7 mtr_lid:0.7,0.7 mtr_lock:-1,0 mtr_m202:1,0 mtr_signs:0,-1 |
 wpn_fps_gre_ray_bolt mtr_firepin:0,1 |
-wpn_fps_gre_ray_magazine |
+wpn_fps_gre_ray_magazine mtr_magazine:-0.7,-0.7 mtr_rocket:-1,0 |
 wpn_fps_gre_ray_magazine_handle mtr_magazine:-0.7,-0.7 |
 wpn_fps_gre_ray_ring_back mtr_lock:-1,0 |
 wpn_fps_gre_ray_sight mtr_sight:0.7,-0.7 |
@@ -330,43 +335,49 @@ wpn_fps_hailstorm_b_extended mtr_extension:-0.7,-0.7 mtr_muzzle:-0.7,0.7 mtr_sto
 wpn_fps_hailstorm_b_std mtr_muzzle:-0.7,0.7 |
 wpn_fps_hailstorm_b_suppressed mtr_suppressor:1,0 |
 wpn_fps_hailstorm_body mtr_buttpad:-0.7,0.7 mtr_lower:-1,0 mtr_stock:0,1 mtr_upper:0.7,-0.7 |
-wpn_fps_hailstorm_conv_b_std ak_base:-1,0 cover:-0.7,0.7 mtr_barrel_conv:0.7,0.7 mtr_brace_conv:0.7,-0.7 mtr_buttpad:-0.7,0.7 mtr_claymore:0,1 mtr_claymore_transparency:-1,0 mtr_extension:-0.7,-0.7 mtr_fl_conv:0.7,0.7 mtr_grip:-0.7,0.7 mtr_gyrojet:-1,0 mtr_hailstorm_flash:-0.7,0.7 mtr_irons:0.7,-0.7 mtr_katabatic:0.7,-0.7 mtr_katabatic_trans:0,-1 mtr_lower:-1,0 mtr_lower_conv:0.7,-0.7 mtr_mag_solid:1,0 mtr_mag_transparency:1,0 mtr_mullplan:1,0 mtr_muzzle:-0.7,0.7 mtr_stock:0,1 mtr_stock_conv:1,0 mtr_suppressor:1,0 mtr_upper:0.7,-0.7 mtr_upper_conv:-0.7,0.7 mtr_vr_phong:-1,0 optical:-1,0 |
+wpn_fps_hailstorm_conv_b_std mtr_barrel_conv:0.7,0.7 |
+wpn_fps_hailstorm_conv_body mtr_brace_conv:0.7,-0.7 mtr_lower:-1,0 mtr_lower_conv:0.7,-0.7 mtr_stock_conv:1,0 mtr_upper_conv:-0.7,0.7 |
 wpn_fps_hailstorm_conv_fl mtr_fl_conv:0.7,0.7 |
 wpn_fps_hailstorm_conv_fl_2 light:-0.7,-0.7 |
 wpn_fps_hailstorm_fl_flash mtr_hailstorm_flash:-0.7,0.7 |
 wpn_fps_hailstorm_g_bubble mtr_grip:-0.7,0.7 |
-wpn_fps_hailstorm_m_std |
+wpn_fps_hailstorm_m_std mtr_gyrojet:-1,0 mtr_mag_solid:1,0 |
 wpn_fps_hailstorm_o_claymore mtr_claymore:0,1 optical:-1,0 |
 wpn_fps_hailstorm_o_irons mtr_irons:0.7,-0.7 |
+wpn_fps_hailstorm_o_katabatic mtr_katabatic:0.7,-0.7 optical:-1,0 |
+wpn_fps_hailstorm_ubgl_dummy ak_base:-1,0 cover:-0.7,0.7 mtr_barrel_conv:0.7,0.7 mtr_brace_conv:0.7,-0.7 mtr_buttpad:-0.7,0.7 mtr_claymore:0,1 mtr_claymore_transparency:-1,0 mtr_extension:-0.7,-0.7 mtr_fl_conv:0.7,0.7 mtr_grip:-0.7,0.7 mtr_gyrojet:-1,0 mtr_hailstorm_flash:-0.7,0.7 mtr_irons:0.7,-0.7 mtr_katabatic:0.7,-0.7 mtr_katabatic_trans:0,-1 mtr_lower:-1,0 mtr_lower_conv:0.7,-0.7 mtr_mag_solid:1,0 mtr_mag_transparency:1,0 mtr_mullplan:1,0 mtr_muzzle:-0.7,0.7 mtr_stock:0,1 mtr_stock_conv:1,0 mtr_suppressor:1,0 mtr_upper:0.7,-0.7 mtr_upper_conv:-0.7,0.7 mtr_vr_phong:-1,0 optical:-1,0 |
 wpn_fps_lmg_hcar_body_ck mat_ck_mainbody_a:0,-1 mat_ck_mainbody_b:-1,0 |
 wpn_fps_lmg_hcar_body_standard mat_mainbody_a:0,-1 mat_mainbody_b:-1,0 |
-wpn_fps_lmg_hcar_brl_ck ak_base:-1,0 cover:-0.7,0.7 mat_barrel:-1,0 mat_barrel_dmr:-0.7,0.7 mat_bullet:0,-1 mat_ck_barrel:-0.7,-0.7 mat_ck_foregrip:1,0 mat_ck_mag:-0.7,-0.7 mat_ck_mainbody_a:0,-1 mat_ck_mainbody_b:-1,0 mat_ck_stock:0.7,0.7 mat_foregrip:-0.7,0.7 mat_mag_drum:0,-1 mat_mag_stick:-1,0 mat_mag_stock:0,-1 mat_mainbody_a:0,-1 mat_mainbody_b:-1,0 mat_supressor:0,1 |
+wpn_fps_lmg_hcar_brl_ck mat_ck_barrel:-0.7,-0.7 |
 wpn_fps_lmg_hcar_brl_dmr mat_barrel_dmr:-0.7,0.7 |
 wpn_fps_lmg_hcar_brl_short mat_barrel:-1,0 |
 wpn_fps_lmg_hcar_fg mat_foregrip:-0.7,0.7 |
+wpn_fps_lmg_hcar_fg_ck mat_ck_foregrip:1,0 |
 wpn_fps_lmg_hcar_g mat_mainbody_b:-1,0 |
-wpn_fps_lmg_hcar_m_drum |
-wpn_fps_lmg_hcar_m_standard |
-wpn_fps_lmg_hcar_m_stick |
+wpn_fps_lmg_hcar_g_ck mat_ck_mainbody_b:-1,0 |
+wpn_fps_lmg_hcar_m_ck mat_bullet:0,-1 mat_ck_mag:-0.7,-0.7 |
+wpn_fps_lmg_hcar_m_drum mat_bullet:0,-1 mat_mag_drum:0,-1 |
+wpn_fps_lmg_hcar_m_standard mat_bullet:0,-1 mat_mag_stock:0,-1 |
+wpn_fps_lmg_hcar_m_stick mat_bullet:0,-1 mat_mag_stick:-1,0 |
 wpn_fps_lmg_hcar_s mat_stock:-0.7,-0.7 |
+wpn_fps_lmg_hcar_s_ck mat_ck_stock:0.7,0.7 |
 wpn_fps_lmg_hcar_suppressor mat_supressor:0,1 |
 wpn_fps_lmg_hk21_body_upper upper:0.7,0.7 |
 wpn_fps_lmg_hk21_fg_long fg_long:-0.7,0.7 fg_stuff:-0.7,-0.7 |
 wpn_fps_lmg_hk21_fg_short fg_short:0,-1 fg_stuff:-0.7,-0.7 |
 wpn_fps_lmg_hk21_g_ergo ergo:0,1 |
 wpn_fps_lmg_hk21_g_standard grip:0,1 |
-wpn_fps_lmg_hk21_m_standard |
+wpn_fps_lmg_hk21_m_standard mag:0.7,0.7 |
 wpn_fps_lmg_hk21_s_standard stock:1,0 |
 wpn_fps_lmg_hk51b_b_fluted mat_spiral_fluting_barrel:0,-1 |
 wpn_fps_lmg_hk51b_b_standard mat_barrel:-1,0 |
 wpn_fps_lmg_hk51b_fg_railed mat_foregrip_caa_hx5:1,0 |
 wpn_fps_lmg_hk51b_fg_standard mat_foregrip:-0.7,0.7 |
 wpn_fps_lmg_hk51b_lower mat_belt_feeder:0.7,0.7 mat_hk_mp5_sef_Lower:0,1 |
-wpn_fps_lmg_hk51b_mag |
 wpn_fps_lmg_hk51b_ns_jcomp mat_muzzle:0.7,0.7 |
 wpn_fps_lmg_hk51b_s_collapsed mat_stock:-0.7,-0.7 |
 wpn_fps_lmg_hk51b_upper mat_bolt:0.7,0.7 mat_shak_receiver:1,0 |
-wpn_fps_lmg_kacchainsaw_b_ck ak_base:-1,0 cover:-0.7,0.7 mat_kcs_barrel:1,0 mat_kcs_barrel_long:0,-1 mat_kcs_barrel_short:0,-1 mat_kcs_bullet:0,1 mat_kcs_ck_barrel:-0.7,-0.7 mat_kcs_ck_body:1,0 mat_kcs_ck_bodygrip:1,0 mat_kcs_ck_grip:1,0 mat_kcs_ck_mag:0.7,-0.7 mat_kcs_ck_upperreceiver:0.7,-0.7 mat_kcs_fl_mag:-0.7,0.7 mat_kcs_flamebody_a:0.7,-0.7 mat_kcs_flamebody_b:0.7,0.7 mat_kcs_flamebody_chamber:-0.7,-0.7 mat_kcs_grip:0,1 mat_kcs_mag_a:0.7,-0.7 mat_kcs_mag_b:0.7,0.7 mat_kcs_muzzle:-0.7,0.7 mat_kcs_sling:-0.7,0.7 mat_kcs_suppressor:0.7,-0.7 mat_kcs_upperreceiver:-1,0 |
+wpn_fps_lmg_kacchainsaw_b_ck mat_kcs_ck_barrel:-0.7,-0.7 |
 wpn_fps_lmg_kacchainsaw_b_long mat_kcs_barrel_long:0,-1 |
 wpn_fps_lmg_kacchainsaw_b_short mat_kcs_barrel_short:0,-1 |
 wpn_fps_lmg_kacchainsaw_b_standard mat_kcs_barrel:1,0 |
@@ -374,12 +385,15 @@ wpn_fps_lmg_kacchainsaw_body mat_kcs_mainbody_a:0.7,0.7 mat_kcs_mainbody_b:0.7,-
 wpn_fps_lmg_kacchainsaw_body_ck mat_kcs_ck_body:1,0 mat_kcs_ck_bodygrip:1,0 |
 wpn_fps_lmg_kacchainsaw_flamethrower mat_kcs_fl_mag:-0.7,0.7 mat_kcs_flamebody_a:0.7,-0.7 mat_kcs_flamebody_b:0.7,0.7 mat_kcs_flamebody_chamber:-0.7,-0.7 |
 wpn_fps_lmg_kacchainsaw_grip mat_kcs_grip:0,1 |
-wpn_fps_lmg_kacchainsaw_mag_a |
-wpn_fps_lmg_kacchainsaw_mag_b |
+wpn_fps_lmg_kacchainsaw_grip_ck mat_kcs_ck_grip:1,0 |
+wpn_fps_lmg_kacchainsaw_mag_a mat_kcs_bullet:0,1 mat_kcs_mag_a:0.7,-0.7 |
+wpn_fps_lmg_kacchainsaw_mag_b mat_kcs_bullet:0,1 mat_kcs_mag_b:0.7,0.7 |
+wpn_fps_lmg_kacchainsaw_mag_ck mat_kcs_bullet:0,1 mat_kcs_ck_mag:0.7,-0.7 |
 wpn_fps_lmg_kacchainsaw_muzzle mat_kcs_muzzle:-0.7,0.7 |
 wpn_fps_lmg_kacchainsaw_sling mat_kcs_sling:-0.7,0.7 |
 wpn_fps_lmg_kacchainsaw_suppressor mat_kcs_suppressor:0.7,-0.7 |
 wpn_fps_lmg_kacchainsaw_upperreceiver mat_kcs_upperreceiver:-1,0 |
+wpn_fps_lmg_kacchainsaw_upperreceiver_ck mat_kcs_ck_upperreceiver:0.7,-0.7 |
 wpn_fps_lmg_m134_barrel_legendary mtr_barrel:1,0 mtr_spikey:0.7,-0.7 |
 wpn_fps_lmg_m134_body_upper mtr_handle:0.7,-0.7 |
 wpn_fps_lmg_m134_body_upper_light mtr_handle_light:0,-1 |
@@ -389,7 +403,7 @@ wpn_fps_lmg_m249_b_short mtr_b_short:-1,0 |
 wpn_fps_lmg_m249_body_standard mtr_bipod:0,1 mtr_body:-0.7,0.7 mtr_charginghandle:-0.7,0.7 |
 wpn_fps_lmg_m249_fg_mk46 mtr_mk46:0,1 |
 wpn_fps_lmg_m249_fg_standard mtr_plastic:-0.7,0.7 |
-wpn_fps_lmg_m249_m_standard |
+wpn_fps_lmg_m249_m_standard mtr_bullet:0,1 mtr_lid:0.7,0.7 mtr_mag:-1,0 |
 wpn_fps_lmg_m249_s_modern mtr_modern:1,0 |
 wpn_fps_lmg_m249_s_para mtr_para:0,1 mtr_sling:0.7,-0.7 |
 wpn_fps_lmg_m249_upper_reciever mtr_dustcover:0,-1 mtr_rearsight:1,0 |
@@ -401,13 +415,12 @@ wpn_fps_lmg_m60_fg_keymod mtr_fg_keymod:0.7,0.7 |
 wpn_fps_lmg_m60_fg_standard mtr_fg_std:1,0 |
 wpn_fps_lmg_m60_fg_tactical mtr_fg_tactical:0.7,0.7 |
 wpn_fps_lmg_m60_fg_tropical mtr_fg_std:1,0 mtr_leaf:1,0 |
-wpn_fps_lmg_m60_m_standard |
+wpn_fps_lmg_m60_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_lmg_m60_ns_standard mtr_flashhider:0.7,-0.7 |
 wpn_fps_lmg_m60_upper_reciever mtr_upper:0.7,-0.7 |
 wpn_fps_lmg_mg42_b_mg34 wpn_fps_ass_fal_barrel_mg34_nm:-0.7,0.7 wpn_fps_ass_fal_barrel_mg42_nm:-1,0 |
 wpn_fps_lmg_mg42_b_mg42 wpn_fps_ass_fal_barrel_mg42_nm:-1,0 |
-wpn_fps_lmg_mg42_n34 ak_base:-1,0 cover:-0.7,0.7 mtr_bullet:0,1 wpn_fps_ass_fal_barrel_mg34_nm:-0.7,0.7 wpn_fps_ass_fal_barrel_mg42_nm:-1,0 wpn_fps_ass_fal_base_nm:-0.7,-0.7 |
-wpn_fps_lmg_mg42_n38 wpn_fps_ass_fal_barrel_mg34_nm:-0.7,0.7 |
+wpn_fps_lmg_mg42_n34 wpn_fps_ass_fal_barrel_mg34_nm:-0.7,0.7 |
 wpn_fps_lmg_mg42_reciever mtr_bullet:0,1 wpn_fps_ass_fal_base_nm:-0.7,-0.7 |
 wpn_fps_lmg_par_body_standard mtr_body:-0.7,0.7 mtr_carry:0.7,-0.7 mtr_dustcover:0,-1 mtr_feed:0.7,0.7 mtr_sight:0.7,-0.7 |
 wpn_fps_lmg_par_upper_reciever mtr_dustcover:0,-1 |
@@ -419,35 +432,34 @@ wpn_fps_lmg_shuno_b_heat_short mat_barrel_heat_short:-0.7,0.7 |
 wpn_fps_lmg_shuno_b_short mat_barrel_short:1,0 |
 wpn_fps_lmg_shuno_b_standard mat_barrel_standard:0,-1 |
 wpn_fps_lmg_shuno_body_standard mat_battery_and_drum:1,0 mat_body_standard:0.7,-0.7 mat_cables:0.7,0.7 mat_grip_standard:0,1 |
-wpn_fps_lmg_shuno_m_standard |
+wpn_fps_lmg_shuno_m_standard mat_magazine:-1,0 |
 wpn_fps_lmg_shuno_s_standard mat_stock:-0.7,-0.7 |
 wpn_fps_lmg_svinet_b_standard mtr_b_legend:-0.7,-0.7 mtr_barrel:1,0 |
 wpn_fps_m16_fg_railed railed:0,1 |
 wpn_fps_m16_fg_standard standard:-0.7,-0.7 |
 wpn_fps_m16_fg_vietnam vietnam:0,1 |
 wpn_fps_m16_s_solid solid:0.7,0.7 |
-wpn_fps_m4_bolt_edge ak_base:-1,0 cover:-0.7,0.7 m4_barrel:1,0 m4_barrel_sd:0,1 m4_draghandle:0.7,-0.7 m4_fg_lr300:0.7,-0.7 m4_fg_rail:1,0 m4_flipup:-1,0 m4_lower_reciever:1,0 m4_mag_std:0,-1 m4_rail_ext:1,0 m4_stock_fold:-0.7,0.7 m4_upper_reciever_edge:-1,0 mtr_bullet:0,1 mtr_mag:-1,0 mtr_magpul:-0.7,-0.7 no_blurr:-0.7,-0.7 round:0.7,0.7 standard_grip:-0.7,-0.7 stock_adapter:-0.7,-0.7 stock_standard:-0.7,0.7 stubby:0.7,-0.7 | mtr_eotech
+wpn_fps_m4_bolt_edge m4_upper_reciever_edge:-1,0 |
+wpn_fps_m4_bolt_round round:0.7,0.7 |
 wpn_fps_m4_lower_reciever m4_lower_reciever:1,0 |
 wpn_fps_m4_upg_b_sd_smr m4_barrel_sd:0,1 |
 wpn_fps_m4_upg_fg_mk12 mtr_mk20_fg:0.7,0.7 |
-wpn_fps_m4_upg_m_quick |
+wpn_fps_m4_upg_m_quick m4_mag_std:0,-1 mtr_bullet:0,1 mtr_magpul:-0.7,-0.7 |
 wpn_fps_m4_upg_ns_mk12 mtr_mk20_supp:-0.7,-0.7 |
-wpn_fps_m4_upper_reciever_edge m4_upper_reciever_edge:-1,0 |
-wpn_fps_m4_upper_reciever_round round:0.7,0.7 |
 wpn_fps_m4_uupg_b_long m4_barrel:1,0 |
 wpn_fps_m4_uupg_b_sd m4_barrel_sd:0,1 |
 wpn_fps_m4_uupg_draghandle m4_draghandle:0.7,-0.7 |
 wpn_fps_m4_uupg_draghandle_ballos mtr_x2:0.7,0.7 |
 wpn_fps_m4_uupg_draghandle_core mtr_raptor:0,-1 |
-wpn_fps_m4_uupg_draghandle_radian ak_base:-1,0 cover:-0.7,0.7 mat_bullet1:0.7,0.7 mat_g_radian:-0.7,0.7 mat_handguard_radian:1,0 mat_lower_radian:-1,0 mat_mag_bottom:0,-1 mat_mag_transparent:0.7,0.7 mat_radian:1,0 mat_upper_radian:1,0 |
+wpn_fps_m4_uupg_draghandle_radian mat_radian:1,0 |
 wpn_fps_m4_uupg_fg_lr300 m4_fg_lr300:0.7,-0.7 |
 wpn_fps_m4_uupg_fg_radian mat_handguard_radian:1,0 |
 wpn_fps_m4_uupg_fg_rail m4_fg_rail:1,0 |
 wpn_fps_m4_uupg_fg_rail_ext m4_rail_ext:1,0 |
 wpn_fps_m4_uupg_g_billet mat_g_radian:-0.7,0.7 |
 wpn_fps_m4_uupg_lorec_radian mat_lower_radian:-1,0 |
-wpn_fps_m4_uupg_m_std |
-wpn_fps_m4_uupg_m_strike |
+wpn_fps_m4_uupg_m_std m4_mag_std:0,-1 mtr_bullet:0,1 |
+wpn_fps_m4_uupg_m_strike mat_bullet1:0.7,0.7 mat_mag_bottom:0,-1 |
 wpn_fps_m4_uupg_o_flipup m4_flipup:-1,0 |
 wpn_fps_m4_uupg_s_fold m4_stock_fold:-0.7,0.7 |
 wpn_fps_m4_uupg_s_zulu mat_s_zulu:0,-1 |
@@ -464,14 +476,14 @@ wpn_fps_pis_1911_g_engraved mtr_engraved:-0.7,-0.7 |
 wpn_fps_pis_1911_g_ergo ergo:0,1 grip:0,1 |
 wpn_fps_pis_1911_g_legendary mtr_legend_grip:-0.7,0.7 |
 wpn_fps_pis_1911_g_standard grip:0,1 |
-wpn_fps_pis_1911_m_big |
-wpn_fps_pis_1911_m_extended |
-wpn_fps_pis_1911_m_standard |
+wpn_fps_pis_1911_m_big extended_mag:-1,0 mtr_big:0.7,0.7 |
+wpn_fps_pis_1911_m_extended extended_mag:-1,0 |
+wpn_fps_pis_1911_m_standard mag:0.7,0.7 |
 wpn_fps_pis_1911_o_long sights:0.7,-0.7 |
 wpn_fps_pis_2006m_b_long mtr_barrel_long:1,0 |
 wpn_fps_pis_2006m_b_medium mtr_barrel_medium:-1,0 |
 wpn_fps_pis_2006m_b_short mtr_barrel_short:0,1 |
-wpn_fps_pis_2006m_m_standard |
+wpn_fps_pis_2006m_m_standard mtr_bullet:0,1 mtr_mag:-1,0 mtr_speedloader:-1,0 |
 wpn_fps_pis_beer_b_robo mtr_barrel:1,0 mtr_barrel_robo:0,1 mtr_sights_robo:0.7,0.7 |
 wpn_fps_pis_beer_b_std mtr_barrel:1,0 |
 wpn_fps_pis_beer_body_modern mtr_body:-0.7,0.7 mtr_rail:0.7,-0.7 mtr_vg:-1,0 |
@@ -479,7 +491,7 @@ wpn_fps_pis_beer_body_robo mtr_body:-0.7,0.7 mtr_vg:-1,0 |
 wpn_fps_pis_beer_dh_hammer mtr_body:-0.7,0.7 |
 wpn_fps_pis_beer_g_lux mtr_grip:-0.7,0.7 |
 wpn_fps_pis_beer_g_robo mtr_grip_robo:-0.7,0.7 |
-wpn_fps_pis_beer_m_extended |
+wpn_fps_pis_beer_m_extended mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_beer_o_robo mtr_sights_robo:0.7,0.7 |
 wpn_fps_pis_beer_o_std mtr_sights:-1,0 |
 wpn_fps_pis_beer_s_std mtr_stock:0,1 |
@@ -491,8 +503,8 @@ wpn_fps_pis_beretta_co_co1 comp_1:0.7,0.7 |
 wpn_fps_pis_beretta_co_co2 comp_2:0.7,-0.7 |
 wpn_fps_pis_beretta_g_ergo ergo:0,1 |
 wpn_fps_pis_beretta_g_std std_grips:-0.7,0.7 |
-wpn_fps_pis_beretta_m_extended |
-wpn_fps_pis_beretta_m_std |
+wpn_fps_pis_beretta_m_extended extd:0.7,-0.7 mtr_bullet:0,1 |
+wpn_fps_pis_beretta_m_std mtr_bullet:0,1 std:1,0 |
 wpn_fps_pis_beretta_o_std std_sight:-1,0 |
 wpn_fps_pis_beretta_sl_brigadier brig:-0.7,-0.7 |
 wpn_fps_pis_beretta_sl_std std_slide:-0.7,-0.7 |
@@ -502,8 +514,8 @@ wpn_fps_pis_breech_b_standard mtr_b_standard:0,1 |
 wpn_fps_pis_breech_body mtr_body:-0.7,0.7 |
 wpn_fps_pis_breech_g_custom mtr_side_covers_custom:0,-1 |
 wpn_fps_pis_breech_g_standard mtr_side_covers:0.7,0.7 |
-wpn_fps_pis_breech_mag |
-wpn_fps_pis_c96_m_extended |
+wpn_fps_pis_breech_mag mtr_bullet:0,1 mtr_mag:-1,0 |
+wpn_fps_pis_c96_m_extended mtr_extended:0.7,0.7 mtr_mag:-1,0 |
 wpn_fps_pis_c96_nozzle ak_base:-1,0 cover:-0.7,0.7 mtr_barrel:1,0 mtr_barrel_long:1,0 mtr_base:0.7,-0.7 mtr_extended:0.7,0.7 mtr_grip:-0.7,0.7 mtr_mag:-1,0 mtr_stock:0,1 |
 wpn_fps_pis_c96_sight mtr_shortdot:-1,0 |
 wpn_fps_pis_chinchilla_b_satan barrel:-0.7,-0.7 mtr_satan:0,-1 |
@@ -513,45 +525,51 @@ wpn_fps_pis_chinchilla_cylinder cylinder:0,1 |
 wpn_fps_pis_chinchilla_g_black grip_black:1,0 |
 wpn_fps_pis_chinchilla_g_death grip_black:1,0 metal_cross:0.7,0.7 strap:-0.7,0.7 |
 wpn_fps_pis_chinchilla_g_standard grip:0,1 |
-wpn_fps_pis_chinchilla_m_bullets |
+wpn_fps_pis_chinchilla_m_bullets cylinder:0,1 wpn_fps_pist_rage_mag44:-0.7,0.7 |
 wpn_fps_pis_czech_b_long mtr_barrel:1,0 mtr_barrel_long:1,0 |
 wpn_fps_pis_czech_b_standard mtr_barrel:1,0 |
 wpn_fps_pis_czech_body_standard mtr_body:-0.7,0.7 mtr_mag:-1,0 mtr_mag_clamp:0.7,-0.7 |
 wpn_fps_pis_czech_g_luxury mtr_grip_luxury:-1,0 |
 wpn_fps_pis_czech_g_sport mtr_grip_sport:0,1 mtr_grip_sport_tape:0,1 |
 wpn_fps_pis_czech_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_pis_czech_m_extended |
-wpn_fps_pis_czech_m_standard |
+wpn_fps_pis_czech_m_extended mtr_bullet:0,1 mtr_mag:-1,0 mtr_mag_ext:0,-1 |
+wpn_fps_pis_czech_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_czech_ns_standard mtr_compensator:0.7,-0.7 |
 wpn_fps_pis_czech_s_standard mtr_stock:0,1 |
 wpn_fps_pis_czech_sl_standard mtr_sights:-1,0 mtr_slide:1,0 |
-wpn_fps_pis_deagle_b_ck ak_base:-1,0 cover:-0.7,0.7 mat_b_ck:0.7,-0.7 mat_body_ck:-0.7,-0.7 mat_bullet:0,-1 mat_g_ck:0.7,0.7 mat_m_ck:1,0 |
+wpn_fps_pis_deagle_b_ck mat_b_ck:0.7,-0.7 |
 wpn_fps_pis_deagle_b_legend mtr_barrel:1,0 mtr_legendcomp:0,1 |
 wpn_fps_pis_deagle_b_long longbarrel:0,-1 |
 wpn_fps_pis_deagle_b_modern mtr_barrel_custom:-0.7,0.7 |
 wpn_fps_pis_deagle_b_standard barrel:-0.7,-0.7 |
+wpn_fps_pis_deagle_body_ck mat_body_ck:-0.7,-0.7 |
 wpn_fps_pis_deagle_body_standard base:-1,0 |
+wpn_fps_pis_deagle_ck ak_base:-1,0 cover:-0.7,0.7 mat_b_ck:0.7,-0.7 mat_body_ck:-0.7,-0.7 mat_bullet:0,-1 mat_g_ck:0.7,0.7 mat_m_ck:1,0 |
 wpn_fps_pis_deagle_co_long comp1:0,1 |
 wpn_fps_pis_deagle_co_short comp2:1,0 |
 wpn_fps_pis_deagle_fg_rail rail:-1,0 |
 wpn_fps_pis_deagle_g_bling bling:0.7,-0.7 |
+wpn_fps_pis_deagle_g_ck mat_g_ck:0.7,0.7 |
 wpn_fps_pis_deagle_g_ergo ergo:0,1 grip:0,1 |
 wpn_fps_pis_deagle_g_standard grip:0,1 |
-wpn_fps_pis_deagle_m_extended |
-wpn_fps_pis_deagle_m_standard |
+wpn_fps_pis_deagle_m_ck mat_bullet:0,-1 mat_m_ck:1,0 |
+wpn_fps_pis_deagle_m_extended extended_mag:-1,0 mtr_bullet:0,1 |
+wpn_fps_pis_deagle_m_standard mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_pis_deagle_o_ck_rear mat_sight_ck:-0.7,0.7 |
 wpn_fps_pis_deagle_o_standard_front sights:0.7,-0.7 |
 wpn_fps_pis_deagle_o_standard_rear sights:0.7,-0.7 |
 wpn_fps_pis_g17 barrel:-0.7,-0.7 frame:-0.7,0.7 mag:0.7,0.7 slide:0,1 |
-wpn_fps_pis_g17_b_ck ak_base:-1,0 cover:-0.7,0.7 mat_barrel_ck:-1,0 mat_frame_ck:-1,0 mat_slider_ck:0.7,0.7 mat_tritium:0,1 |
-wpn_fps_pis_g17_m_standard |
+wpn_fps_pis_g17_b_ck mat_frame_ck:-1,0 mat_slider_ck:0.7,0.7 mat_tritium:0,1 no_blurr:-0.7,-0.7 |
+wpn_fps_pis_g17_body_ck mat_barrel_ck:-1,0 mat_frame_ck:-1,0 mat_slider_ck:0.7,0.7 mat_tritium:0,1 |
+wpn_fps_pis_g17_ck ak_base:-1,0 cover:-0.7,0.7 mat_barrel_ck:-1,0 mat_frame_ck:-1,0 mat_slider_ck:0.7,0.7 mat_tritium:0,1 |
+wpn_fps_pis_g17_m_standard mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_pis_g18c_b_standard mtr_g18c_slide:0,-1 |
 wpn_fps_pis_g18c_co_1 comp1:0,1 |
 wpn_fps_pis_g18c_co_comp_2 mtr_comp_2:-1,0 |
 wpn_fps_pis_g18c_frame mtr_frame:-0.7,-0.7 mtr_g18c_barrel:-1,0 |
 wpn_fps_pis_g18c_g_ergo ergo:0,1 |
-wpn_fps_pis_g18c_m_mag_17rnd |
-wpn_fps_pis_g18c_m_mag_33rnd |
+wpn_fps_pis_g18c_m_mag_17rnd mag17rnd:1,0 mtr_bullet:0,1 |
+wpn_fps_pis_g18c_m_mag_33rnd mtr_bullet:0,1 mtr_mag_extended:0.7,-0.7 |
 wpn_fps_pis_g18c_s_stock mtr_stock:0,1 |
 wpn_fps_pis_g22c_b_long mtr_barrel_long:1,0 mtr_g35:-1,0 mtr_sights:-1,0 |
 wpn_fps_pis_g22c_b_standard mtr_barrel:1,0 mtr_g22c:0.7,0.7 mtr_sights:-1,0 |
@@ -562,18 +580,18 @@ wpn_fps_pis_g26_body_stardard mtr_frame:-0.7,-0.7 |
 wpn_fps_pis_g26_fl_adapter mtr_rail:0.7,-0.7 |
 wpn_fps_pis_g26_g_gripforce mtr_gripforce:0.7,0.7 |
 wpn_fps_pis_g26_g_laser mtr_laser:0.7,-0.7 |
-wpn_fps_pis_g26_m_contour |
-wpn_fps_pis_g26_m_standard |
+wpn_fps_pis_g26_m_contour mtr_bullet:0,1 mtr_mag_contour:0.7,0.7 |
+wpn_fps_pis_g26_m_standard mtr_bullet:0,1 mtr_mag_norm:-0.7,0.7 |
 wpn_fps_pis_holt_b_standard mtr_body_upper:0.7,0.7 |
 wpn_fps_pis_holt_body_lower mtr_body_lower:0,-1 |
 wpn_fps_pis_holt_body_upper mtr_body_upper:0.7,0.7 |
 wpn_fps_pis_holt_g_bling mtr_grip_bling:0.7,-0.7 |
 wpn_fps_pis_holt_g_ergo mtr_grip_ergo:-0.7,0.7 |
 wpn_fps_pis_holt_g_standard mtr_grip_standard:1,0 |
-wpn_fps_pis_holt_m_extended |
-wpn_fps_pis_holt_m_standard |
+wpn_fps_pis_holt_m_extended mtr_bullet:0,1 mtr_mag_ext:0,-1 |
+wpn_fps_pis_holt_m_standard mtr_bullet:0,1 mtr_mag_standard:0.7,-0.7 |
 wpn_fps_pis_hs2000_b_custom mtr_body_standard:0.7,0.7 |
-wpn_fps_pis_hs2000_m_extended |
+wpn_fps_pis_hs2000_m_extended mtr_bullet:0,1 mtr_m_extended:-0.7,-0.7 |
 wpn_fps_pis_hs2000_sl_custom mtr_sl_custom:0.7,0.7 |
 wpn_fps_pis_hs2000_sl_long mtr_sl_long:-1,0 |
 wpn_fps_pis_hs2000_sl_standard mtr_sl_standard:-1,0 |
@@ -581,35 +599,38 @@ wpn_fps_pis_judge_b_legend mtr_b_legendary:0.7,-0.7 |
 wpn_fps_pis_judge_body_modern mat_judge_barrel_modern:0,1 mat_judge_modern:1,0 mat_judge_modern_glow:-1,0 mtr_buckshot:-0.7,-0.7 mtr_mech:1,0 |
 wpn_fps_pis_judge_body_standard mtr_buckshot:-0.7,-0.7 mtr_cylinder:-1,0 mtr_frame:-0.7,-0.7 mtr_mech:1,0 |
 wpn_fps_pis_judge_g_legend mtr_grip_legendary:1,0 |
-wpn_fps_pis_judge_g_modern ak_base:-1,0 cover:-0.7,0.7 mat_aim_glow:1,0 mat_judge_barrel_modern:0,1 mat_judge_grip:0,-1 mat_judge_modern:1,0 mat_judge_modern_glow:-1,0 mtr_buckshot:-0.7,-0.7 mtr_mech:1,0 |
+wpn_fps_pis_judge_g_modern mat_judge_grip:0,-1 |
 wpn_fps_pis_korth_b_railed mtr_b_railed:0,-1 |
 wpn_fps_pis_korth_b_standard mtr_b_standard:0,1 mtr_barrel_anodized:-1,0 |
 wpn_fps_pis_korth_body mtr_body:-0.7,0.7 |
-wpn_fps_pis_korth_body_conversionkit ak_base:-1,0 cover:-0.7,0.7 mat_conversionkit:-0.7,-0.7 mtr_b_railed:0,-1 mtr_b_standard:0,1 mtr_barrel_anodized:-1,0 mtr_body:-0.7,0.7 mtr_bullet:0,1 mtr_conversionkit_chamber:0,-1 mtr_conversionkit_grip:1,0 mtr_conversionkit_mainbody:1,0 mtr_cylinder_6:0,-1 mtr_cylinder_8:0.7,0.7 mtr_g_ergo:0,1 mtr_g_standard:0.7,-0.7 mtr_korth_grip_03:0,1 mtr_speedloader:-1,0 | mat_third_korth_ck_body mat_third_korth_ck_chamber mtr_third_cyl mtr_third_korth_grip_03
+wpn_fps_pis_korth_body_conversionkit mtr_conversionkit_mainbody:1,0 |
+wpn_fps_pis_korth_conversionkit mat_conversionkit:-0.7,-0.7 |
 wpn_fps_pis_korth_fl_conversion indicator:0,-1 laser:0.7,0.7 |
+wpn_fps_pis_korth_g_conversionkit mtr_conversionkit_grip:1,0 |
 wpn_fps_pis_korth_g_ergo mtr_g_ergo:0,1 |
 wpn_fps_pis_korth_g_hogue mtr_korth_grip_03:0,1 |
 wpn_fps_pis_korth_g_standard mtr_g_standard:0.7,-0.7 |
-wpn_fps_pis_korth_m_6 |
-wpn_fps_pis_korth_m_8 |
+wpn_fps_pis_korth_m_6 mtr_body:-0.7,0.7 mtr_bullet:0,1 mtr_cylinder_6:0,-1 mtr_speedloader:-1,0 |
+wpn_fps_pis_korth_m_8 mtr_body:-0.7,0.7 mtr_bullet:0,1 mtr_cylinder_8:0.7,0.7 mtr_speedloader:-1,0 |
+wpn_fps_pis_korth_m_conversionkit mtr_body:-0.7,0.7 mtr_bullet:0,1 mtr_conversionkit_chamber:0,-1 mtr_conversionkit_mainbody:1,0 mtr_speedloader:-1,0 |
 wpn_fps_pis_legacy_b_standard mat_barrels:0,-1 |
 wpn_fps_pis_legacy_body_standard mat_body_standard:0.7,-0.7 |
 wpn_fps_pis_legacy_fl_mount mat_fl_mount:-0.7,0.7 |
 wpn_fps_pis_legacy_g_standard mat_grip_standard:0,1 |
 wpn_fps_pis_legacy_g_wood mat_grip_wood:-0.7,0.7 |
-wpn_fps_pis_legacy_m_standard |
+wpn_fps_pis_legacy_m_standard mat_mag_standard:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_pis_legacy_sl_standard mat_legacy_glow:-1,0 mat_slide_s:-0.7,-0.7 |
 wpn_fps_pis_lemming_b_nitride mtr_barrel_nitride:0.7,-0.7 |
 wpn_fps_pis_lemming_b_standard mtr_barrel:1,0 |
 wpn_fps_pis_lemming_body mtr_body:-0.7,0.7 |
-wpn_fps_pis_lemming_m_ext |
+wpn_fps_pis_lemming_m_ext mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_lemming_sl_standard mtr_slider:1,0 |
 wpn_fps_pis_m1911_b_hardballer mtr_barrelhardballer:1,0 mtr_hardballer:-0.7,-0.7 |
 wpn_fps_pis_m1911_b_standard mtr_barrel:1,0 mtr_match:-0.7,-0.7 |
 wpn_fps_pis_m1911_body_standard mtr_frame:-0.7,-0.7 mtr_mr07:-0.7,-0.7 |
 wpn_fps_pis_m1911_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_pis_m1911_m_extended |
-wpn_fps_pis_m1911_m_standard |
+wpn_fps_pis_m1911_m_extended mtr_extendedmag:-0.7,-0.7 |
+wpn_fps_pis_m1911_m_standard mtr_mag:-1,0 |
 wpn_fps_pis_m1911_sl_hardballer mtr_hardballer:-0.7,-0.7 |
 wpn_fps_pis_m1911_sl_match mtr_match:-0.7,-0.7 |
 wpn_fps_pis_m1911_sl_standard mtr_slide:1,0 |
@@ -618,15 +639,15 @@ wpn_fps_pis_maxim9_b_marksman mtr_b_comp:-1,0 mtr_barrel:1,0 mtr_sight:0.7,-0.7 
 wpn_fps_pis_maxim9_b_standard mtr_barrel:1,0 mtr_sight:0.7,-0.7 |
 wpn_fps_pis_maxim9_body_lower mtr_body:-0.7,0.7 mtr_slide:1,0 |
 wpn_fps_pis_maxim9_body_upper mtr_sight:0.7,-0.7 mtr_slide:1,0 |
-wpn_fps_pis_maxim9_m_ext |
-wpn_fps_pis_maxim9_m_standard |
+wpn_fps_pis_maxim9_m_ext mtr_bullet:0,1 mtr_m_ext:-0.7,-0.7 mtr_mag:-1,0 |
+wpn_fps_pis_maxim9_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_model3_b_long mtr_b_long:0,-1 |
 wpn_fps_pis_model3_b_short mtr_b_short:-1,0 |
 wpn_fps_pis_model3_b_standard mtr_b_std:0.7,0.7 |
 wpn_fps_pis_model3_body_standard mtr_body:-0.7,0.7 |
 wpn_fps_pis_model3_cylinder mtr_cylinder:-1,0 |
 wpn_fps_pis_model3_g_bling mtr_grip:-0.7,0.7 |
-wpn_fps_pis_model3_m_bullets |
+wpn_fps_pis_model3_m_bullets mtr_bullet:0,1 mtr_cylinder:-1,0 |
 wpn_fps_pis_p226_b_barrel_equinox mtr_slide_equinox:1,0 |
 wpn_fps_pis_p226_b_barrel_long mtr_slide_long:0.7,0.7 |
 wpn_fps_pis_p226_b_barrel_standard mtr_slide_standard:0,1 |
@@ -638,14 +659,14 @@ wpn_fps_pis_p226_co_comp_1 comp1:0,1 |
 wpn_fps_pis_p226_co_comp_2 mtr_comp_2:-1,0 |
 wpn_fps_pis_p226_g_ergo mtr_g_ergo:0,1 |
 wpn_fps_pis_p226_g_standard mtr_g_standard:0.7,-0.7 |
-wpn_fps_pis_p226_m_extended |
-wpn_fps_pis_p226_m_standard |
+wpn_fps_pis_p226_m_extended mtr_bullet:0,1 mtr_mag_extended:0.7,-0.7 |
+wpn_fps_pis_p226_m_standard mtr_bullet:0,1 mtr_mag_standard:0.7,-0.7 |
 wpn_fps_pis_p226_o_long mtr_sight:0.7,-0.7 |
 wpn_fps_pis_p226_o_standard mtr_sight:0.7,-0.7 |
 wpn_fps_pis_packrat_b_standard mtr_b_standard:0,1 |
 wpn_fps_pis_packrat_body_standard mtr_body_standard:0.7,0.7 |
-wpn_fps_pis_packrat_m_extended |
-wpn_fps_pis_packrat_m_standard |
+wpn_fps_pis_packrat_m_extended mtr_bullet:0,1 mtr_m_extended:-0.7,-0.7 |
+wpn_fps_pis_packrat_m_standard mtr_bullet:0,1 mtr_m_standard:-0.7,-0.7 |
 wpn_fps_pis_packrat_ns_wick mtr_ns_wick:0,-1 |
 wpn_fps_pis_packrat_o_expert mtr_o_expert:0,1 mtr_o_expert_red:0.7,0.7 |
 wpn_fps_pis_packrat_o_standard mtr_o_standard:0,1 |
@@ -658,12 +679,12 @@ wpn_fps_pis_peacemaker_s_skeletal mtr_stock:0,1 |
 wpn_fps_pis_pl14_b_comp mtr_b:0,-1 mtr_comp:-0.7,0.7 |
 wpn_fps_pis_pl14_b_standard mtr_b:0,-1 |
 wpn_fps_pis_pl14_body_standard mtr_bits:1,0 mtr_frame:-0.7,-0.7 |
-wpn_fps_pis_pl14_m_extended |
-wpn_fps_pis_pl14_m_standard |
+wpn_fps_pis_pl14_m_extended mtr_bullet:0,1 mtr_m_ext:-0.7,-0.7 mtr_mag:-1,0 |
+wpn_fps_pis_pl14_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_pl14_sl_standard mtr_bits:1,0 mtr_slide:1,0 |
 wpn_fps_pis_pmm_flashlight_mount mat_mount:0.7,0.7 |
 wpn_fps_pis_pmm_lower_standard mat_frame:0,1 |
-wpn_fps_pis_pmm_magazine_standard |
+wpn_fps_pis_pmm_magazine_standard mat_mag:-1,0 |
 wpn_fps_pis_pmm_ns_suppressor mat_suppressor:-1,0 |
 wpn_fps_pis_pmm_slide_standard mat_slide:-0.7,0.7 |
 wpn_fps_pis_pmm_slide_suppressed mat_slide_suppressed:-1,0 |
@@ -674,7 +695,7 @@ wpn_fps_pis_ppk_body_standard mtr_frame:-0.7,-0.7 |
 wpn_fps_pis_ppk_fl_mount mtr_mount:-1,0 |
 wpn_fps_pis_ppk_g_laser mtr_grip_laser:0.7,0.7 |
 wpn_fps_pis_ppk_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_pis_ppk_m_standard |
+wpn_fps_pis_ppk_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_rage_b_comp1 comp1:0,1 |
 wpn_fps_pis_rage_b_comp2 comp2:1,0 |
 wpn_fps_pis_rage_b_long barrel_long:1,0 |
@@ -696,8 +717,8 @@ wpn_fps_pis_shrew_fl_adapter mat_rail:0,1 |
 wpn_fps_pis_shrew_g_bling mat_grip_bling:-0.7,-0.7 |
 wpn_fps_pis_shrew_g_ergo mat_grip_ergo:0,1 |
 wpn_fps_pis_shrew_g_standard mat_grip_standard:0,1 |
-wpn_fps_pis_shrew_m_extended |
-wpn_fps_pis_shrew_m_standard |
+wpn_fps_pis_shrew_m_extended mat_mag_extended:0.7,0.7 mtr_bullet:0,1 |
+wpn_fps_pis_shrew_m_standard mat_mag_standard:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_pis_shrew_sl_milled mat_sight:0,-1 mat_slider_milled:0,-1 |
 wpn_fps_pis_shrew_sl_standard mat_sight:0,-1 mat_slider_standard:-1,0 |
 wpn_fps_pis_sparrow_b_comp mtr_b_comp:-1,0 |
@@ -715,16 +736,16 @@ wpn_fps_pis_stech_body_standard mtr_body:-0.7,0.7 mtr_rail:0.7,-0.7 |
 wpn_fps_pis_stech_g_luxury mtr_grip_luxury:-1,0 |
 wpn_fps_pis_stech_g_standard mtr_grip:-0.7,0.7 |
 wpn_fps_pis_stech_g_tactical mtr_grip_tactical:0,-1 mtr_grip_tactical_plastic:0,1 |
-wpn_fps_pis_stech_m_extended |
-wpn_fps_pis_stech_m_standard |
+wpn_fps_pis_stech_m_extended mtr_bullet:0,1 mtr_mag:-1,0 mtr_mag_ext:0,-1 |
+wpn_fps_pis_stech_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_pis_stech_s_standard mtr_stock:0,1 |
 wpn_fps_pis_stech_sl_standard mtr_sights:-1,0 mtr_slide:1,0 |
 wpn_fps_pis_type54_b_long mtr_b_long:0,-1 mtr_b_std:0.7,0.7 |
 wpn_fps_pis_type54_b_standard mtr_b_std:0.7,0.7 |
 wpn_fps_pis_type54_body mtr_frame:-0.7,-0.7 mtr_grip:-0.7,0.7 |
 wpn_fps_pis_type54_fl_rail mtr_rail:0.7,-0.7 |
-wpn_fps_pis_type54_m_ext |
-wpn_fps_pis_type54_m_standard |
+wpn_fps_pis_type54_m_ext mtr_m_ext:-0.7,-0.7 mtr_m_std:-0.7,0.7 |
+wpn_fps_pis_type54_m_standard mtr_m_std:-0.7,0.7 |
 wpn_fps_pis_type54_sl_standard mtr_slide:1,0 |
 wpn_fps_pis_type54_underbarrel mtr_shotty:0.7,0.7 mtr_slug:-0.7,0.7 |
 wpn_fps_pis_usp_b_expert mtr_barrel_expert:0.7,0.7 mtr_expert:-0.7,0.7 mtr_sights:-1,0 |
@@ -734,41 +755,41 @@ wpn_fps_pis_usp_body_standard mtr_frame:-0.7,-0.7 |
 wpn_fps_pis_usp_co_comp_1 comp1:0,1 |
 wpn_fps_pis_usp_co_comp_2 mtr_comp_2:-1,0 |
 wpn_fps_pis_usp_fl_adapter mtr_adapter:0,1 |
-wpn_fps_pis_usp_m_big |
-wpn_fps_pis_usp_m_extended |
-wpn_fps_pis_usp_m_standard |
-wpn_fps_rpg7_m_grinclown |
-wpn_fps_rpg7_m_rocket |
+wpn_fps_pis_usp_m_big mtr_extended:0.7,0.7 mtr_m_big:0.7,0.7 |
+wpn_fps_pis_usp_m_extended mtr_extended:0.7,0.7 |
+wpn_fps_pis_usp_m_standard mtr_mag:-1,0 |
+wpn_fps_rpg7_m_grinclown mtr_custom_rocket:-1,0 mtr_rocket:-1,0 |
+wpn_fps_rpg7_m_rocket mtr_rocket:-1,0 |
 wpn_fps_saw_b_normal mtr_protection:-0.7,0.7 |
 wpn_fps_saw_body_silent mtr_silent:0,-1 mtr_silent_motor:0,1 |
 wpn_fps_saw_body_speed mtr_fast_motor:0,1 mtr_saw:-0.7,-0.7 |
 wpn_fps_saw_body_standard mtr_blade:0,1 mtr_protection:-0.7,0.7 mtr_saw:-0.7,-0.7 |
-wpn_fps_saw_m_blade |
-wpn_fps_saw_m_blade_durable |
-wpn_fps_saw_m_blade_sharp |
+wpn_fps_saw_m_blade mtr_blade:0,1 |
+wpn_fps_saw_m_blade_durable mtr_blade:0,1 mtr_blade_durable:-1,0 |
+wpn_fps_saw_m_blade_sharp mtr_blade:0,1 mtr_blade_sharp:-1,0 |
 wpn_fps_sho_aa12_barrel aa12_main:0.7,-0.7 |
 wpn_fps_sho_aa12_barrel_silenced aa12_silencer:0,1 |
 wpn_fps_sho_aa12_body_rail aa12_rail:0,-1 |
 wpn_fps_sho_aa12_body_rear_sight aa12_ironsight_rear:0,-1 |
-wpn_fps_sho_aa12_mag_drum |
-wpn_fps_sho_aa12_mag_straight |
+wpn_fps_sho_aa12_mag_drum mag:0.7,0.7 slug_slug:1,0 |
+wpn_fps_sho_aa12_mag_straight aa12_mag_straight:1,0 slug_slug:1,0 |
 wpn_fps_sho_basset_b_short mat_barrel:-1,0 |
 wpn_fps_sho_basset_body_standard mat_ak_base:-1,0 |
 wpn_fps_sho_basset_fg_short mat_case_short:-0.7,-0.7 |
 wpn_fps_sho_basset_fg_standard mat_case_standard:0,-1 |
 wpn_fps_sho_basset_g_standard mat_grip:-1,0 |
-wpn_fps_sho_basset_m_extended |
+wpn_fps_sho_basset_m_extended mat_mag:-1,0 slug:0,1 |
 wpn_fps_sho_basset_o_short mtr_mbus:0.7,-0.7 |
 wpn_fps_sho_ben_b_long mtr_barrel:1,0 mtr_frontsight:0,-1 |
 wpn_fps_sho_ben_b_short mtr_barrel:1,0 mtr_frontsight:0,-1 |
 wpn_fps_sho_ben_body_standard mtr_rearsight:1,0 mtr_receiver:-0.7,0.7 |
 wpn_fps_sho_ben_s_collapsable mtr_collapse:-0.7,-0.7 |
-wpn_fps_sho_bleckert_ammo_extra_standard |
+wpn_fps_sho_bleckert_ammo_extra_standard mat_receiver:0,-1 mat_shell:0,1 |
 wpn_fps_sho_bleckert_barrel_long mat_barrel:-1,0 |
 wpn_fps_sho_bleckert_extra_rail_standard mat_gadget_rail:-0.7,0.7 |
 wpn_fps_sho_bleckert_lower_body_standard mat_barrel:-1,0 mat_handguard:-0.7,0.7 mat_receiver:0,-1 |
-wpn_fps_sho_bleckert_magazine_horse |
-wpn_fps_sho_bleckert_magazine_standard |
+wpn_fps_sho_bleckert_magazine_horse mat_magazine_horse:0.7,-0.7 |
+wpn_fps_sho_bleckert_magazine_standard mat_magazine_std:-0.7,0.7 |
 wpn_fps_sho_bleckert_stock_precision mat_stock_precision:0.7,-0.7 |
 wpn_fps_sho_bleckert_stock_sawnoff mat_stock_sawnoff:0,-1 |
 wpn_fps_sho_bleckert_stock_standard mat_stock_standard:1,0 |
@@ -779,7 +800,6 @@ wpn_fps_sho_boot_body_exotic mtr_body:-0.7,0.7 mtr_mech:1,0 mtr_strap:-0.7,-0.7 
 wpn_fps_sho_boot_body_standard mtr_body:-0.7,0.7 mtr_mech:1,0 |
 wpn_fps_sho_boot_em_extra slug:0,1 |
 wpn_fps_sho_boot_fg_standard mtr_fg:1,0 |
-wpn_fps_sho_boot_m_standard |
 wpn_fps_sho_boot_o_legendary mtr_sight_legend:-0.7,0.7 |
 wpn_fps_sho_boot_s_long mtr_solid:0.7,-0.7 |
 wpn_fps_sho_boot_s_short mtr_stock:0,1 |
@@ -806,20 +826,21 @@ wpn_fps_sho_rota_b_silencer mat_supressor:0,1 |
 wpn_fps_sho_rota_body_lower mat_lower:0.7,0.7 mat_mag:-1,0 |
 wpn_fps_sho_rota_body_upper mat_upper:0,-1 |
 wpn_fps_sho_rota_fg_standard mat_foregrip:-0.7,0.7 |
-wpn_fps_sho_rota_m_standard |
+wpn_fps_sho_rota_m_standard mat_mag:-1,0 slug:0,1 |
 wpn_fps_sho_s_spas12_folded mtr_grip:-0.7,0.7 mtr_stock:0,1 |
 wpn_fps_sho_s_spas12_solid mtr_grip:-0.7,0.7 mtr_solid:0.7,-0.7 |
 wpn_fps_sho_saiga_b_short mtr_short:1,0 |
 wpn_fps_sho_saiga_fg_holy mtr_holy:-1,0 |
 wpn_fps_sho_sko12_b_long mtr_sko12_barrel:0.7,-0.7 |
-wpn_fps_sho_sko12_b_standard_conversion ak_base:-1,0 cover:-0.7,0.7 mtr_shell:-0.7,-0.7 mtr_shell_brass:1,0 mtr_sko12_adapter:-1,0 mtr_sko12_barrel:0.7,-0.7 mtr_sko12_conversion_kit:-1,0 mtr_sko12_draghandle:-1,0 mtr_sko12_fg_rail:-1,0 mtr_sko12_lower_reciever:0,-1 mtr_sko12_mag_drum:0.7,0.7 mtr_sko12_mag_drum_window:0.7,0.7 mtr_sko12_mfg_grip:1,0 mtr_sko12_rail_ext:-0.7,0.7 mtr_sko12_shell:0.7,-0.7 mtr_sko12_stiletto:1,0 mtr_sko12_stock_mfg:0,1 mtr_sko12_upper_reciever:-0.7,-0.7 sko12_mag_stick:0.7,-0.7 |
 wpn_fps_sho_sko12_conversion mtr_sko12_conversion_kit:-1,0 |
 wpn_fps_sho_sko12_dh mtr_sko12_draghandle:-1,0 |
 wpn_fps_sho_sko12_fg_rail mtr_sko12_fg_rail:-1,0 |
 wpn_fps_sho_sko12_fg_rail_ext mtr_sko12_fg_rail:-1,0 mtr_sko12_rail_ext:-0.7,0.7 |
 wpn_fps_sho_sko12_lower_reciever mtr_sko12_lower_reciever:0,-1 |
-wpn_fps_sho_sko12_mag_drum |
-wpn_fps_sho_sko12_mag_stick |
+wpn_fps_sho_sko12_mag_drum mtr_sko12_mag_drum:0.7,0.7 mtr_sko12_shell:0.7,-0.7 |
+wpn_fps_sho_sko12_mag_drum_conversion mtr_sko12_mag_drum:0.7,0.7 mtr_sko12_shell:0.7,-0.7 |
+wpn_fps_sho_sko12_mag_stick mtr_shell:-0.7,-0.7 mtr_shell_brass:1,0 sko12_mag_stick:0.7,-0.7 |
+wpn_fps_sho_sko12_ns_stiletto_conversion mtr_sko12_stiletto:1,0 |
 wpn_fps_sho_sko12_s_adapter mtr_sko12_adapter:-1,0 |
 wpn_fps_sho_sko12_upg_g_mfg mtr_sko12_mfg_grip:1,0 |
 wpn_fps_sho_sko12_upg_s_mfg mtr_sko12_stock_mfg:0,1 |
@@ -834,7 +855,7 @@ wpn_fps_sho_supernova_b_short mtr_barrel:1,0 |
 wpn_fps_sho_supernova_body_conversion mtr_body_conversion:1,0 mtr_slug:-0.7,0.7 |
 wpn_fps_sho_supernova_body_standard mtr_body_standard:0.7,0.7 mtr_slug:-0.7,0.7 |
 wpn_fps_sho_supernova_conversion mtr_conversion:0.7,0.7 |
-wpn_fps_sho_supernova_conversion_display_dummy |
+wpn_fps_sho_supernova_conversion_display_dummy mtr_conversion_display:-0.7,-0.7 |
 wpn_fps_sho_supernova_fg_conversion mtr_foregrip_conversion:0,-1 |
 wpn_fps_sho_supernova_fg_standard mtr_foregrip:0,-1 |
 wpn_fps_sho_supernova_g_adapter mtr_grip_adapter:0,1 |
@@ -842,7 +863,7 @@ wpn_fps_sho_supernova_g_conversion mtr_grip_conversion:0,-1 |
 wpn_fps_sho_supernova_g_raven mtr_grip_raven:0,-1 |
 wpn_fps_sho_supernova_g_stakeout mtr_grip_stakeout:0.7,0.7 |
 wpn_fps_sho_supernova_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_sho_supernova_m_extender |
+wpn_fps_sho_supernova_m_extender mtr_mag_extender:-0.7,-0.7 |
 wpn_fps_sho_supernova_s_raven mtr_stock_raven:0,1 |
 wpn_fps_sho_supernova_s_standard mtr_stock:0,1 |
 wpn_fps_sho_supernova_shell_rack mtr_shellrack:0,-1 mtr_slug:-0.7,0.7 |
@@ -852,7 +873,7 @@ wpn_fps_sho_ultima_body_rack mtr_mods:-0.7,0.7 mtr_slug:-0.7,0.7 |
 wpn_fps_sho_ultima_fg_kit mtr_foregrip:0,-1 |
 wpn_fps_sho_ultima_fg_standard mtr_camera:0,1 mtr_foregrip:0,-1 |
 wpn_fps_sho_ultima_fl_kit mtr_kit:-0.7,0.7 |
-wpn_fps_sho_ultima_m_standard |
+wpn_fps_sho_ultima_m_standard mtr_slug:-0.7,0.7 |
 wpn_fps_sho_ultima_ns_comp mtr_mods:-0.7,0.7 |
 wpn_fps_sho_ultima_s_standard mtr_stock:0,1 |
 wpn_fps_shot_b682_b_long mtr_barrel:1,0 mtr_foregrip:0,-1 slug:0,1 |
@@ -868,11 +889,11 @@ wpn_fps_shot_m1897_b_short mtr_b_short:-1,0 mtr_b_std:0.7,0.7 |
 wpn_fps_shot_m1897_b_standard mtr_b_std:0.7,0.7 |
 wpn_fps_shot_m1897_body_standard mtr_body:-0.7,0.7 |
 wpn_fps_shot_m1897_fg_standard mtr_bolt:1,0 mtr_fg:1,0 |
-wpn_fps_shot_m1897_m_standard |
+wpn_fps_shot_m1897_m_standard mtr_shell:-0.7,-0.7 |
 wpn_fps_shot_m1897_s_short mtr_stock_short:0,-1 |
 wpn_fps_shot_m1897_s_standard mtr_stock:0,1 |
 wpn_fps_shot_m37_body_standard mtr_body:-0.7,0.7 mtr_internal:1,0 |
-wpn_fps_shot_m37_m_standard |
+wpn_fps_shot_m37_m_standard mtr_shell:-0.7,-0.7 |
 wpn_fps_shot_m37_s_short mtr_short_stock:-0.7,0.7 |
 wpn_fps_shot_r870_b_legendary long_barrel:1,0 mtr_legendary_barrel:-0.7,0.7 |
 wpn_fps_shot_r870_b_long long_barrel:1,0 |
@@ -884,7 +905,7 @@ wpn_fps_shot_r870_fg_legendary mtr_legendary_barrel:-0.7,0.7 mtr_legendary_pump:
 wpn_fps_shot_r870_fg_railed railed_pump:0.7,-0.7 |
 wpn_fps_shot_r870_fg_small short_pump:1,0 |
 wpn_fps_shot_r870_fg_wood wood_pump:0.7,-0.7 |
-wpn_fps_shot_r870_m_extended |
+wpn_fps_shot_r870_m_extended extension:-0.7,-0.7 |
 wpn_fps_shot_r870_ris_special ris:0.7,0.7 |
 wpn_fps_shot_r870_s_folding folding_stock:-0.7,-0.7 |
 wpn_fps_shot_r870_s_legendary mtr_legendary_pump:-0.7,0.7 |
@@ -895,9 +916,9 @@ wpn_fps_shot_r870_s_solid solid:0.7,0.7 |
 wpn_fps_shot_r870_s_solid_big big_rail:0.7,0.7 solid:0.7,0.7 |
 wpn_fps_shot_r870_s_solid_single single_rail:-0.7,-0.7 solid:0.7,0.7 |
 wpn_fps_shot_saiga_b_standard saiga_barrel:0,-1 |
-wpn_fps_shot_saiga_m_5rnd |
+wpn_fps_shot_saiga_m_5rnd saiga_5rnd:-1,0 slug:0,1 |
 wpn_fps_shot_shorty_b_legendary mtr_comp:-0.7,0.7 short_barrel:1,0 |
-wpn_fps_shot_shorty_m_extended_short |
+wpn_fps_shot_shorty_m_extended_short extension:-0.7,-0.7 |
 wpn_fps_shot_shorty_s_nostock_short big_rail:0.7,0.7 folding_stock:-0.7,-0.7 |
 wpn_fps_shot_shorty_s_solid_short big_rail:0.7,0.7 solid:0.7,0.7 |
 wpn_fps_smg_akmsu_b_standard akmsu_barrel:0,1 |
@@ -912,7 +933,7 @@ wpn_fps_smg_baka_body_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_sight:0.7,-0.7
 wpn_fps_smg_coal_b_standard mat_barrel_grp:0.7,-0.7 |
 wpn_fps_smg_coal_body_standard mat_barrel_grp:0.7,-0.7 mat_receiver:0,-1 |
 wpn_fps_smg_coal_g_standard mat_griip:-0.7,0.7 |
-wpn_fps_smg_coal_m_standard |
+wpn_fps_smg_coal_m_standard mat_mag:-1,0 mtr_bullet:0,1 |
 wpn_fps_smg_coal_mr_standard mat_receiver:0,-1 |
 wpn_fps_smg_coal_o_scopemount_standard mat_scopemount_low:1,0 |
 wpn_fps_smg_coal_s_standard mat_stock:-0.7,-0.7 |
@@ -925,15 +946,15 @@ wpn_fps_smg_cobray_s_m4adapter mtr_stock_adapter:0.7,0.7 |
 wpn_fps_smg_erma_b_standard mat_barrel:-1,0 |
 wpn_fps_smg_erma_body_standard mat_body:-1,0 |
 wpn_fps_smg_erma_extra_rail mat_rail:0,1 |
-wpn_fps_smg_erma_mag_standard |
+wpn_fps_smg_erma_mag_standard mat_magazine:-1,0 mtr_bullet:0,1 |
 wpn_fps_smg_fmg9_b_dummy ak_base:-1,0 cover:-0.7,0.7 mat_body:-1,0 mat_bullet:0,-1 mat_buttpad:0,-1 mat_grip:-1,0 mat_grip_tape:-1,0 mat_speedmag:0,1 mat_stock:-0.7,-0.7 mtr_conversion:0.7,0.7 mtr_glow:0,1 mtr_screen:-0.7,-0.7 |
 wpn_fps_smg_fmg9_body mat_body:-1,0 mat_stock:-0.7,-0.7 |
-wpn_fps_smg_fmg9_conversion |
+wpn_fps_smg_fmg9_conversion mtr_conversion:0.7,0.7 mtr_glow:0,1 mtr_screen:-0.7,-0.7 |
 wpn_fps_smg_fmg9_dh mat_body:-1,0 |
 wpn_fps_smg_fmg9_grip mat_grip:-1,0 |
 wpn_fps_smg_fmg9_grip_tape mat_grip_tape:-1,0 |
-wpn_fps_smg_fmg9_m_speed |
-wpn_fps_smg_fmg9_m_standard |
+wpn_fps_smg_fmg9_m_speed mat_bullet:0,-1 mat_speedmag:0,1 |
+wpn_fps_smg_fmg9_m_standard mat_bullet:0,-1 mat_mag:-1,0 |
 wpn_fps_smg_fmg9_o mat_sight:0,-1 mtr_glow:0,1 |
 wpn_fps_smg_fmg9_stock mat_stock:-0.7,-0.7 |
 wpn_fps_smg_fmg9_stock_padded mat_buttpad:0,-1 mat_stock:-0.7,-0.7 |
@@ -948,14 +969,14 @@ wpn_fps_smg_hajk_vg_moe mtr_vg:-1,0 |
 wpn_fps_smg_m45_b_green m45_barrel:0,-1 |
 wpn_fps_smg_m45_body_green m45_body:1,0 |
 wpn_fps_smg_m45_g_bling m45_grip:1,0 |
-wpn_fps_smg_m45_m_extended |
+wpn_fps_smg_m45_m_extended m45_mag:0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_smg_m45_s_standard m45_stock:1,0 |
 wpn_fps_smg_mac10_body_mac10 mac10:1,0 |
 wpn_fps_smg_mac10_body_modern mtr_body_modern:-1,0 |
 wpn_fps_smg_mac10_body_ris ris:0.7,0.7 |
-wpn_fps_smg_mac10_m_extended |
-wpn_fps_smg_mac10_m_quick |
-wpn_fps_smg_mac10_m_short |
+wpn_fps_smg_mac10_m_extended extended:-0.7,-0.7 mtr_bullet:0,1 |
+wpn_fps_smg_mac10_m_quick extended:-0.7,-0.7 mtr_bullet:0,1 mtr_magpul:-0.7,-0.7 |
+wpn_fps_smg_mac10_m_short mtr_bullet:0,1 short:0,1 |
 wpn_fps_smg_mac10_s_fold fold:0.7,0.7 |
 wpn_fps_smg_mac10_s_skel skeletal:1,0 |
 wpn_fps_smg_mp5_body_mp5 mtr_mp5:-1,0 |
@@ -965,22 +986,22 @@ wpn_fps_smg_mp5_fg_m5k mp5k:0.7,0.7 |
 wpn_fps_smg_mp5_fg_mp5a4 mp5a4:-0.7,0.7 |
 wpn_fps_smg_mp5_fg_mp5a5 mp5a5:0,-1 |
 wpn_fps_smg_mp5_fg_mp5sd mtr_sd:0.7,-0.7 |
-wpn_fps_smg_mp5_m_drum |
-wpn_fps_smg_mp5_m_std |
-wpn_fps_smg_mp5_m_straight |
+wpn_fps_smg_mp5_m_drum mtr_drum:-0.7,-0.7 |
+wpn_fps_smg_mp5_m_std mag_std:-0.7,-0.7 mtr_bullet:0,1 |
+wpn_fps_smg_mp5_m_straight mtr_straight:1,0 |
 wpn_fps_smg_mp5_s_adjust adjust:-0.7,0.7 |
 wpn_fps_smg_mp5_s_ring ring:0.7,-0.7 |
 wpn_fps_smg_mp5_s_solid solid:0.7,0.7 |
 wpn_fps_smg_mp7_b_standard mtr_flashhider:0.7,-0.7 |
 wpn_fps_smg_mp7_b_suppressed mtr_suppressor:1,0 |
 wpn_fps_smg_mp7_body_standard mtr_body:-0.7,0.7 mtr_charging_handle:0.7,0.7 mtr_sights:-1,0 mtr_trigger:0,-1 |
-wpn_fps_smg_mp7_m_extended |
-wpn_fps_smg_mp7_m_short |
+wpn_fps_smg_mp7_m_extended mtr_bullet:0,1 mtr_long_mag:-0.7,-0.7 |
+wpn_fps_smg_mp7_m_short mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_smg_mp7_s_long mtr_stock:0,1 |
 wpn_fps_smg_mp9_b_suppressed mtr_bt:0,1 |
 wpn_fps_smg_mp9_body_mp9 mp9:-0.7,-0.7 stubby:0.7,-0.7 |
-wpn_fps_smg_mp9_m_extended |
-wpn_fps_smg_mp9_m_short |
+wpn_fps_smg_mp9_m_extended mag_extended:-1,0 mtr_bullet:0,1 |
+wpn_fps_smg_mp9_m_short mag_standard:-1,0 mtr_bullet:0,1 |
 wpn_fps_smg_mp9_s_fold foldable:-1,0 |
 wpn_fps_smg_mp9_s_skel skeletal:1,0 |
 wpn_fps_smg_olympic_fg_olympic olympic:-0.7,-0.7 |
@@ -994,15 +1015,15 @@ wpn_fps_smg_p90_b_ninja mtr_ninja:0,-1 |
 wpn_fps_smg_p90_b_short short:0,1 |
 wpn_fps_smg_p90_body_boxy mat_boxy_body:-0.7,0.7 mat_boxy_sight_and_straps:1,0 p90:0.7,0.7 |
 wpn_fps_smg_p90_body_p90 p90:0.7,0.7 |
-wpn_fps_smg_p90_m_std |
-wpn_fps_smg_p90_m_strap |
+wpn_fps_smg_p90_m_std mtr_bullet:0,1 |
+wpn_fps_smg_p90_m_strap mtr_bullet:0,1 mtr_strap:-0.7,-0.7 |
 wpn_fps_smg_pm9_body_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_sights:-1,0 |
-wpn_fps_smg_pm9_m_quick |
+wpn_fps_smg_pm9_m_quick mtr_bullet:0,1 mtr_mag:-1,0 mtr_mag_speed:0,1 |
 wpn_fps_smg_pm9_s_tactical mtr_s_tactical:-0.7,-0.7 |
 wpn_fps_smg_polymer_barrel_precision mtr_precision:0.7,-0.7 |
 wpn_fps_smg_polymer_dh_standard mtr_dh:0,-1 |
 wpn_fps_smg_polymer_extra_sling sling:0.7,0.7 |
-wpn_fps_smg_polymer_m_standard |
+wpn_fps_smg_polymer_m_standard b_mtr_bullet:0.7,-0.7 mtr_mag:-1,0 |
 wpn_fps_smg_polymer_o_iron mtr_dd:1,0 |
 wpn_fps_smg_schakal_b_civil mtr_barrel_civil:0.7,-0.7 |
 wpn_fps_smg_schakal_b_standard mtr_barrel_standard:0.7,0.7 |
@@ -1010,9 +1031,9 @@ wpn_fps_smg_schakal_body_lower mtr_lower_reciever:-0.7,0.7 |
 wpn_fps_smg_schakal_body_upper mtr_casing_exhaust:0.7,0.7 mtr_upper_reciever:-1,0 |
 wpn_fps_smg_schakal_bolt_standard mtr_casing_exhaust:0.7,0.7 |
 wpn_fps_smg_schakal_dh_standard mtr_upper_reciever:-1,0 |
-wpn_fps_smg_schakal_m_long |
-wpn_fps_smg_schakal_m_short |
-wpn_fps_smg_schakal_m_standard |
+wpn_fps_smg_schakal_m_long mtr_bullet:0,1 mtr_mag_long:-0.7,0.7 |
+wpn_fps_smg_schakal_m_short mtr_bullet:0,1 mtr_mag_short:0.7,-0.7 |
+wpn_fps_smg_schakal_m_standard mtr_bullet:0,1 mtr_mag_standard:0.7,-0.7 |
 wpn_fps_smg_schakal_ns_silencer mtr_silencer:1,0 |
 wpn_fps_smg_schakal_s_civil mtr_stock_civil:-0.7,-0.7 |
 wpn_fps_smg_schakal_s_folded mtr_stock_standard:-0.7,0.7 |
@@ -1021,30 +1042,29 @@ wpn_fps_smg_schakal_vg_surefire mtr_surefire:-1,0 |
 wpn_fps_smg_scorpion_body_standard mtr_charging_handle:0.7,0.7 mtr_lower:-1,0 mtr_rail:0.7,-0.7 mtr_upper:0.7,-0.7 |
 wpn_fps_smg_scorpion_g_ergo mtr_ergo:-0.7,0.7 |
 wpn_fps_smg_scorpion_g_wood mtr_wood:0,1 |
-wpn_fps_smg_scorpion_m_extended |
+wpn_fps_smg_scorpion_m_extended mtr_bullet:0,1 mtr_clamp:1,0 mtr_mag:-1,0 |
 wpn_fps_smg_scorpion_s_standard mtr_mount:-1,0 mtr_stock:0,1 |
-wpn_fps_smg_shepheard_b_short ak_base:-1,0 cover:-0.7,0.7 mat_grip_s:0.7,0.7 mat_mag:-1,0 mat_plastic:0,-1 mat_receiver_bot_s:0.7,-0.7 mat_receiver_top_s:1,0 mat_stock_s:0,1 mtr_bullet:0,1 mtr_stock_adapter:0.7,0.7 |
-wpn_fps_smg_shepheard_b_standard mat_receiver_top_s:1,0 |
+wpn_fps_smg_shepheard_b_short mat_receiver_top_s:1,0 |
 wpn_fps_smg_shepheard_body mat_receiver_bot_s:0.7,-0.7 mat_receiver_top_s:1,0 |
 wpn_fps_smg_shepheard_g_standard mat_grip_s:0.7,0.7 |
-wpn_fps_smg_shepheard_mag_extended |
-wpn_fps_smg_shepheard_o_standard iron_sights_mtr_sights:-1,0 |
+wpn_fps_smg_shepheard_mag_extended mat_mag:-1,0 mtr_bullet:0,1 |
+wpn_fps_smg_shepheard_o_short iron_sights_mtr_sights:-1,0 |
 wpn_fps_smg_shepheard_s_adapter mtr_stock_adapter:0.7,0.7 |
 wpn_fps_smg_shepheard_s_standard mat_stock_s:0,1 |
-wpn_fps_smg_speen_magazine_extended |
+wpn_fps_smg_speen_magazine_extended mat_bullet:0,-1 mat_mag:-1,0 |
 wpn_fps_smg_sr2_b_standard mtr_barrel:1,0 |
 wpn_fps_smg_sr2_body_lower mtr_body:-0.7,0.7 |
 wpn_fps_smg_sr2_fg_standard mtr_foregrip:0,-1 |
-wpn_fps_smg_sr2_m_mag |
-wpn_fps_smg_sr2_m_quick |
+wpn_fps_smg_sr2_m_mag mtr_bullet:0,1 mtr_mag:-1,0 |
+wpn_fps_smg_sr2_m_quick mtr_bullet:0,1 mtr_mag:-1,0 mtr_magpul:-0.7,-0.7 |
 wpn_fps_smg_sr2_ns_silencer mtr_silencer:1,0 |
 wpn_fps_smg_sr2_s_folded mtr_stock:0,1 |
 wpn_fps_smg_sr2_vg_standard mtr_verticalgrip:-0.7,-0.7 |
 wpn_fps_smg_sterling_b_e11 mtr_barrel_standard:0.7,0.7 |
 wpn_fps_smg_sterling_b_suppressed mtr_barrel_suppressed:0.7,-0.7 |
-wpn_fps_smg_sterling_m_long |
-wpn_fps_smg_sterling_m_medium |
-wpn_fps_smg_sterling_m_short |
+wpn_fps_smg_sterling_m_long mtr_bullet:0,1 mtr_mag_long:-0.7,0.7 |
+wpn_fps_smg_sterling_m_medium mtr_bullet:0,1 mtr_mag_medium:-1,0 |
+wpn_fps_smg_sterling_m_short mtr_bullet:0,1 mtr_mag_short:0.7,-0.7 |
 wpn_fps_smg_sterling_s_folded mtr_stock_standard:-0.7,0.7 |
 wpn_fps_smg_sterling_s_nostock mtr_stock_nostock:0.7,0.7 |
 wpn_fps_smg_sterling_s_solid mtr_stock_solid:-0.7,0.7 |
@@ -1065,7 +1085,7 @@ wpn_fps_smg_vityaz_body_standard mtr_lower:-1,0 mtr_rearsight:1,0 mtr_upper:0.7,
 wpn_fps_smg_vityaz_bolt_standard mtr_lower:-1,0 |
 wpn_fps_smg_vityaz_fg_standard mtr_foregrip:0,-1 |
 wpn_fps_smg_vityaz_g_standard mtr_grip:-0.7,0.7 |
-wpn_fps_smg_vityaz_m_standard |
+wpn_fps_smg_vityaz_m_standard mtr_9x19:0,1 mtr_mag:-1,0 |
 wpn_fps_smg_vityaz_ns_standard mtr_flashhider:0.7,-0.7 |
 wpn_fps_smg_vityaz_s_short mtr_nostock:0,1 |
 wpn_fps_smg_vityaz_s_standard mtr_stock:0,1 |
@@ -1073,27 +1093,28 @@ wpn_fps_snp_awp_b_long mtr_wpn_fps_snp_awp_b_long:-0.7,0.7 |
 wpn_fps_snp_awp_b_short mtr_wpn_fps_snp_awp_b_short:-1,0 |
 wpn_fps_snp_awp_b_standard mtr_wpn_fps_snp_awp_b_standard:-0.7,-0.7 |
 wpn_fps_snp_awp_bipod mtr_wpn_fps_snp_awp_bipod:1,0 |
-wpn_fps_snp_awp_ck_1_b_standard ak_base:-1,0 cover:-0.7,0.7 mtr_wpn_fps_snp_awp_b_standard:-0.7,-0.7 mtr_wpn_fps_snp_awp_chassi:0.7,0.7 mtr_wpn_fps_snp_awp_dh:1,0 mtr_wpn_fps_snp_awp_g_main:0,1 mtr_wpn_fps_snp_awp_g_solid:1,0 mtr_wpn_fps_snp_awp_receiver:-0.7,-0.7 mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 mtr_wpn_fps_snp_awp_stock_solid:0.7,-0.7 |
-wpn_fps_snp_awp_ck_2_b_long ak_base:-1,0 cover:-0.7,0.7 mtr_wpn_fps_snp_awp_b_long:-0.7,0.7 mtr_wpn_fps_snp_awp_b_standard:-0.7,-0.7 mtr_wpn_fps_snp_awp_bipod:1,0 mtr_wpn_fps_snp_awp_chassi:0.7,0.7 mtr_wpn_fps_snp_awp_dh:1,0 mtr_wpn_fps_snp_awp_g_main:0,1 mtr_wpn_fps_snp_awp_g_solid:1,0 mtr_wpn_fps_snp_awp_m_standard:0,1 mtr_wpn_fps_snp_awp_receiver:-0.7,-0.7 mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 mtr_wpn_fps_snp_awp_stock_solid:0.7,-0.7 |
+wpn_fps_snp_awp_ck_1_dh_standard mtr_wpn_fps_snp_awp_dh:1,0 |
+wpn_fps_snp_awp_ck_1_g_solid mtr_wpn_fps_snp_awp_g_solid:1,0 |
+wpn_fps_snp_awp_ck_1_m_standard mtr_wpn_fps_snp_awp_bullet:0.7,0.7 mtr_wpn_fps_snp_awp_m_standard:0,1 |
+wpn_fps_snp_awp_ck_1_reciever mtr_wpn_fps_snp_awp_chassi:0.7,0.7 mtr_wpn_fps_snp_awp_g_main:0,1 mtr_wpn_fps_snp_awp_receiver:-0.7,-0.7 |
+wpn_fps_snp_awp_ck_1_stock_solid mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 mtr_wpn_fps_snp_awp_stock_solid:0.7,-0.7 |
 wpn_fps_snp_awp_dh_speed mtr_wpn_fps_snp_awp_dh:1,0 mtr_wpn_fps_snp_awp_dh_speed:0,1 |
-wpn_fps_snp_awp_dh_standard mtr_wpn_fps_snp_awp_dh:1,0 |
 wpn_fps_snp_awp_ext_shellrack mtr_wpn_fps_snp_awp_bullet:0.7,0.7 mtr_wpn_fps_snp_awp_ext_shellrack:-1,0 |
 wpn_fps_snp_awp_g_grainy mtr_wpn_fps_snp_awp_g:0,-1 |
-wpn_fps_snp_awp_g_solid mtr_wpn_fps_snp_awp_g_solid:1,0 |
-wpn_fps_snp_awp_m_speed |
-wpn_fps_snp_awp_m_standard |
+wpn_fps_snp_awp_m_speed mtr_wpn_fps_snp_awp_bullet:0.7,0.7 mtr_wpn_fps_snp_awp_m_speed:0.7,0.7 mtr_wpn_fps_snp_awp_m_standard:0,1 |
 wpn_fps_snp_awp_ns_muzzle mtr_wpn_fps_snp_awp_ns_muzzle:0,-1 |
-wpn_fps_snp_awp_ns_muzzle_long ak_base:-1,0 cover:-0.7,0.7 mtr_wpn_fps_snp_awp_b_long:-0.7,0.7 mtr_wpn_fps_snp_awp_b_short:-1,0 mtr_wpn_fps_snp_awp_b_standard:-0.7,-0.7 mtr_wpn_fps_snp_awp_bipod:1,0 mtr_wpn_fps_snp_awp_bullet:0.7,0.7 mtr_wpn_fps_snp_awp_chassi:0.7,0.7 mtr_wpn_fps_snp_awp_dh:1,0 mtr_wpn_fps_snp_awp_dh_speed:0,1 mtr_wpn_fps_snp_awp_ext_shellrack:-1,0 mtr_wpn_fps_snp_awp_g:0,-1 mtr_wpn_fps_snp_awp_g_main:0,1 mtr_wpn_fps_snp_awp_g_solid:1,0 mtr_wpn_fps_snp_awp_m_speed:0.7,0.7 mtr_wpn_fps_snp_awp_m_standard:0,1 mtr_wpn_fps_snp_awp_ns_muzzle:0,-1 mtr_wpn_fps_snp_awp_ns_suppressor:-1,0 mtr_wpn_fps_snp_awp_receiver:-0.7,-0.7 mtr_wpn_fps_snp_awp_stock_lightweight:-1,0 mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 mtr_wpn_fps_snp_awp_stock_solid:0.7,-0.7 |
 wpn_fps_snp_awp_ns_suppressor mtr_wpn_fps_snp_awp_ns_suppressor:-1,0 |
-wpn_fps_snp_awp_reciever mtr_wpn_fps_snp_awp_chassi:0.7,0.7 mtr_wpn_fps_snp_awp_g_main:0,1 mtr_wpn_fps_snp_awp_receiver:-0.7,-0.7 |
 wpn_fps_snp_awp_stock_lightweight mtr_wpn_fps_snp_awp_stock_lightweight:-1,0 mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 |
-wpn_fps_snp_awp_stock_solid mtr_wpn_fps_snp_awp_stock_shared:0.7,-0.7 mtr_wpn_fps_snp_awp_stock_solid:0.7,-0.7 |
-wpn_fps_snp_contender_barrel_conversion ak_base:-1,0 cover:-0.7,0.7 mtr_contender_barrel:0.7,-0.7 mtr_contender_barrel_conversion:0.7,0.7 mtr_contender_bullet:0.7,0.7 mtr_contender_front_grip:-1,0 mtr_contender_front_grip_conversion:-0.7,0.7 mtr_contender_grip:0.7,-0.7 mtr_contender_grip_conversion:-0.7,-0.7 mtr_contender_receiver:0,1 mtr_contender_receiver_conversion:-1,0 mtr_contender_suppresor:0.7,-0.7 |
+wpn_fps_snp_contender_barrel_conversion mtr_contender_barrel_conversion:0.7,0.7 mtr_contender_bullet:0.7,0.7 |
 wpn_fps_snp_contender_barrel_long mtr_contender_barrel:0.7,-0.7 mtr_contender_bullet:0.7,0.7 |
-wpn_fps_snp_contender_bullet |
+wpn_fps_snp_contender_bullet mtr_contender_bullet:0.7,0.7 |
+wpn_fps_snp_contender_conversion ak_base:-1,0 cover:-0.7,0.7 mtr_contender_barrel:0.7,-0.7 mtr_contender_barrel_conversion:0.7,0.7 mtr_contender_bullet:0.7,0.7 mtr_contender_front_grip:-1,0 mtr_contender_front_grip_conversion:-0.7,0.7 mtr_contender_grip:0.7,-0.7 mtr_contender_grip_conversion:-0.7,-0.7 mtr_contender_receiver:0,1 mtr_contender_receiver_conversion:-1,0 mtr_contender_suppresor:0.7,-0.7 |
+wpn_fps_snp_contender_frontgrip_conversion mtr_contender_front_grip_conversion:-0.7,0.7 |
 wpn_fps_snp_contender_frontgrip_long mtr_contender_front_grip:-1,0 |
+wpn_fps_snp_contender_grip_conversion mtr_contender_grip_conversion:-0.7,-0.7 |
 wpn_fps_snp_contender_grip_standard mtr_contender_grip:0.7,-0.7 |
 wpn_fps_snp_contender_receiver mtr_contender_receiver:0,1 |
+wpn_fps_snp_contender_receiver_conversion mtr_contender_receiver_conversion:-1,0 |
 wpn_fps_snp_contender_suppressor mtr_contender_suppresor:0.7,-0.7 |
 wpn_fps_snp_desertfox_b_long mtr_b_long:0,-1 mtr_comp:-0.7,0.7 mtr_fg_long:0,-1 |
 wpn_fps_snp_desertfox_b_short mtr_b_short:-1,0 mtr_fg:1,0 |
@@ -1105,26 +1126,25 @@ wpn_fps_snp_m95_barrel_standard mtr_medium:1,0 mtr_muzzlebreak:0,-1 |
 wpn_fps_snp_m95_barrel_suppressed mtr_suppressed:0,-1 |
 wpn_fps_snp_m95_bipod mtr_bipod:0,1 mtr_pin:0.7,-0.7 |
 wpn_fps_snp_m95_lower_reciever mtr_bolt:1,0 mtr_lower:-1,0 |
-wpn_fps_snp_m95_magazine |
+wpn_fps_snp_m95_magazine mtr_bullet:0,1 mtr_clip:1,0 |
 wpn_fps_snp_m95_upper_reciever mtr_pin:0.7,-0.7 mtr_upper:0.7,-0.7 |
 wpn_fps_snp_model70_b_legend mtr_barrel:1,0 mtr_skull:-1,0 |
 wpn_fps_snp_model70_b_standard mtr_barrel:1,0 mtr_sights:-1,0 |
 wpn_fps_snp_model70_body_standard mtr_bolt:1,0 mtr_receiver:-0.7,0.7 |
 wpn_fps_snp_model70_s_legend mtr_body:-0.7,0.7 mtr_legend:-1,0 |
 wpn_fps_snp_mosin_b_medium mtr_b_medium:0.7,-0.7 |
-wpn_fps_snp_mosin_b_medium_black ak_base:-1,0 cover:-0.7,0.7 lambert1:0,1 mtr_b_medium:0.7,-0.7 mtr_b_short:-1,0 mtr_b_standard:0,1 mtr_bayonet:-0.7,0.7 mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_mag:-1,0 mtr_sniper:0.7,0.7 mtr_upper:0.7,-0.7 |
+wpn_fps_snp_mosin_b_short_black lambert1:0,1 mtr_b_short:-1,0 |
 wpn_fps_snp_mosin_body_black mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_upper:0.7,-0.7 |
 wpn_fps_snp_mosin_ns_bayonet mtr_bayonet:-0.7,0.7 |
 wpn_fps_snp_msr_body_msr mtr_body_msr:1,0 mtr_receiver:-0.7,0.7 |
 wpn_fps_snp_msr_body_wood mtr_receiver:-0.7,0.7 mtr_wooden:-0.7,0.7 |
-wpn_fps_snp_msr_ns_suppressor_long ak_base:-1,0 cover:-0.7,0.7 mtr_barrel:1,0 mtr_body_msr:1,0 mtr_receiver:-0.7,0.7 mtr_supp:1,0 mtr_wooden:-0.7,0.7 |
 wpn_fps_snp_qbu88_b_long mtr_b_long:0,-1 mtr_flash:-1,0 |
 wpn_fps_snp_qbu88_b_short mtr_b_short:-1,0 mtr_flash:-1,0 |
 wpn_fps_snp_qbu88_b_standard mtr_b_std:0.7,0.7 mtr_flash:-1,0 |
 wpn_fps_snp_qbu88_body_standard mtr_lower:-1,0 |
 wpn_fps_snp_qbu88_bolt_standard mtr_bolt:1,0 |
 wpn_fps_snp_qbu88_fg_standard mtr_upper:0.7,-0.7 |
-wpn_fps_snp_qbu88_m_extended |
+wpn_fps_snp_qbu88_m_extended mtr_mag:-1,0 |
 wpn_fps_snp_qbu88_o_standard mtr_sights:-1,0 |
 wpn_fps_snp_r700_b_medium mtr_b_medium:0.7,-0.7 mtr_suppressor:1,0 |
 wpn_fps_snp_r700_b_short mtr_b_short:-1,0 |
@@ -1132,7 +1152,7 @@ wpn_fps_snp_r700_b_standard mtr_b_long:0,-1 |
 wpn_fps_snp_r700_body_standard mtr_body:-0.7,0.7 |
 wpn_fps_snp_r700_bolt_standard mtr_bolt:1,0 |
 wpn_fps_snp_r700_fl_rail mtr_rail:0.7,-0.7 |
-wpn_fps_snp_r700_m_standard |
+wpn_fps_snp_r700_m_standard mtr_bullet:0,1 mtr_mag:-1,0 |
 wpn_fps_snp_r700_o_rail mtr_mount:-1,0 |
 wpn_fps_snp_r700_s_military mtr_bullet:0,1 mtr_s_military:0,-1 |
 wpn_fps_snp_r700_s_standard mtr_s_standard:0.7,0.7 |
@@ -1144,20 +1164,21 @@ wpn_fps_snp_sbl_b_long mtr_b_long:0,-1 |
 wpn_fps_snp_sbl_b_short mtr_b_short:-1,0 |
 wpn_fps_snp_sbl_b_standard mtr_b_std:0.7,0.7 |
 wpn_fps_snp_sbl_body_standard mtr_body:-0.7,0.7 mtr_bolt:1,0 mtr_rail:0.7,-0.7 |
-wpn_fps_snp_sbl_m_standard |
+wpn_fps_snp_sbl_m_standard mtr_body:-0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_snp_sbl_o_standard mtr_stock:0,1 |
 wpn_fps_snp_sbl_s_saddle mtr_bullet:0,1 mtr_rack:-0.7,-0.7 mtr_saddle:0,1 mtr_stock:0,1 |
 wpn_fps_snp_scout_b_standard mat_barrel1:-0.7,-0.7 |
-wpn_fps_snp_scout_body_conversion ak_base:-1,0 cover:-0.7,0.7 mat_barrel1:-0.7,-0.7 mat_body_conversion:-0.7,-0.7 mat_bolt:0.7,0.7 mat_bolt_conversion:0.7,0.7 mat_bolt_speed:0,1 mat_bullet:0,-1 mat_buttpad:0,-1 mat_mag:-1,0 mat_mag1:0.7,0.7 mat_mag_extension:0,-1 mat_rail_adapter:0,-1 mat_reciever1:-0.7,-0.7 mat_stock1:-0.7,-0.7 mat_suppressor1:0.7,-0.7 mtr_bolt_conversion_chrome:0.7,0.7 mtr_glow:0,1 | mat_sights1
+wpn_fps_snp_scout_body_conversion mat_body_conversion:-0.7,-0.7 |
 wpn_fps_snp_scout_body_standard mat_reciever1:-0.7,-0.7 |
+wpn_fps_snp_scout_bolt_conversion mat_bolt_conversion:0.7,0.7 mtr_bolt_conversion_chrome:0.7,0.7 |
 wpn_fps_snp_scout_bolt_speed mat_bolt_speed:0,1 |
 wpn_fps_snp_scout_bolt_standard mat_bolt:0.7,0.7 |
 wpn_fps_snp_scout_conversion_dummy mat_bullet:0,-1 mat_mag:-1,0 |
-wpn_fps_snp_scout_m_extended |
-wpn_fps_snp_scout_m_standard |
+wpn_fps_snp_scout_m_extended mat_bullet:0,-1 mat_mag:-1,0 mat_mag_extension:0,-1 |
 wpn_fps_snp_scout_ns_suppressor mat_barrel1:-0.7,-0.7 mat_suppressor1:0.7,-0.7 |
 wpn_fps_snp_scout_o_iron_down mat_reciever1:-0.7,-0.7 mat_sights1:1,0 mtr_glow:0,1 |
 wpn_fps_snp_scout_o_rail mat_rail_adapter:0,-1 |
+wpn_fps_snp_scout_s_conversion mat_body_conversion:-0.7,-0.7 mat_mag:-1,0 |
 wpn_fps_snp_scout_s_pads_full mat_buttpad:0,-1 mat_mag1:0.7,0.7 mat_stock1:-0.7,-0.7 |
 wpn_fps_snp_siltstone_b_silenced mat_low_barrel:-0.7,-0.7 mat_silencer:0.7,-0.7 |
 wpn_fps_snp_siltstone_b_standard mat_low_barrel:-0.7,-0.7 mat_low_muzzle_01:0.7,-0.7 |
@@ -1165,7 +1186,7 @@ wpn_fps_snp_siltstone_body_receiver mat_body_low:0,-1 |
 wpn_fps_snp_siltstone_dh_standard mat_bolt_low:-0.7,-0.7 |
 wpn_fps_snp_siltstone_fg_polymer mat_low_grip_polymer:0.7,0.7 mat_low_sight:1,0 |
 wpn_fps_snp_siltstone_fg_wood mat_low_grip_wood:0.7,-0.7 mat_low_sight:1,0 |
-wpn_fps_snp_siltstone_m_standard |
+wpn_fps_snp_siltstone_m_standard mat_low_magazine:0.7,-0.7 mtr_bullet:0,1 |
 wpn_fps_snp_siltstone_ns_variation_b mat_low_barrel:-0.7,-0.7 mat_low_muzzle_02:0.7,0.7 |
 wpn_fps_snp_siltstone_o_scopemount mat_scopemount_low:1,0 |
 wpn_fps_snp_siltstone_s_polymer mat_stock_polymer_low:0,1 |
@@ -1177,22 +1198,29 @@ wpn_fps_snp_tti_bolt_standard tti_bolt:1,0 |
 wpn_fps_snp_tti_dh_standard tti_charginhandle:0.7,0.7 |
 wpn_fps_snp_tti_fg_standard tti_fg:-0.7,0.7 |
 wpn_fps_snp_tti_g_grippy tti_grip:-0.7,0.7 |
-wpn_fps_snp_tti_m_standard |
+wpn_fps_snp_tti_m_standard mtr_bullet:0,1 tti_mag:-0.7,-0.7 |
 wpn_fps_snp_tti_ns_hex tti_hex_silencer:0.7,0.7 |
 wpn_fps_snp_tti_ns_standard tti_nozzle:-0.7,-0.7 |
 wpn_fps_snp_tti_s_vltor tti_stock:0.7,0.7 |
 wpn_fps_snp_tti_vg_standard tti_vg:0.7,0.7 |
-wpn_fps_snp_victor_b_sbr ak_base:-1,0 cover:-0.7,0.7 mat_barrel:-1,0 mat_bullet:0,-1 mat_dh_hera:1,0 mat_grip:-1,0 mat_handguard:-0.7,0.7 mat_hera_handguard:0,1 mat_hera_lower:1,0 mat_hera_stock:0,-1 mat_hera_supp:0.7,-0.7 mat_hera_upper:-0.7,-0.7 mat_hera_vg:0,1 mat_lower:0.7,0.7 mat_magazine:-1,0 mat_muzzle:0.7,0.7 mat_omega:-0.7,0.7 mat_railcover:1,0 mat_stock:-0.7,-0.7 mat_upper:0,-1 mtr_hera_muzzle:0.7,0.7 | mat_sights
-wpn_fps_snp_victor_b_standard mat_barrel:-1,0 |
+wpn_fps_snp_victor_b_sbr mat_barrel:-1,0 |
 wpn_fps_snp_victor_body_receiver_lower mat_lower:0.7,0.7 |
+wpn_fps_snp_victor_body_receiver_lower_hera mat_hera_lower:1,0 |
 wpn_fps_snp_victor_body_receiver_upper mat_upper:0,-1 |
+wpn_fps_snp_victor_body_receiver_upper_hera mat_hera_upper:-0.7,-0.7 |
+wpn_fps_snp_victor_dh_hera mat_dh_hera:1,0 |
+wpn_fps_snp_victor_fg_hera mat_hera_handguard:0,1 mat_railcover:1,0 |
 wpn_fps_snp_victor_fg_standard mat_handguard:-0.7,0.7 |
 wpn_fps_snp_victor_g_mod3 mat_grip:-1,0 |
-wpn_fps_snp_victor_m_standard |
+wpn_fps_snp_victor_m_standard mat_bullet:0,-1 mat_magazine:-1,0 |
+wpn_fps_snp_victor_ns_hera_muzzle mtr_hera_muzzle:0.7,0.7 |
+wpn_fps_snp_victor_ns_hera_supp mat_hera_supp:0.7,-0.7 |
 wpn_fps_snp_victor_ns_omega mat_omega:-0.7,0.7 |
 wpn_fps_snp_victor_ns_standard mat_muzzle:0.7,0.7 |
-wpn_fps_snp_victor_o_standard mat_sights:1,0 |
+wpn_fps_snp_victor_o_down_hera mat_sights:1,0 |
+wpn_fps_snp_victor_s_hera mat_hera_stock:0,-1 |
 wpn_fps_snp_victor_s_mod0 mat_stock:-0.7,-0.7 |
+wpn_fps_snp_victor_sbr_kit ak_base:-1,0 cover:-0.7,0.7 mat_barrel:-1,0 mat_bullet:0,-1 mat_dh_hera:1,0 mat_grip:-1,0 mat_handguard:-0.7,0.7 mat_hera_handguard:0,1 mat_hera_lower:1,0 mat_hera_stock:0,-1 mat_hera_supp:0.7,-0.7 mat_hera_upper:-0.7,-0.7 mat_hera_vg:0,1 mat_lower:0.7,0.7 mat_magazine:-1,0 mat_muzzle:0.7,0.7 mat_omega:-0.7,0.7 mat_railcover:1,0 mat_stock:-0.7,-0.7 mat_upper:0,-1 mtr_hera_muzzle:0.7,0.7 | mat_sights
 wpn_fps_snp_victor_vg_hera mat_hera_vg:0,1 |
 wpn_fps_snp_wa2000_body_standard mtr_bipod:0,1 mtr_body:-0.7,0.7 mtr_bolt:1,0 |
 wpn_fps_snp_wa2000_g_light mtr_grip_light:-0.7,-0.7 |
@@ -1201,7 +1229,7 @@ wpn_fps_snp_wa2000_g_walnut mtr_grip_walnut:1,0 |
 wpn_fps_snp_winchester_b_long mtr_barrel:1,0 |
 wpn_fps_snp_winchester_b_suppressed mtr_barrel:1,0 mtr_supp:1,0 |
 wpn_fps_snp_winchester_body_standard mtr_body:-0.7,0.7 mtr_trigger:0,-1 |
-wpn_fps_snp_winchester_m_standard |
+wpn_fps_snp_winchester_m_standard mtr_body:-0.7,0.7 mtr_bullet:0,1 |
 wpn_fps_snp_winchester_s_standard mtr_stock:0,1 |
 wpn_fps_spe_dart_lower_body_standard mat_body:-1,0 mat_body_skinless:-1,0 |
 wpn_fps_spec_bessy_barrel mtr_bessy_barrel:-0.7,-0.7 |
@@ -1226,9 +1254,9 @@ wpn_fps_upg_ak_g_pgrip mtr_akgrip:-1,0 |
 wpn_fps_upg_ak_g_rk3 mtr_rk3:0,-1 |
 wpn_fps_upg_ak_g_rk9 mat_rk9:-0.7,0.7 |
 wpn_fps_upg_ak_g_wgrip mtr_woodgrip:0,-1 |
-wpn_fps_upg_ak_m_quad |
-wpn_fps_upg_ak_m_quick |
-wpn_fps_upg_ak_m_uspalm |
+wpn_fps_upg_ak_m_quad mtr_bullet:0,1 mtr_quadstack:0.7,-0.7 |
+wpn_fps_upg_ak_m_quick ak74_mag:0,1 mtr_bullet:0,1 mtr_magpul:-0.7,-0.7 |
+wpn_fps_upg_ak_m_uspalm mtr_bullet:0,1 mtr_uspalm:0.7,0.7 |
 wpn_fps_upg_ak_ns_jmac mat_jmac_mtc:-0.7,-0.7 |
 wpn_fps_upg_ak_ns_tgp mat_tgp:-0.7,-0.7 |
 wpn_fps_upg_ak_ns_zenitco mtr_ak_ns_zenitco:-0.7,-0.7 |
@@ -1236,9 +1264,9 @@ wpn_fps_upg_ak_s_zenitco mtr_ak_s_zenitco:0.7,0.7 |
 wpn_fps_upg_ass_ak_b_zastava mtr_flash:-1,0 mtr_m76:-1,0 |
 wpn_fps_upg_ass_m16_fg_stag mtr_stag:1,0 |
 wpn_fps_upg_ass_m4_b_beowulf mtr_beowulf:-1,0 |
+wpn_fps_upg_ass_m4_bolt_ballos mtr_balios:0,1 |
 wpn_fps_upg_ass_m4_fg_lvoa mtr_lvoa:0.7,0.7 |
 wpn_fps_upg_ass_m4_fg_moe mtr_moe:0,-1 |
-wpn_fps_upg_ass_m4_upper_reciever_ballos mtr_balios:0,1 |
 wpn_fps_upg_ass_ns_battle mtr_battle:0,-1 |
 wpn_fps_upg_ass_ns_jprifles mtr_jprifles:0,-1 |
 wpn_fps_upg_ass_ns_linear mtr_linear:0.7,0.7 |
@@ -1299,11 +1327,11 @@ wpn_fps_upg_m4_g_hgrip mtr_hogue:-0.7,-0.7 |
 wpn_fps_upg_m4_g_mgrip mtr_moek:0,1 |
 wpn_fps_upg_m4_g_sniper sniper_grip:0.7,-0.7 |
 wpn_fps_upg_m4_g_standard standard_grip:-0.7,-0.7 |
-wpn_fps_upg_m4_m_drum |
-wpn_fps_upg_m4_m_l5 |
-wpn_fps_upg_m4_m_pmag |
-wpn_fps_upg_m4_m_quad |
-wpn_fps_upg_m4_m_straight |
+wpn_fps_upg_m4_m_drum drum:1,0 |
+wpn_fps_upg_m4_m_l5 mtr_bullet:0,1 mtr_l5:0,1 |
+wpn_fps_upg_m4_m_pmag mtr_bullet:0,1 pmag:0.7,-0.7 |
+wpn_fps_upg_m4_m_quad mtr_bullet:0,1 mtr_quad:0.7,-0.7 |
+wpn_fps_upg_m4_m_straight mtr_bullet:0,1 straight:0,-1 |
 wpn_fps_upg_m4_s_adapter stock_adapter:-0.7,-0.7 |
 wpn_fps_upg_m4_s_contender mtr_fps_upg_m4_s_contender:-1,0 |
 wpn_fps_upg_m4_s_crane mtr_lmt:0.7,0.7 |
@@ -1370,6 +1398,7 @@ wpn_fps_upg_o_rms mtr_rms:-0.7,0.7 |
 wpn_fps_upg_o_rx01 rx01:0,1 rx01_third:0.7,-0.7 |
 wpn_fps_upg_o_rx30 rx30:-0.7,-0.7 rx30_third:-1,0 |
 wpn_fps_upg_o_schmidt mtr_masked:-0.7,0.7 mtr_wpn_fps_upg_o_schmidt:0,-1 mtr_wpn_fps_upg_o_schmidt_mount:0.7,0.7 |
+wpn_fps_upg_o_schmidt_ck_2 mtr_masked:-0.7,0.7 mtr_wpn_fps_upg_o_schmidt:0,-1 mtr_wpn_fps_upg_o_schmidt_mount:0.7,0.7 |
 wpn_fps_upg_o_shortdot mtr_masked:-0.7,0.7 mtr_shortdot:-1,0 |
 wpn_fps_upg_o_sig mtr_sig:0,-1 |
 wpn_fps_upg_o_specter mtr_specter:-1,0 optical:-1,0 |
@@ -1383,22 +1412,20 @@ wpn_fps_upg_smg_olympic_fg_lr300 mtr_lr300:0,1 |
 wpn_fps_upg_vg_ass_smg_afg afg:-0.7,-0.7 |
 wpn_fps_upg_vg_ass_smg_verticalgrip mtr_vertical_grip:0,-1 |
 wpn_fps_upg_winchester_o_classic mtr_scope:-1,0 |
-wpn_lmg_rpk_m_drum |
+wpn_lmg_rpk_m_drum drum:1,0 mtr_bullet:0,1 |
 wpn_upg_ak_fg_combo1 aims:-1,0 ultimak:1,0 |
 wpn_upg_ak_fg_combo2 handguard_lower_wood:-0.7,-0.7 ultimak:1,0 |
 wpn_upg_ak_fg_combo3 lower_rail:0,-1 ultimak:1,0 |
-wpn_upg_ak_fg_combo3_slavic afg:-0.7,-0.7 aims:-1,0 ak74_dustcover:1,0 ak_base:-1,0 ak_stockadapter:0,1 akm_barrel:-1,0 akm_mag:1,0 cover:-0.7,0.7 drum:1,0 folding:0,-1 handguard_lower_wood:-0.7,-0.7 handguard_upper_wood:0.7,0.7 lower_rail:0,-1 mtr_bullet:0,1 mtr_fore:0,1 pistolgrip:-0.7,-0.7 psl:0.7,0.7 sk_foldable:0.7,-0.7 stock_pts:1,0 surefire:0,1 ultimak:1,0 | mtr_eotech
 wpn_upg_ak_fg_combo4 aims:-1,0 handguard_upper_wood:0.7,0.7 |
 wpn_upg_ak_fg_legend handguard_upper_wood:0.7,0.7 mtr_fore:0,1 |
 wpn_upg_ak_fg_standard handguard_lower_wood:-0.7,-0.7 handguard_upper_wood:0.7,0.7 |
 wpn_upg_ak_fl_legend |
 wpn_upg_ak_g_standard pistolgrip:-0.7,-0.7 |
-wpn_upg_ak_m_akm |
+wpn_upg_ak_m_akm akm_mag:1,0 mtr_bullet:0,1 |
 wpn_upg_ak_s_adapter ak_stockadapter:0,1 |
 wpn_upg_ak_s_folding folding:0,-1 |
 wpn_upg_ak_s_psl psl:0.7,0.7 |
 wpn_upg_ak_s_skfoldable sk_foldable:0.7,-0.7 |
 wpn_upg_o_marksmansight_front front1:0.7,0.7 rear:0.7,-0.7 |
 wpn_upg_saiga_fg_lowerrail lower_rail:0,-1 |
-wpn_upg_saiga_fg_lowerrail_short ak_base:-1,0 cover:-0.7,0.7 lower_rail:0,-1 saiga_20rnd:-0.7,-0.7 saiga_5rnd:-1,0 saiga_barrel:0,-1 saiga_handguard:-0.7,0.7 slug:0,1 |
 wpn_upg_saiga_fg_standard saiga_handguard:-0.7,0.7 |

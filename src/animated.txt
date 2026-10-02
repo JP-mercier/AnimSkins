@@ -136,7 +136,6 @@ mag44 e
 mag_extended w
 mag_standard w
 mag_std sw
-mat_aim_glow e
 mat_ak_base w
 mat_ammo_belt w
 mat_ammopouch w
@@ -289,7 +288,6 @@ mat_mag_extension s
 mat_mag_standard ne
 mat_mag_stick w
 mat_mag_stock s
-mat_mag_transparent ne
 mat_magazine w
 mat_magazine02 e
 mat_magazine_horse se
@@ -307,7 +305,6 @@ mat_omega nw
 mat_perst n
 mat_pipe_long e
 mat_pipe_short sw
-mat_plastic s
 mat_poker_chip n
 mat_pump se
 mat_putnik ne
@@ -854,7 +851,6 @@ mtr_sko12_draghandle w
 mtr_sko12_fg_rail w
 mtr_sko12_lower_reciever s
 mtr_sko12_mag_drum ne
-mtr_sko12_mag_drum_window ne
 mtr_sko12_mfg_grip e
 mtr_sko12_rail_ext nw
 mtr_sko12_shell se
@@ -989,7 +985,6 @@ rx01_third se
 rx30 sw
 rx30_third w
 s_standard ne
-saiga_20rnd sw
 saiga_5rnd w
 saiga_barrel s
 saiga_handguard nw

@@ -42,7 +42,7 @@ DEFAULT_SKIN = "default"     # id from src/skins.json
 SCROLL_SPEED = 0.1           # UV units per second
 GLOW_MULTIPLIER = 5          # il_multiplier
 GLOW_BLOOM = 1.0             # il_bloom
-BLACK_PARTS = True           # draw the parts in src/black_parts.txt (the magazines) solid black
+BLACK_PARTS = False          # draw the parts in src/black_parts.txt (the magazines) solid black
 
 # Scroll direction in UV space (u, v), scaled by SCROLL_SPEED. Same names as Inversion Universal.
 DIRECTIONS = {

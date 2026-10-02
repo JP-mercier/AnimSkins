@@ -43,12 +43,7 @@
 		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il" />
 		<variable name="falloff_exp" type="scalar" value="1000" />
 	</material>
-	<material id="gfx_reddot/6" name="gfx_reddot" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2">
-		<variable name="intensity" type="scalar" value="match" />
-		<diffuse_texture file="$diffuse" />
-		<variable name="falloff_exp" type="scalar" value="1000" />
-	</material>
-	<material id="gfx_reddot/7" name="gfx_reddot" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" unique="true" version="2">
+	<material id="gfx_reddot/6" name="gfx_reddot" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" unique="true" version="2">
 		<variable name="intensity" type="scalar" value="reddot" />
 		<diffuse_texture file="$diffuse" />
 		<variable name="falloff_exp" type="scalar" value="1000" />
@@ -260,17 +255,13 @@
 		<reflection_texture global_texture="current_global_texture" type="cube" />
 		<bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_aug_pts/wpn_fps_ass_aug_mag_nm" />
 	</material>
-	<material id="mag_third" name="mag_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_g3_pts/g3_third_m_mag_nm" />
-	</material>
-	<material id="mat_aim_glow/2" name="mat_aim_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2">
-		<diffuse_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_df" />
+	<material id="mat_aim_glow" name="mat_aim_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2">
+		<diffuse_texture file="units/pd2_dlc_icc/weapons/wpn_fps_pis_judge_body_modern/aim_glow_df" />
 		<variable name="intensity" type="scalar" value="reddot" />
 		<variable name="falloff_exp" type="scalar" value="15.210099660027" />
 	</material>
-	<material id="mat_aim_glow/3" name="mat_aim_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2">
-		<diffuse_texture file="units/pd2_dlc_icc/weapons/wpn_fps_pis_judge_body_modern/aim_glow_df" />
+	<material id="mat_aim_glow/2" name="mat_aim_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2">
+		<diffuse_texture file="units/pd2_dlc_khp/weapons/wpn_fps_pis_legacy_pts/wpn_fps_pis_legacy_sl_standard_df" />
 		<variable name="intensity" type="scalar" value="reddot" />
 		<variable name="falloff_exp" type="scalar" value="15.210099660027" />
 	</material>
@@ -294,15 +285,7 @@
 		<reflection_texture file="units/payday2/cubemaps/cubemap_silver_df" type="cubemap" />
 		<variable name="fresnel_settings" type="vector3" value="2 1 -0.5" />
 	</material>
-	<material id="mat_grip_s_third" name="mat_grip_s_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_grip_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_grip_nm" />
-	</material>
-	<material id="mat_mag_third" name="mat_mag_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_magazine_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_magazine_nm" />
-	</material>
-	<material id="mat_mag_transparent/2" name="mat_mag_transparent" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+	<material id="mat_mag_transparent" name="mat_mag_transparent" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
 		<variable name="fresnel_settings" type="vector3" value="0.2 0.15 0.10" />
 		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
 		<diffuse_texture file="units/pd2_dlc_mxm/weapons/wpn_fps_upg_mxm_m4/mag_strike_df" />
@@ -317,20 +300,12 @@
 		<material_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_ass_tkb_pts/wpn_fps_ass_tkb_o_tritium_gsma" />
 		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_ass_tkb_pts/wpn_fps_ass_tkb_o_tritium_nm" />
 	</material>
-	<material id="mat_plastic/2" name="mat_plastic" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+	<material id="mat_plastic" name="mat_plastic" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
 		<variable name="fresnel_settings" type="vector3" value="0 0 0.21999999880791" />
 		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
 		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_fps_smg_shepheard_magazine_df" />
 		<reflection_texture global_texture="current_global_texture" type="cube" />
 		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_fps_smg_shepheard_magazine_nm" />
-	</material>
-	<material id="mat_receiver_bot_s_third" name="mat_receiver_bot_s_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_rec_bot_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_rec_bot_nm" />
-	</material>
-	<material id="mat_receiver_top_s_third" name="mat_receiver_top_s_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_rec_top_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_rec_top_nm" />
 	</material>
 	<material id="mat_shadow" name="mat_shadow" render_template="effect:BLEND_MUL:DIFFUSE0_TEXTURE:FPS" version="2">
 		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/shadow_mullplan_df" />
@@ -355,22 +330,9 @@
 		<material_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/victor_sights_gsma" />
 		<bump_normal_texture file="units/pd2_dlc_savi/weapons/wpn_fps_snp_victor_pts/victor_sights_nm" />
 	</material>
-	<material id="mat_sights1/2" name="mat_sights1" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="$diffuse" />
-		<material_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_snp_scout_pts/scout_sight_gsma" />
-		<bump_normal_texture file="units/pd2_dlc_pxp1/weapons/wpn_fps_snp_scout_pts/scout_sight_nm" />
-	</material>
-	<material id="mat_stock_s_third" name="mat_stock_s_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_stock_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_stock_nm" />
-	</material>
 	<material id="mat_third_barrel" name="mat_third_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
 		<diffuse_texture file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928_pts/wpn_third_smg_thompson_barrel_df" />
 		<bump_normal_texture file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928_pts/wpn_third_smg_thompson_barrel_nm" />
-	</material>
-	<material id="mat_third_barrel/2" name="mat_third_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_barrel_standard_df" />
-		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_barrel_standard_nm" />
 	</material>
 	<material id="mat_third_body" name="mat_third_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
 		<diffuse_texture file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928_pts/wpn_third_smg_thompson_body_df" />
@@ -387,14 +349,6 @@
 	<material id="mat_third_grip" name="mat_third_grip" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
 		<diffuse_texture file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928_pts/wpn_third_smg_thompson_grip_df" />
 		<bump_normal_texture file="units/pd2_dlc_pines/weapons/wpn_fps_smg_m1928_pts/wpn_third_smg_thompson_grip_nm" />
-	</material>
-	<material id="mat_third_korth_ck_body" name="mat_third_korth_ck_body" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_pis_korth_pts/korth_third_conversionkit_mainbody_nm" />
-	</material>
-	<material id="mat_third_korth_ck_chamber" name="mat_third_korth_ck_chamber" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_pis_korth_pts/korth_third_conversionkit_chamber_nm" />
 	</material>
 	<material id="mat_wpn_fps_3gl_sights/2" name="mat_wpn_fps_3gl_sights" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:GSMA_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
 		<diffuse_texture file="$diffuse" />
@@ -432,10 +386,6 @@
 		<variable name="intensity" type="scalar" value="reddot" />
 		<diffuse_texture file="units/pd2_dlc_gage_snp/weapons/wpn_effects_textures/wpn_effect_rangefinder_dds_df" />
 	</material>
-	<material id="mtr_eotech/2" name="mtr_eotech" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/payday2/weapons/wpn_fps_upg_o_eotech/wpn_fps_upg_o_eotech_nm" />
-	</material>
 	<material id="mtr_glass" decal_material="glass_breakable" name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
 		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/green_glass_df" />
 		<opacity_texture file="units/payday2/weapons/wpn_fps_upg_o_docter/wpn_fps_upg_o_docter_op" />
@@ -449,12 +399,6 @@
 		<variable name="fresnel_settings" type="vector3" value="0.34999999403954 0.6599999666214 1" />
 	</material>
 	<material id="mtr_glass/11" decal_material="glass_breakable" name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
-		<diffuse_texture file="$diffuse" />
-		<opacity_texture file="units/payday2/weapons/wpn_fps_upg_o_eotech/wpn_eotech_glass_op" />
-		<reflection_texture global_texture="current_global_texture" type="cubemap" />
-		<variable name="fresnel_settings" type="vector3" value="0.91999995708466 0 1" />
-	</material>
-	<material id="mtr_glass/12" decal_material="glass_breakable" name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
 		<diffuse_texture file="$diffuse" />
 		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
 		<reflection_texture global_texture="current_global_texture" type="cubemap" />
@@ -515,6 +459,13 @@
 		<diffuse_texture file="units/payday2_cash/safes/surf/weapons/wpn_fps_shot_r870_b_legend/glow_lightblue_il" />
 		<variable name="falloff_exp" type="scalar" value="300" />
 	</material>
+	<material id="mtr_katabatic_trans/2" name="mtr_katabatic_trans" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+		<variable name="fresnel_settings" type="vector3" value="0 1 0.5" />
+		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
+		<diffuse_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_hailstorm_pts/conversion_collimator_df" />
+		<reflection_texture global_texture="current_global_texture" type="cube" />
+		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_hailstorm_pts/conversion_collimator_nm" />
+	</material>
 	<material id="mtr_mag/2" name="mtr_mag" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
 		<variable name="fresnel_settings" type="vector3" value="0 0 0.21999999880791" />
 		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
@@ -563,16 +514,19 @@
 		<bump_normal_texture file="units/pd2_dlc_tawp/weapons/wpn_fps_ass_shak12_pts/sights_nm" />
 		<reflection_texture file="environments/cubemaps/weapon_cube" type="cubemap" />
 	</material>
-	<material id="mtr_sko12_mag_drum_window/2" name="mtr_sko12_mag_drum_window" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+	<material id="mtr_sko12_mag_drum_window" name="mtr_sko12_mag_drum_window" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
 		<variable name="fresnel_settings" type="vector3" value="0 0 0.21999999880791" />
 		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
 		<diffuse_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/mag_drum_df" />
 		<reflection_texture global_texture="current_global_texture" type="cube" />
 		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/mag_drum_nm" />
 	</material>
-	<material id="mtr_stock_adapter_third" name="mtr_stock_adapter_third" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_s_adapter_df" />
-		<bump_normal_texture file="units/pd2_dlc_joy/weapons/wpn_fps_smg_shepheard_pts/wpn_third_smg_shepheard_s_adapter_nm" />
+	<material id="mtr_sko12_mag_drum_window/2" name="mtr_sko12_mag_drum_window" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2">
+		<variable name="fresnel_settings" type="vector3" value="0 0 0" />
+		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
+		<diffuse_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/mag_drum_conversion_df" />
+		<reflection_texture global_texture="current_global_texture" type="cube" />
+		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_sho_sko12_pts/mag_drum_conversion_nm" />
 	</material>
 	<material id="mtr_third_contender_barrel" name="mtr_third_contender_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
 		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_snp_contender_pts/wpn_third_snp_contender_barrel_df" />
@@ -597,30 +551,6 @@
 	<material id="mtr_third_contender_suppresor" name="mtr_third_contender_suppresor" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
 		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_snp_contender_pts/wpn_third_snp_contender_suppressor_df" />
 		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_snp_contender_pts/wpn_third_snp_contender_suppressor_nm" />
-	</material>
-	<material id="mtr_third_cyl" name="mtr_third_cyl" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_pis_korth_pts/korth_third_mag_6_nm" />
-	</material>
-	<material id="mtr_third_fg" name="mtr_third_fg" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP:NORMALMAP_UV1" version="2">
-		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_foregrip_df" />
-		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_foregrip_nm" />
-	</material>
-	<material id="mtr_third_korth_grip_03" name="mtr_third_korth_grip_03" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_pxp2/weapons/wpn_fps_pis_korth_pts/korth_third_grip_hogue_nm" />
-	</material>
-	<material id="mtr_third_mainbody_a" name="mtr_third_mainbody_a" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_mainbody_a_df" />
-		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_mainbody_a_nm" />
-	</material>
-	<material id="mtr_third_mainbody_b" name="mtr_third_mainbody_b" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_mainbody_b_df" />
-		<bump_normal_texture file="units/pd2_dlc_pxp3/weapons/wpn_fps_lmg_hcar_pts/hcar_third_mainbody_b_nm" />
-	</material>
-	<material id="mtr_third_sniper_barrel" name="mtr_third_sniper_barrel" render_template="generic:DIFFUSE_TEXTURE:NORMALMAP" version="2">
-		<diffuse_texture file="$diffuse" />
-		<bump_normal_texture file="units/pd2_dlc_gage_assault/weapons/wpn_fps_ass_g3_pts/g3_third_b_sniper_nm" />
 	</material>
 	<material id="mtr_vr_lens" name="mtr_vr_lens" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2">
 		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/vr_crosshair_vr_lens_color_df" />

@@ -34,10 +34,10 @@ AnimSkins Tuner requires AnimSkins. AnimSkins works on its own, showing the defa
 | Your own weapons, first person | Teammates, bots, enemies, lobby characters |
 | Weapons wearing a game weapon skin (covered by the animated skin) | Melee weapons and throwables |
 | Inventory and customization previews (optional, see the Tuner's `Show in menus`) | Custom weapons added by other mods |
-| Every vanilla weapon part with a mesh: 1,788 material configs, read from the game (see [Part data](#part-data)) | VR |
+| Every vanilla weapon part with a mesh: 1,909 material configs, read from the game (see [Part data](#part-data)) | VR |
 | Sights (optional, see the Tuner's `Animate sights`) | |
 
-Magazines (208 configs) are drawn solid black with no glow. Set `BLACK_PARTS = False` in `tools/build.py` and rebuild to animate them.
+Magazines are animated like every other part. To draw them solid black with no glow instead (the 3.1 look), set `BLACK_PARTS = True` in `tools/build.py` and rebuild; `src/black_parts.txt` lists them.
 
 Within a part, every solid surface is animated. Glass, reticles, transparent windows, fake shadows and other effect shaders keep their vanilla look, and so do meshes bent by bones (bow and crossbow strings).
 
@@ -90,7 +90,7 @@ After each swap, `AnimSkins.swapped[weapon]` records the part units and configs,
 
 **Tuner (`mods/AnimSkins Tuner/`).** Writes only to part units AnimSkins swapped, only while they still wear that config, and only to the materials `skin_materials.txt` lists for it: animated materials (both textures) and static materials showing the skin's base (diffuse only). Scope glass, reticles and lasers are never touched. `Application:set_material_texture` on a material without that texture slot faults in the render thread, and `pcall` cannot catch it. Textures are bound only once the engine reports them loaded. Settings are re-applied from the `AnimSkinsSwapped` hook, because `set_material_config` rebuilds a unit's materials.
 
-**Configs.** Each config declares exactly the materials of its mesh, first-person variant only, and every material is `unique="true"`. The engine shares one material instance between all units wearing the same config. Without `unique`, a part fitted to both weapons (a suppressor, a sight) would show whichever skin the Tuner wrote last on both. Vanilla's `_cc` configs are unique for the same reason. The 1,788 configs come out as 1,370 files, because byte-identical ones share a file.
+**Configs.** Each config declares exactly the materials of its mesh, first-person variant only, and every material is `unique="true"`. The engine shares one material instance between all units wearing the same config. Without `unique`, a part fitted to both weapons (a suppressor, a sight) would show whichever skin the Tuner wrote last on both. Vanilla's `_cc` configs are unique for the same reason. The 1,909 configs come out as 1,430 files, because byte-identical ones share a file.
 
 **Lookup.** A part is matched by the config it is wearing (`unit:material_config()`), its `_cc` variant or AnimSkins' own, before falling back to the factory data. Several parts are built from another part's mesh and wear that part's config, as named in their `.object` file, so their own unit path matches nothing.
 
@@ -158,7 +158,7 @@ Defaults baked into the configs are at the top of `tools/build.py`: `DEFAULT_SKI
 
 ## Troubleshooting
 
-At startup, `mods/logs` shows `[AnimSkins] 1788 weapon parts mapped`, then `swap #N: X of Y parts, Z waiting for their config to load` for the first 20 weapons. Parts that were waiting pick the skin up the next time the weapon is rebuilt (re-equip it).
+At startup, `mods/logs` shows `[AnimSkins] 1909 weapon parts mapped`, then `swap #N: X of Y parts, Z waiting for their config to load` for the first 20 weapons. Parts that were waiting pick the skin up the next time the weapon is rebuilt (re-equip it).
 
 | Symptom | Cause |
 | --- | --- |
@@ -173,6 +173,7 @@ At startup, `mods/logs` shows `[AnimSkins] 1788 weapon parts mapped`, then `swap
 - Every solid surface is animated. Effect, glass and decal materials (73 were animated) and bow strings keep their vanilla look.
 - Materials are `unique`: a part fitted to both weapons shows each weapon's own skin.
 - Parts are matched by the config they wear, which covers parts built from another part's mesh.
+- Magazines are animated by default (`BLACK_PARTS = False`).
 - Tuner: `Animate attachments` and `Animate sights` options.
 
 ### 3.1 (Tuner 2.1)
