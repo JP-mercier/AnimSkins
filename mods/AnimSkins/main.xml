@@ -139,6 +139,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_g_retro"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_g_sniper"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_m_mag"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_m_mag_psg"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_s_sniper"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_g3_s_wood"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_galil_body_standard"/>
@@ -182,6 +183,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_jae"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_legendary"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_lower"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_lower_empty"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_lower_legendary"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_ruger"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_m14_body_ruger_rail"/>
@@ -212,6 +214,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_shak12_m_magazine25"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_shak12_ns_muzzle"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_shak12_ns_suppressor"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_shak12_o_carry_dummy"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_shak12_o_sight"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_sub2000_body_gen1"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_sub2000_body_gen2"/>
@@ -232,6 +235,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tecci_upper_reciever"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tecci_vg_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tkb_barrels"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tkb_barrels_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tkb_body_front"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tkb_body_pouch"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_ass_tkb_body_rear"/>
@@ -293,6 +297,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_long_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_long_m_explosive"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_long_m_poison"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_plainsrider_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_plainsrider_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bow_plainsrider_m_explosive"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_bullet_belt_0"/>
@@ -310,6 +315,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_fla_system_m_low"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_fla_system_m_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_3gl_barrel"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_3gl_barrel_dummy"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_3gl_barrel_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_3gl_grenade"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_3gl_lower_reciever"/>
@@ -327,12 +333,15 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_arbiter_s_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_china_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_china_m_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_hornet"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m32_barrel"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m32_mag"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m32_mag_incendiary"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m32_stock_adapter"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m79_barrel"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m79_barrelcatch"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m79_grenade"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m79_grenade_whole_incendiary"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_m79_stock"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_ray_body"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_gre_ray_bolt"/>
@@ -352,6 +361,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_b_std"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_b_suppressed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_body"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_conv_b_std"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_conv_fl"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_conv_fl_2"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_fl_flash"/>
@@ -361,6 +371,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_hailstorm_o_irons"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_body_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_body_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_brl_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_brl_dmr"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_brl_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hcar_fg"/>
@@ -386,6 +397,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hk51b_ns_jcomp"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hk51b_s_collapsed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_hk51b_upper"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_kacchainsaw_b_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_kacchainsaw_b_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_kacchainsaw_b_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_kacchainsaw_b_standard"/>
@@ -425,6 +437,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_m60_upper_reciever"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_mg42_b_mg34"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_mg42_b_mg42"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_mg42_n34"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_mg42_n38"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_mg42_reciever"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_lmg_par_body_standard"/>
@@ -444,6 +457,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m16_fg_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m16_fg_vietnam"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m16_s_solid"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_bolt_edge"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_lower_reciever"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_upg_b_sd_smr"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_upg_fg_mk12"/>
@@ -456,6 +470,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_draghandle"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_draghandle_ballos"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_draghandle_core"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_draghandle_radian"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_fg_lr300"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_fg_radian"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_m4_uupg_fg_rail"/>
@@ -520,6 +535,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_breech_g_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_breech_mag"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_c96_m_extended"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_c96_nozzle"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_c96_sight"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_chinchilla_b_satan"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_chinchilla_b_standard"/>
@@ -540,6 +556,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_czech_ns_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_czech_s_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_czech_sl_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_b_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_b_legend"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_b_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_b_modern"/>
@@ -557,6 +574,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_o_standard_front"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_deagle_o_standard_rear"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_g17"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_g17_b_ck"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_g17_m_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_g18c_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_g18c_co_1"/>
@@ -594,9 +612,11 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_judge_body_modern"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_judge_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_judge_g_legend"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_judge_g_modern"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_b_railed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_body"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_body_conversionkit"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_fl_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_g_ergo"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_pis_korth_g_hogue"/>
@@ -823,6 +843,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_saiga_b_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_saiga_fg_holy"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_sko12_b_long"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_sko12_b_standard_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_sko12_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_sko12_dh"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_sho_sko12_fg_rail"/>
@@ -936,6 +957,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_erma_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_erma_extra_rail"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_erma_mag_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_fmg9_b_dummy"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_fmg9_body"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_fmg9_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_fmg9_dh"/>
@@ -1032,6 +1054,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_scorpion_g_wood"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_scorpion_m_extended"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_scorpion_s_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_shepheard_b_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_shepheard_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_shepheard_body"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_shepheard_g_standard"/>
@@ -1058,6 +1081,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_sterling_s_solid"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_tec9_b_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_tec9_ns_ext"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_thompson_ns_no"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_thompson_stock_nostock"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_uzi_b_suppressed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_smg_uzi_body_standard"/>
@@ -1080,6 +1104,8 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_b_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_bipod"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ck_1_b_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ck_2_b_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_dh_speed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_dh_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ext_shellrack"/>
@@ -1088,10 +1114,12 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_m_speed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_m_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ns_muzzle"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ns_muzzle_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_ns_suppressor"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_reciever"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_stock_lightweight"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_awp_stock_solid"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_contender_barrel_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_contender_barrel_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_contender_bullet"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_contender_frontgrip_long"/>
@@ -1115,10 +1143,12 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_model70_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_model70_s_legend"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_mosin_b_medium"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_mosin_b_medium_black"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_mosin_body_black"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_mosin_ns_bayonet"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_msr_body_msr"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_msr_body_wood"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_msr_ns_suppressor_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_qbu88_b_long"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_qbu88_b_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_qbu88_b_standard"/>
@@ -1149,6 +1179,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_sbl_o_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_sbl_s_saddle"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_scout_b_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_scout_body_conversion"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_scout_body_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_scout_bolt_speed"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_scout_bolt_standard"/>
@@ -1182,6 +1213,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_tti_ns_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_tti_s_vltor"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_tti_vg_standard"/>
+		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_victor_b_sbr"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_victor_b_standard"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_victor_body_receiver_lower"/>
 		<material_config path="units/mods/animskins3/materials/wpn_fps_snp_victor_body_receiver_upper"/>
@@ -1386,6 +1418,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_combo1"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_combo2"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_combo3"/>
+		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_combo3_slavic"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_combo4"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_legend"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_fg_standard"/>
@@ -1398,6 +1431,7 @@
 		<material_config path="units/mods/animskins3/materials/wpn_upg_ak_s_skfoldable"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_o_marksmansight_front"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_saiga_fg_lowerrail"/>
+		<material_config path="units/mods/animskins3/materials/wpn_upg_saiga_fg_lowerrail_short"/>
 		<material_config path="units/mods/animskins3/materials/wpn_upg_saiga_fg_standard"/>
 	</AddFiles>
 </table>

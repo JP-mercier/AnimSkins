@@ -2,7 +2,7 @@
 	"name" : "AnimSkins PartDumper",
 	"description" : "Development tool for AnimSkins. At the main menu, writes every weapon part's material config to mods/saves/animskins_part_dump.txt for tools/build.py --import-dump. Reads game files only. Remove it afterwards.",
 	"author" : "jpmercier",
-	"version" : "1.0",
+	"version" : "1.1",
 	"blt_version" : 2,
 	"hooks" : [
 		{ "hook_id" : "lib/managers/menumanager", "script_path" : "dump.lua" }

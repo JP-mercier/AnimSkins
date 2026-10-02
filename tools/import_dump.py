@@ -11,6 +11,7 @@ its shader:
     generic with SKINNED_*        static, the vanilla definition: meshes bent by bones (bow and
                                   crossbow strings) need the skinned shader
 
+Entries the dump does not cover are kept unchanged, so a dump can add and correct but never remove.
 Parts whose config the factory data names by Idstring only are dumped as "?<part id>";
 src/explicit_configs.txt gives their paths. New magazine parts are appended to src/black_parts.txt.
 
@@ -138,6 +139,31 @@ def import_dump(dump_path):
                 refs.append(("a", name))
         parts[path] = [path, by_path[path].get("group", "-"), *refs]
 
+    # Entries the dump does not cover are kept as they are, so a dump that misses some units can
+    # never take coverage away. Their static definitions come over from the old static.xml.
+    old_static = {el.get("id"): el for el in ET.parse(SRC / "static.xml").getroot()}
+    kept = sorted(old_parts.keys() - parts.keys())
+    for path in kept:
+        refs = []
+        for ref in old_parts[path][2:]:
+            if ref in old_static:
+                el = old_static[ref]
+                key = canon(el)
+                if key not in static_by_canon:
+                    sid, n = el.get("name"), 1
+                    while sid in static:
+                        n += 1
+                        sid = f"{el.get('name')}/{n}"
+                    copy = ET.Element("material", {"id": sid, **{k: v for k, v in el.attrib.items() if k != "id"}})
+                    copy.extend(ET.Element(c.tag, dict(c.attrib)) for c in el)
+                    static[sid] = copy
+                    static_by_canon[key] = sid
+                refs.append(("s", static_by_canon[key]))
+            else:
+                animated.setdefault(ref, old_directions.get(ref) or direction_for(ref))
+                refs.append(("a", ref))
+        parts[path] = [path, old_parts[path][1], *refs]
+
     # Every ref must be unambiguous: a static id that is also an animated name gets a suffix.
     renames = {}
     for sid in sorted(static):
@@ -171,9 +197,8 @@ def import_dump(dump_path):
         black_file.write_text("\n".join(black_lines + added_black) + "\n", newline="\n")
 
     added = sorted(lines.keys() - old_parts.keys())
-    dropped = sorted(old_parts.keys() - lines.keys())
     changed = sum(1 for k in lines.keys() & old_parts.keys() if lines[k] != old_parts[k])
-    print(f"import: {len(lines)} configs ({len(added)} new, {changed} changed, {len(dropped)} dropped: no part wears them); "
+    print(f"import: {len(lines)} configs ({len(added)} new, {changed} changed, {len(kept)} not in the dump, kept as they were); "
           f"{len(animated)} animated names ({new_names} new), {len(static)} static materials; "
           f"{len(added_black)} magazines added to black_parts.txt")
     if unresolved:

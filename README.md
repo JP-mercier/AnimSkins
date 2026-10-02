@@ -98,14 +98,14 @@ After each swap, `AnimSkins.swapped[weapon]` records the part units and configs,
 
 ## Part data
 
-`src/parts.txt` lists, per vanilla material config, its material group and the materials of its mesh. It is generated from the game: `tools/PartDumper` is a development mod that reads the `.unit` → `.object` → `.material_config` chain of every part in `tweak_data.weapon.factory.parts` at the main menu and writes them to `mods/saves/animskins_part_dump.txt`. Nothing in the game is changed.
+`src/parts.txt` lists, per vanilla material config, its material group and the materials of its mesh. It is generated from the game: `tools/PartDumper` is a development mod that reads the `.unit` → `.object` → `.material_config` chain of every part in `tweak_data.weapon.factory.parts`, and of every unit a part or weapon `override` puts in a part's place (conversion kits, the Judge's modern grip), at the main menu and writes them to `mods/saves/animskins_part_dump.txt`. Nothing in the game is changed.
 
 After a game update that adds weapons or parts:
 
 1. Copy `tools/PartDumper` to `PAYDAY 2/mods/`, start the game, wait for the PartDumper dialog at the main menu, then remove the mod.
 2. `python tools/build.py --import-dump "<PAYDAY 2>/mods/saves/animskins_part_dump.txt"`
 
-The import (`tools/import_dump.py`) rebuilds `parts.txt`, `animated.txt` and `static.xml`. A `generic` material without `SKINNED_*` is animated and keeps its scroll direction; a new name gets one derived from its name. `effect`, `opacity` and `decal` materials, and skinned ones, keep their vanilla definition. New magazine parts are added to `black_parts.txt`. Parts whose config the factory data names by Idstring only cannot be resolved from the dump; `src/explicit_configs.txt` lists their paths, and the import reports any that are missing.
+The import (`tools/import_dump.py`) rebuilds `parts.txt`, `animated.txt` and `static.xml`. A `generic` material without `SKINNED_*` is animated and keeps its scroll direction; a new name gets one derived from its name. `effect`, `opacity` and `decal` materials, and skinned ones, keep their vanilla definition. New magazine parts are added to `black_parts.txt`. Parts whose config the factory data names by Idstring only cannot be resolved from the dump; `src/explicit_configs.txt` lists their paths, and the import reports any that are missing. Entries the dump does not mention are kept unchanged, so an import can add and correct coverage but never remove it.
 
 ## Repository layout
 

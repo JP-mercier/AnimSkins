@@ -1,0 +1,235 @@
+<materials version="3" group="weapon_hailstorm">
+	<material name="gfx_reddot" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" unique="true" version="2">
+		<variable name="intensity" type="scalar" value="reddot" />
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<variable name="falloff_exp" type="scalar" value="1000" />
+	</material>
+	<material name="gfx_specter" render_template="effect:DIFFUSE0_TEXTURE:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<variable name="intensity" type="scalar" value="reddot" />
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<variable name="falloff_exp" type="scalar" value="500" />
+	</material>
+	<material name="mtr_barrel_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_brace_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_buttpad" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_claymore" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_claymore_transparency" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_extension" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_fl_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material decal_material="glass_breakable" name="mtr_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
+		<reflection_texture global_texture="current_global_texture" type="cubemap" />
+		<variable name="fresnel_settings" type="vector3" value="0 1 0.5" />
+	</material>
+	<material name="mtr_grip" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_gyrojet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_hailstorm_flash" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_irons" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_katabatic" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_katabatic_trans" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 -0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_lower" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_lower_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_mag_solid" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_mag_transparency" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_mullplan" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_muzzle" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_stock" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_stock_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_suppressor" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_upper" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_upper_conv" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_vr_lens" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<opacity_texture file="units/payday2/weapons/wpn_effects_textures/vr_crosshair_vr_lens_df" />
+		<reflection_texture global_texture="current_global_texture" type="cubemap" />
+		<variable name="fresnel_settings" type="vector3" value="0.1 0.1 0.5" />
+	</material>
+	<material name="mtr_vr_phong" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="optical" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="screen" render_template="effect:BLEND_ADD:SCOPE:SCOPE_INNER_RETICLE:SCOPE_LENSE_DISTORTION" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<variable name="scope_fadeout" type="scalar" value="0" />
+		<variable name="scope_fadeout_params" type="vector3" value="35 20 0" />
+		<macrodetail_diffuse_texture file="units/payday2/weapons/wpn_effects_textures/vr_crosshair_testimage_df" />
+		<variable name="scope_zoom" type="scalar" value="1" />
+		<variable name="scope_params" type="vector3" value="5000 12 1.5" />
+		<variable name="scope_inner_vignett" type="vector3" value="0.99 0.22 0" />
+		<variable name="scope_outer_vignett" type="vector3" value="0.99 0.2 0.2" />
+		<detail_diffuse_texture file="units/payday2/weapons/wpn_effects_textures/vr_crosshair_specter_df" />
+		<variable name="scope_inner_reticle_scale" type="scalar" value="0.3" />
+		<variable name="scope_k" type="vector3" value="0.114 -0.037 -0.190" />
+		<variable name="scope_kcube" type="vector3" value="-0.65 -0.113 0.875" />
+		<variable name="scope_distortion_params" type="vector3" value="0.17 0.2 0" />
+	</material>
+	<material name="ak_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="cover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+</materials>

@@ -1,6 +1,7 @@
 -- AnimSkins PartDumper
 --
--- Writes the material config of every weapon part in tweak_data.weapon.factory.parts to
+-- Writes the material config of every weapon part in tweak_data.weapon.factory.parts, and of every
+-- unit a part or weapon override puts in a part's place, to
 -- <SavePath>/animskins_part_dump.txt, for tools/build.py --import-dump. A part's config is the one
 -- its .object file names (diesel.materials), unless the factory data overrides it
 -- (part_data.material_config). This is the same chain the engine follows: .unit -> .object ->
@@ -94,15 +95,62 @@ local function dump()
 	end
 
 	local written, parts, failed = {}, 0, 0
-	local ids = {}
-	for part_id in pairs(tweak_data.weapon.factory.parts) do
-		table.insert(ids, part_id)
-	end
-	table.sort(ids)
+	local factory = tweak_data.weapon.factory
 
-	for _, part_id in ipairs(ids) do
-		local part = tweak_data.weapon.factory.parts[part_id]
-		if type(part) == "table" and type(part.unit) == "string" then
+	-- Every part, then every unit an override puts in a part's place: a part fitted next to another
+	-- (the Judge's modern frame swaps in its own grip) or a weapon (conversion kits, akimbo variants)
+	-- can replace a part's unit, and that unit is listed nowhere else. Override entries are named
+	-- "<owner>><part id>" and dumped once per unit.
+	local entries, seen_units = {}, {}
+	local function add(id, part, once)
+		if type(part) == "table" and type(part.unit) == "string" and not (once and seen_units[part.unit]) then
+			seen_units[part.unit] = true
+			table.insert(entries, { id = id, part = part })
+		end
+	end
+	local function sorted_keys(t)
+		local keys = {}
+		for k in pairs(t) do
+			if type(k) == "string" then
+				table.insert(keys, k)
+			end
+		end
+		table.sort(keys)
+		return keys
+	end
+	local function add_overrides(owner, override)
+		if type(override) ~= "table" then
+			return
+		end
+		for _, target in ipairs(sorted_keys(override)) do
+			local replacement = override[target]
+			if type(replacement) == "table" and type(replacement.unit) == "string" then
+				local base = factory.parts[target]
+				add(owner .. ">" .. target, {
+					unit = replacement.unit,
+					type = replacement.type or (type(base) == "table" and base.type) or nil,
+					material_config = replacement.material_config,
+				}, true)
+			end
+		end
+	end
+	for _, part_id in ipairs(sorted_keys(factory.parts)) do
+		add(part_id, factory.parts[part_id])
+	end
+	for _, part_id in ipairs(sorted_keys(factory.parts)) do
+		local part = factory.parts[part_id]
+		add_overrides(part_id, type(part) == "table" and part.override)
+	end
+	for _, factory_id in ipairs(sorted_keys(factory)) do
+		local weapon = factory[factory_id]
+		if factory_id ~= "parts" and type(weapon) == "table" then
+			add_overrides(factory_id, weapon.override)
+		end
+	end
+
+	for _, entry in ipairs(entries) do
+		local part_id, part = entry.id, entry.part
+		do
 			local ok, err = pcall(function()
 				local config, xml
 				if part.material_config then
