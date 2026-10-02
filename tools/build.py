@@ -287,7 +287,9 @@ def pack():
     files = [ROOT / "README.md"] + sorted(p for folder in mod_folders() for p in folder.rglob("*") if p.is_file())
     with zipfile.ZipFile(archive, "w", zipfile.ZIP_DEFLATED) as z:
         for path in files:
-            z.write(path, path.relative_to(ROOT))
+            # Laid out like the PAYDAY 2 folder, so the zip extracts straight into it. The README goes
+            # with the mod rather than into the game folder.
+            z.write(path, "mods/AnimSkins/README.md" if path == ROOT / "README.md" else path.relative_to(ROOT))
     print(f"{len(files)} files -> {archive.relative_to(ROOT)} ({archive.stat().st_size / 1e6:.1f} MB)")
 
 

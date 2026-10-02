@@ -15,9 +15,28 @@ Skins: Eldritch Rose, Crackle, Crystal, Interstellar, Inversion, Molton, Nebula,
 
 ## Installation
 
-1. Download the latest release zip, or the repository (Code → Download ZIP).
-2. Copy the two folders in `mods/` (`AnimSkins`, `AnimSkins Tuner`) into `PAYDAY 2/mods/`.
-3. Remove anything that swaps the same materials. For the two old packs this is automatic: at the main menu AnimSkins offers to move them to `PAYDAY 2/AnimSkins old versions/`, out of the game's reach (a restart finishes it), and `python tools/build.py --install` does the same. Nothing is deleted.
+### From the release
+
+1. Download `AnimSkins-<version>.zip` from [Releases](https://github.com/JP-mercier/AnimSkins/releases/latest).
+2. Extract it into your PAYDAY 2 folder, the one with `PAYDAY2.exe` (Steam: right-click PAYDAY 2 → Manage → Browse local files). The zip is laid out like that folder, so the mods land in `PAYDAY 2/mods/AnimSkins` and `PAYDAY 2/mods/AnimSkins Tuner`.
+3. Start the game. The settings are in Options → Mod Options → AnimSkins Tuner.
+
+### From the repository
+
+1. Code → Download ZIP, or clone the repository.
+2. Copy `mods/AnimSkins` and `mods/AnimSkins Tuner` into `PAYDAY 2/mods/`. With Python 3.10+, `python tools/build.py --install` does this, finding PAYDAY 2 through Steam.
+
+### Updating
+
+Delete `PAYDAY 2/mods/AnimSkins` and `PAYDAY 2/mods/AnimSkins Tuner`, then install the new version. Tuner settings are kept in `PAYDAY 2/mods/saves/animskins_tuner.json`.
+
+### Uninstalling
+
+Delete `PAYDAY 2/mods/AnimSkins` and `PAYDAY 2/mods/AnimSkins Tuner`. `PAYDAY 2/mods/saves/animskins_tuner.json` holds the Tuner settings and can be deleted too.
+
+### Conflicts
+
+These swap or override the same materials and should be removed. The two old packs are handled automatically: at the main menu AnimSkins offers to move them to `PAYDAY 2/AnimSkins old versions/`, out of the game's reach (a restart finishes it), and `python tools/build.py --install` does the same. Nothing is deleted.
 
 | Path | Why |
 | --- | --- |
