@@ -1,37 +1,20 @@
 <materials version="3" group="charm">
-	<material name="mtr_charm_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mtr_pumpkin" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mtr_pumpkin" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
 		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
 	</material>
-	<material name="mtr_pumpkin_il" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="ak_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="cover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mtr_charm_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
 		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mtr_pumpkin_il" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc_trik/weapons/wpn_fps_upg_charm_pumpkin/pumpkin_glow_light_df" />
+		<variable name="intensity" type="scalar" value="sun" />
 	</material>
 </materials>

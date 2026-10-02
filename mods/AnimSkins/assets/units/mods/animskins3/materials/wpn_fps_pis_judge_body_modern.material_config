@@ -1,64 +1,41 @@
 <materials version="3" group="weapon_judge_modern">
-	<material name="mat_aim_glow" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mat_judge_barrel_modern" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="0 0.1 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mat_judge_grip" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="0 -0.1 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mat_judge_modern" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mat_judge_modern_glow" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
-		<diffuse_texture file="units/mods/animskins3/default_df" />
-		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
-		<variable name="il_bloom" value="1.0" type="float" />
-		<variable name="il_multiplier" value="5" type="scalar" />
-	</material>
-	<material name="mtr_buckshot" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mtr_buckshot" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
 		<variable name="uv_speed" value="-0.07 -0.07 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
 	</material>
-	<material name="mtr_mech" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mat_judge_barrel_modern" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0 0.1 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_judge_modern" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
 		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
 	</material>
-	<material name="ak_base" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mtr_mech" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="uv_speed" value="0.1 0 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
 	</material>
-	<material name="cover" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2">
+	<material name="mat_aim_glow" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc_icc/weapons/wpn_fps_pis_judge_body_modern/aim_glow_df" />
+		<variable name="intensity" type="scalar" value="reddot" />
+		<variable name="falloff_exp" type="scalar" value="15.210099660027" />
+	</material>
+	<material name="mat_judge_modern_glow" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
 		<diffuse_texture file="units/mods/animskins3/default_df" />
 		<self_illumination_texture file="units/mods/animskins3/default_il" />
-		<variable name="uv_speed" value="-0.07 0.07 0" type="vector3" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
 		<variable name="il_bloom" value="1.0" type="float" />
 		<variable name="il_multiplier" value="5" type="scalar" />
 	</material>

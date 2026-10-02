@@ -20,6 +20,19 @@ if AS.menus == nil then
 	AS.menus = true
 end
 
+-- Set to false by the tuner's "Animate attachments" option: only the parts a weapon comes with are
+-- swapped, and every mod fitted on top of them keeps its vanilla look.
+if AS.attachments == nil then
+	AS.attachments = true
+end
+
+-- Set to true by the tuner's "Animate sights" option. Off, sights keep their vanilla look: scopes,
+-- red dots and iron sights (factory type "sight") and offset sights and magnifiers (sub_type
+-- "second_sight"). Their glass and reticles stay vanilla either way.
+if AS.sights == nil then
+	AS.sights = false
+end
+
 -- weapon base -> { { unit = part unit, config = config name, ids = config Idstring }, ... }
 AS.swapped = AS.swapped or setmetatable({}, { __mode = "k" })
 
@@ -27,6 +40,9 @@ local IDS_MATERIAL_CONFIG = Idstring("material_config")
 
 -- Each line of material_configs.txt is "<vanilla path> <config name>". Parts whose configs are
 -- identical share one file, so several vanilla paths can name the same config.
+--
+-- Keyed by every config a part can be wearing when it is looked up: the vanilla one, its weapon
+-- skin variant (_cc), and ours (a weapon that is rebuilt is already wearing it).
 local replacements = {}
 local count = 0
 
@@ -34,14 +50,27 @@ for line in io.lines(ModPath .. "material_configs.txt") do
 	local vanilla, name = line:match("^%s*(%S+)%s+(%S+)%s*$")
 
 	if vanilla then
-		replacements[Idstring(vanilla):key()] = { name = name, ids = Idstring(AS.MATERIALS_DIR .. name) }
+		local replacement = { name = name, ids = Idstring(AS.MATERIALS_DIR .. name) }
+		replacements[Idstring(vanilla):key()] = replacement
+		replacements[Idstring(vanilla .. "_cc"):key()] = replacements[Idstring(vanilla .. "_cc"):key()] or replacement
+		replacements[replacement.ids:key()] = replacement
 		count = count + 1
 	end
 end
 
 log("[AnimSkins] " .. count .. " weapon parts mapped")
 
-local function replacement_for(part_data)
+local function replacement_for(part_data, unit)
+	-- The config the part is actually wearing. Several parts are built from another part's mesh and
+	-- wear that part's config (their .unit names it), so their own unit path matches nothing.
+	if unit and alive(unit) then
+		local replacement = replacements[unit:material_config():key()]
+
+		if replacement then
+			return replacement
+		end
+	end
+
 	-- Same default the vanilla code falls back to when it restores a part's material config.
 	local vanilla = part_data.material_config or part_data.unit
 
@@ -71,6 +100,40 @@ local function wanted(self)
 	return not self:is_npc() and not _G.IS_VR and managers.dyn_resource and (AS.menus or in_game())
 end
 
+-- The parts a weapon comes with: its default blueprint, plus the parts those add (a default barrel
+-- can bring its own front sight, for example). Assembled the way vanilla assembles any blueprint,
+-- once per factory id.
+local stock_parts = {}
+
+local function is_stock(factory_id, part_id)
+	local stock = stock_parts[factory_id]
+
+	if not stock then
+		local factory = managers.weapon_factory
+		local default = factory:get_default_blueprint_by_factory_id(factory_id)
+		local ok, assembled = pcall(factory.get_assembled_blueprint, factory, factory_id, default)
+
+		stock = {}
+		for _, id in ipairs(ok and type(assembled) == "table" and assembled or default) do
+			stock[id] = true
+		end
+		stock_parts[factory_id] = stock
+	end
+
+	return stock[part_id] or false
+end
+
+local function is_sight(part_data)
+	return part_data.type == "sight" or part_data.sub_type == "second_sight"
+end
+
+local function animate_part(self, part_id, part_data)
+	if not AS.sights and is_sight(part_data) then
+		return false
+	end
+	return AS.attachments or is_stock(self._factory_id, part_id)
+end
+
 -- A weapon wearing a game weapon skin gets our configs through the skin system itself.
 --
 -- For a skinned weapon, vanilla _update_materials asks _material_config_name which config each
@@ -91,8 +154,9 @@ if material_config_name and not AS._name_wrapped then
 	AS._name_wrapped = true
 
 	function NewRaycastWeaponBase:_material_config_name(part_id, part_data, use_cc_material_config, force_third_person, ...)
-		if use_cc_material_config and not force_third_person and part_data and wanted(self) then
-			local replacement = replacement_for(part_data)
+		if use_cc_material_config and not force_third_person and part_data and wanted(self) and animate_part(self, part_id, part_data) then
+			local part = self._parts and self._parts[part_id]
+			local replacement = replacement_for(part_data, part and part.unit)
 
 			if replacement and is_loaded(replacement.ids) then
 				return replacement.ids
@@ -117,7 +181,7 @@ Hooks:PostHook(NewRaycastWeaponBase, "_update_materials", "AnimSkins_update_mate
 
 	for part_id, part in pairs(self._parts) do
 		local part_data = managers.weapon_factory:get_part_data_by_part_id_from_weapon(part_id, self._factory_id, self._blueprint)
-		local replacement = part_data and replacement_for(part_data)
+		local replacement = part_data and animate_part(self, part_id, part_data) and replacement_for(part_data, part.unit)
 
 		if replacement and alive(part.unit) then
 			total = total + 1

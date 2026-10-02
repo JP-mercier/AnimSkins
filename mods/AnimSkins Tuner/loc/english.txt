@@ -32,6 +32,12 @@
 	"ast_menus_title" : "Show in menus",
 	"ast_menus_desc" : "Show the skin on the inventory and customise previews. Off keeps menu weapons vanilla and skins only the weapon in your hands in a heist. Applies to weapons built after the change.",
 
+	"ast_attachments_title" : "Animate attachments",
+	"ast_attachments_desc" : "Off animates only the parts a weapon comes with. Suppressors, custom barrels, stocks and every other mod fitted on top keep their normal look. Applies to weapons built after the change.",
+
+	"ast_sights_title" : "Animate sights",
+	"ast_sights_desc" : "Also animate scopes, red dots, iron sights, offset sights and magnifiers. Their glass and reticles always keep their normal look. Applies to weapons built after the change.",
+
 	"ast_reactive_title" : "Reactive glow",
 	"ast_reactive_desc" : "The glow follows the heist: dims to an ember in stealth, ramps up during assaults, and the gun heats up the longer you fire -- brighter, faster scrolling, and a heat effect at the muzzle. All of it scales the Glow brightness above.",
 

@@ -40,6 +40,14 @@ Hooks:Add("MenuManagerInitialize", "AnimSkinsTuner_callbacks", function(menu_man
 		set("menus", item:value() == "on")
 		T:sync_animskins()
 	end
+	MenuCallbackHandler.ast_set_attachments = function(self, item)
+		set("attachments", item:value() == "on")
+		T:sync_animskins()
+	end
+	MenuCallbackHandler.ast_set_sights = function(self, item)
+		set("sights", item:value() == "on")
+		T:sync_animskins()
+	end
 
 	MenuCallbackHandler.ast_set_reactive = toggle("reactive", true)
 	MenuCallbackHandler.ast_set_react_stealth = slider("react_stealth")
@@ -121,6 +129,8 @@ Hooks:Add("MenuManagerPopulateCustomMenus", "AnimSkinsTuner_populate", function(
 	add("choice", "direction", { value = s.direction,
 		items = { "ast_dir_right", "ast_dir_left", "ast_dir_down", "ast_dir_up", "ast_dir_diag", "ast_dir_part" } })
 	add("toggle", "menus", { value = s.menus })
+	add("toggle", "attachments", { value = s.attachments })
+	add("toggle", "sights", { value = s.sights })
 
 	divider("reactive")
 	add("toggle", "reactive", { value = s.reactive })

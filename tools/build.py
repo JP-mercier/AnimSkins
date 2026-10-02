@@ -25,6 +25,7 @@ Usage (Python 3.10+, standard library only; Pillow optional, for the texture che
     python tools/build.py                   build in place
     python tools/build.py --install [PD2]   build, then copy both mods into <PD2>/mods
     python tools/build.py --pack            build, then write dist/AnimSkins-<version>.zip
+    python tools/build.py --import-dump D   merge a tools/PartDumper dump into src/, then build
 """
 from pathlib import Path
 import argparse
@@ -299,7 +300,14 @@ def main():
     parser.add_argument("--install", nargs="?", const=AUTO, type=Path, metavar="PD2",
                         help="copy both mods into <PD2>/mods (PAYDAY 2 is found through Steam if omitted)")
     parser.add_argument("--pack", action="store_true", help="write dist/AnimSkins-<version>.zip")
+    parser.add_argument("--import-dump", type=Path, metavar="DUMP",
+                        help="merge a tools/PartDumper dump into src/ before building (see tools/import_dump.py)")
     args = parser.parse_args()
+
+    if args.import_dump:
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from import_dump import import_dump
+        import_dump(args.import_dump)
 
     errors = []
 
@@ -375,6 +383,12 @@ def main():
                 root.append(black_material(ref) if black else animated_material(ref, animated[ref], default))
             else:
                 root.append(static_material(static[ref], default))
+        # The engine shares one material instance between every unit wearing the same config, so
+        # without this a part fitted to both weapons (a suppressor, a sight) would show whichever
+        # skin the tuner wrote last on both. Vanilla's _cc configs mark their materials unique for
+        # the same reason: weapon skins are painted per weapon.
+        for material in root:
+            material.set("unique", "true")
         ET.indent(root, "\t")
         # A config naming a mod texture that main.xml does not register would point the renderer at
         # a texture that is not there.

@@ -1,0 +1,10 @@
+# Parts whose material config the factory data names by Idstring (parts.<id>.material_config), so the
+# part dump cannot print its path. <part id> <material config path>, from weaponfactorytweakdata.lua.
+wpn_fps_aug_ris_special units/payday2/weapons/wpn_fps_ass_aug_pts/wpn_fps_aug_body_aug
+wpn_fps_pis_c96_nozzle units/pd2_dlc_gage_historical/weapons/wpn_fps_pis_c96_pts/wpn_fps_pis_c96_body_standard
+wpn_fps_pis_g18c_body_frame units/payday2/weapons/wpn_fps_pis_g18c_pts/wpn_fps_pis_g18c_frame
+wpn_fps_smg_m45_s_folded units/pd2_dlc1/weapons/wpn_fps_smg_m45_pts/wpn_fps_smg_m45_s_standard
+wpn_fps_smg_m45_s_folded_vanilla units/pd2_dlc1/weapons/wpn_fps_smg_m45_pts/wpn_fps_smg_m45_s_standard
+wpn_fps_upg_o_mbus_pro_front units/pd2_dlc_mxm/weapons/wpn_fps_upg_mbus_pro/wpn_fps_upg_o_mbus_pro_front
+wpn_fps_upg_o_mbus_pro_rear units/pd2_dlc_mxm/weapons/wpn_fps_upg_mbus_pro/wpn_fps_upg_o_mbus_pro_rear
+wpn_fps_upg_o_mbus_rear units/pd2_dlc_gage_shot/weapons/wpn_fps_upg_o_mbus/wpn_fps_upg_o_mbus_front

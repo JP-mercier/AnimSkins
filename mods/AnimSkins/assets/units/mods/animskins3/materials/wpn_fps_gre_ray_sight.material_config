@@ -1,0 +1,32 @@
+<materials version="3" group="weapon_ray">
+	<material name="mtr_sight" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="0.07 -0.07 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="gfx_redlight" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<variable name="intensity" type="scalar" value="desklight" />
+		<diffuse_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_o_cs/red_glass_df" />
+		<variable name="falloff_exp" type="scalar" value="150" />
+	</material>
+	<material name="gfx_redlight1" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<variable name="intensity" type="scalar" value="match" />
+		<diffuse_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_o_cs/red_glass_df" />
+		<variable name="falloff_exp" type="scalar" value="150" />
+	</material>
+	<material decal_material="glass_breakable" name="glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_o_cs/red_glass_texture_df" />
+		<opacity_texture file="units/pd2_dlc_gage_jobs/weapons/wpn_fps_upg_o_cs/wpn_aimpoint_glass_op" />
+		<reflection_texture global_texture="current_global_texture" type="cubemap" />
+		<variable name="fresnel_settings" type="vector3" value="0.91999995708466 0 1" />
+	</material>
+	<material name="gfx_reddot" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:HOLO:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<variable name="intensity" type="scalar" value="reddot" />
+		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/m202_flash_reticule_df" />
+		<variable name="falloff_exp" type="scalar" value="500" />
+		<variable name="holo_target_offset" type="vector3" value="0 10000 0" />
+		<variable name="holo_reticle_scale" type="vector3" value="0.9 2 20" />
+	</material>
+</materials>

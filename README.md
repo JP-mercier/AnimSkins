@@ -34,11 +34,12 @@ AnimSkins Tuner requires AnimSkins. AnimSkins works on its own, showing the defa
 | Your own weapons, first person | Teammates, bots, enemies, lobby characters |
 | Weapons wearing a game weapon skin (covered by the animated skin) | Melee weapons and throwables |
 | Inventory and customization previews (optional, see the Tuner's `Show in menus`) | Custom weapons added by other mods |
-| 1,766 vanilla weapon parts | VR |
+| Every vanilla weapon part with a mesh: 1,788 material configs, read from the game (see [Part data](#part-data)) | VR |
+| Sights (optional, see the Tuner's `Animate sights`) | |
 
-Magazines (188 parts) are drawn solid black with no glow. Set `BLACK_PARTS = False` in `tools/build.py` and rebuild to animate them.
+Magazines (208 configs) are drawn solid black with no glow. Set `BLACK_PARTS = False` in `tools/build.py` and rebuild to animate them.
 
-**Known gap.** The part data does not cover 144 part configs the game has. Most are optics (Aimpoint, EOTech, ACOG, Specter, T1 Micro, the reflex/holo/magnifier family, back-up iron sights). The rest are the Chimano 88's barrel and body, every part of the PMM, Bleckert, Speen and Dart, some quick-mags, charms, belt-fed bullets, and a few legendary-skin parts (Model 70, Minigun, KSG, flamethrower). These stay vanilla. Covering one requires its exact material names in `src/parts.txt`. Guessing them puts effect shaders on the wrong meshes.
+Within a part, every solid surface is animated. Glass, reticles, transparent windows, fake shadows and other effect shaders keep their vanilla look, and so do meshes bent by bones (bow and crossbow strings).
 
 ## AnimSkins Tuner
 
@@ -55,6 +56,8 @@ Options → Mod Options → AnimSkins Tuner. Changes apply immediately, with no 
 | Scroll speed | 0.1 | `uv_speed`, UV units per second. 0 freezes the pattern |
 | Scroll direction | Per part (built-in) | Right, left, down, up, diagonal, or each material's own direction. UV islands are rotated and mirrored per part, so per part reads the most even |
 | Show in menus | On | Off keeps inventory and customization previews vanilla. Applies to weapons built after the change |
+| Animate attachments | On | Off animates only the parts a weapon comes with (its default build, including parts those add). Suppressors, custom barrels, stocks and other mods fitted on top keep their normal look. Applies to weapons built after the change |
+| Animate sights | Off | On also animates scopes, red dots, iron sights (factory type `sight`), offset sights and magnifiers (sub-type `second_sight`). Their glass and reticles keep their normal look. Applies to weapons built after the change |
 
 Reactive glow (on by default) scales the glow brightness with the heist state and weapon heat:
 
@@ -87,9 +90,22 @@ After each swap, `AnimSkins.swapped[weapon]` records the part units and configs,
 
 **Tuner (`mods/AnimSkins Tuner/`).** Writes only to part units AnimSkins swapped, only while they still wear that config, and only to the materials `skin_materials.txt` lists for it: animated materials (both textures) and static materials showing the skin's base (diffuse only). Scope glass, reticles and lasers are never touched. `Application:set_material_texture` on a material without that texture slot faults in the render thread, and `pcall` cannot catch it. Textures are bound only once the engine reports them loaded. Settings are re-applied from the `AnimSkinsSwapped` hook, because `set_material_config` rebuilds a unit's materials.
 
-**Configs.** Each part declares only the materials its mesh uses, first-person variant only. The 1,766 parts come out as 408 files, because parts whose configs are byte-identical share one.
+**Configs.** Each config declares exactly the materials of its mesh, first-person variant only, and every material is `unique="true"`. The engine shares one material instance between all units wearing the same config. Without `unique`, a part fitted to both weapons (a suppressor, a sight) would show whichever skin the Tuner wrote last on both. Vanilla's `_cc` configs are unique for the same reason. The 1,788 configs come out as 1,370 files, because byte-identical ones share a file.
+
+**Lookup.** A part is matched by the config it is wearing (`unit:material_config()`), its `_cc` variant or AnimSkins' own, before falling back to the factory data. Several parts are built from another part's mesh and wear that part's config, as named in their `.object` file, so their own unit path matches nothing.
 
 **Textures.** Skin textures are 1024×1024 DXT1 without mipmaps. They are fully opaque, so a DXT5 texture's alpha blocks carry nothing. The build rewrites an opaque DXT5 as DXT1 in place, keeping each colour block bit for bit, and verifies the result decodes pixel-identical (when Pillow is installed).
+
+## Part data
+
+`src/parts.txt` lists, per vanilla material config, its material group and the materials of its mesh. It is generated from the game: `tools/PartDumper` is a development mod that reads the `.unit` → `.object` → `.material_config` chain of every part in `tweak_data.weapon.factory.parts` at the main menu and writes them to `mods/saves/animskins_part_dump.txt`. Nothing in the game is changed.
+
+After a game update that adds weapons or parts:
+
+1. Copy `tools/PartDumper` to `PAYDAY 2/mods/`, start the game, wait for the PartDumper dialog at the main menu, then remove the mod.
+2. `python tools/build.py --import-dump "<PAYDAY 2>/mods/saves/animskins_part_dump.txt"`
+
+The import (`tools/import_dump.py`) rebuilds `parts.txt`, `animated.txt` and `static.xml`. A `generic` material without `SKINNED_*` is animated and keeps its scroll direction; a new name gets one derived from its name. `effect`, `opacity` and `decal` materials, and skinned ones, keep their vanilla definition. New magazine parts are added to `black_parts.txt`. Parts whose config the factory data names by Idstring only cannot be resolved from the dump; `src/explicit_configs.txt` lists their paths, and the import reports any that are missing.
 
 ## Repository layout
 
@@ -110,10 +126,13 @@ mods/
         variants.json                   skin list for the tuner            (generated)
     AnimSkins Tuner/                    the in-game menu; install as is
 src/
-    parts.txt, animated.txt, static.xml weapon part data, from Inversion Universal
+    parts.txt, animated.txt, static.xml weapon part data, generated from the game (see Part data)
+    explicit_configs.txt                configs the factory data names by Idstring only
     black_parts.txt                     parts drawn black
     skins.json                          skin ids and names, in dropdown order
 tools/build.py                          generates the files above, installs, packs
+tools/import_dump.py                    rebuilds the part data from a PartDumper dump
+tools/PartDumper/                       development mod that dumps every part's material config
 docs/                                   README screenshots
 ```
 
@@ -128,6 +147,7 @@ python tools/build.py                  # build in place
 python tools/build.py --install        # build, copy both mods into PAYDAY 2/mods (found through Steam), retire old packs
 python tools/build.py --install <PD2>  # same, with an explicit PAYDAY 2 folder
 python tools/build.py --pack           # build, then write dist/AnimSkins-<version>.zip
+python tools/build.py --import-dump D  # rebuild src/ part data from a PartDumper dump, then build
 ```
 
 The build stops before writing anything on duplicate skin ids, missing or malformed textures, textures no skin uses, unknown materials or scroll directions, and configs referencing unregistered textures.
@@ -138,7 +158,7 @@ Defaults baked into the configs are at the top of `tools/build.py`: `DEFAULT_SKI
 
 ## Troubleshooting
 
-At startup, `mods/logs` shows `[AnimSkins] 1766 weapon parts mapped`, then `swap #N: X of Y parts, Z waiting for their config to load` for the first 20 weapons. Parts that were waiting pick the skin up the next time the weapon is rebuilt (re-equip it).
+At startup, `mods/logs` shows `[AnimSkins] 1788 weapon parts mapped`, then `swap #N: X of Y parts, Z waiting for their config to load` for the first 20 weapons. Parts that were waiting pick the skin up the next time the weapon is rebuilt (re-equip it).
 
 | Symptom | Cause |
 | --- | --- |
@@ -147,6 +167,13 @@ At startup, `mods/logs` shows `[AnimSkins] 1766 weapon parts mapped`, then `swap
 | Crash | Disable AnimSkins Tuner in the BLT mod manager first. That leaves the swap running with nothing writing to materials at runtime, and tells you which mod is at fault. Keep `mods/logs/<date>_log.txt`: it is replaced on the next launch. Relevant lines start with `[AnimSkins]`. |
 
 ## Changelog
+
+### 3.2 (Tuner 2.2)
+- Part data generated from the game's own material configs (`tools/PartDumper`, `--import-dump`). Every part with a mesh is covered, sights, gadgets, quick magazines and the Locomotive's short parts included. Material lists are exact: about 19,600 names that were not on the mesh are gone, and 108 that were missing are added.
+- Every solid surface is animated. Effect, glass and decal materials (73 were animated) and bow strings keep their vanilla look.
+- Materials are `unique`: a part fitted to both weapons shows each weapon's own skin.
+- Parts are matched by the config they wear, which covers parts built from another part's mesh.
+- Tuner: `Animate attachments` and `Animate sights` options.
 
 ### 3.1 (Tuner 2.1)
 - Single repository: both mods under `mods/`, sources under `src/`, one build script.

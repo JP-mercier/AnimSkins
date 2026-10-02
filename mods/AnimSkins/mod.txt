@@ -2,7 +2,7 @@
 	"name" : "AnimSkins",
 	"description" : "Animated glowing skins on your own first-person weapons only: Eldritch Rose, Crackle, Crystal, Interstellar, Inversion, Molton, Nebula, Nightwave, PaP Galaxy, Purple, Scribble, Shatter, Starfall and Inversion Universal. Pick one with AnimSkins Tuner. Made by Siuna, built on Inversion Universal. Requires BeardLib.",
 	"author" : "jpmercier",
-	"version" : "3.1",
+	"version" : "3.2",
 	"blt_version" : 2,
 	"hooks" : [
 		{

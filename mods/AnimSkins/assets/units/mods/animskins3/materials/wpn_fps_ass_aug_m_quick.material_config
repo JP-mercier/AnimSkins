@@ -1,0 +1,30 @@
+<materials version="3" group="weapon_group">
+	<material name="mag" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="mtr_bullet" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+	<material name="mag_plastic" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS:NORMALMAP" version="2" unique="true">
+		<variable name="fresnel_settings" type="vector3" value="0 0 0.21999999880791" />
+		<opacity_texture file="units/pd2_dlc_bbq/weapons/molotov_cocktail/textures/wpn_fps_molotov_glass_op" />
+		<diffuse_texture file="units/payday2/weapons/wpn_fps_ass_aug_pts/wpn_fps_ass_aug_mag_df" />
+		<reflection_texture global_texture="current_global_texture" type="cube" />
+		<bump_normal_texture file="units/payday2/weapons/wpn_fps_ass_aug_pts/wpn_fps_ass_aug_mag_nm" />
+	</material>
+	<material name="mtr_magpul" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/black" />
+		<self_illumination_texture file="units/mods/animskins3/black" />
+		<variable name="uv_speed" value="0 0 0" type="vector3" />
+		<variable name="il_bloom" value="0" type="float" />
+		<variable name="il_multiplier" value="0" type="scalar" />
+	</material>
+</materials>

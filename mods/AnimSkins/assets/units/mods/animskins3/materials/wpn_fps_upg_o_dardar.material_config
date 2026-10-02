@@ -1,0 +1,29 @@
+<materials version="3" group="weapon_group">
+	<material name="mat_dardar" render_template="generic:DEPTH_SCALING:DIFFUSE_TEXTURE:DIFFUSE_UVANIM:SELF_ILLUMINATION:SELF_ILLUMINATION_BLOOM:SELF_ILLUMINATION_UVANIM" version="2" unique="true">
+		<diffuse_texture file="units/mods/animskins3/default_df" />
+		<self_illumination_texture file="units/mods/animskins3/default_il" />
+		<variable name="uv_speed" value="-0.1 0 0" type="vector3" />
+		<variable name="il_bloom" value="1.0" type="float" />
+		<variable name="il_multiplier" value="5" type="scalar" />
+	</material>
+	<material name="mat_glass" render_template="opacity:CUBE_ENVIRONMENT_MAPPING:CUBE_FRESNEL:DIFFUSE_TEXTURE:FPS" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc_auc/weapons/wpn_fps_upg_o_dardar/yellow_glass_df" />
+		<opacity_texture file="units/pd2_dlc_auc/weapons/wpn_fps_upg_o_dardar/wpn_fps_upg_o_dardar_op" />
+		<reflection_texture global_texture="current_global_texture" type="cubemap" />
+		<variable name="fresnel_settings" type="vector3" value="0.91999995708466 0 1" />
+	</material>
+	<material name="gfx_reddot_1" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS:HOLO:VIEW_ANGLE_FALLOFF_OP" version="2" unique="true">
+		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il" />
+		<variable name="intensity" type="scalar" value="reddot" />
+		<variable name="falloff_exp" type="scalar" value="4" />
+		<variable name="holo_target_offset" type="vector3" value="0 10000 0" />
+		<variable name="holo_reticle_scale" type="vector3" value="0.5 1 20" />
+	</material>
+	<material name="gfx_reddot_2" render_template="effect:BLEND_ADD:DIFFUSE0_TEXTURE:FPS" version="2" unique="true">
+		<variable name="intensity" type="scalar" value="candle" />
+		<diffuse_texture file="units/pd2_dlc1/weapons/wpn_effects_textures/wpn_sight_reticle_1_il" />
+	</material>
+	<material name="mat_mullplan" render_template="decal:DIFFUSE_TEXTURE:RL_FPS_WEAPON" version="2" unique="true">
+		<diffuse_texture file="units/payday2/weapons/wpn_effects_textures/shadow_mullplane_fade_df" />
+	</material>
+</materials>

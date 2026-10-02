@@ -43,6 +43,8 @@ T.defaults = {
 	speed = 0.1,       -- uv_speed magnitude, UV units per second
 	direction = 6,     -- index into T.DIRECTIONS; 6 = each part's own built-in direction
 	menus = true,      -- show the skin on inventory and customise previews
+	attachments = true, -- animate mods fitted on top of the parts a weapon comes with
+	sights = false,    -- animate sights too (scopes, red dots, iron sights, offset sights, magnifiers)
 
 	-- Skin per slot, as an index into T.skins.
 	primary_skin = 1,
@@ -181,6 +183,8 @@ end
 function T:sync_animskins()
 	_G.AnimSkins = _G.AnimSkins or {}
 	_G.AnimSkins.menus = self.settings.menus
+	_G.AnimSkins.attachments = self.settings.attachments
+	_G.AnimSkins.sights = self.settings.sights
 end
 
 --------------------------------------------------------------------- menu lists
